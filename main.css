@@ -1414,6 +1414,38 @@ card-btns > button > a {
     border: none;
 }
 
+#tabs {position:fixed; top: 50px;background-color:white;width: 100%; padding-top: 10px; }
+
+#tabs > ul > li {display:inline-block;margin-left: 20px;}
+
+#tabs > ul {margin: auto; width: 300px; }
+
+.borderLeftRight {
+  display: inline-block;
+  position: relative;
+  color: #474E51;
+}
+
+.borderLeftRight::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #5878F3;
+  transform-origin: bottom right;
+  margin-bottom: -10px;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.borderLeftRight:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
 .site {
     display: none;
     position: absolute;
@@ -1429,7 +1461,7 @@ card-btns > button > a {
 
 
 .calendar > iframe {
-    height: 74%;
+    height: 100%;
 }
 
 .rounded-btn-wrapper {

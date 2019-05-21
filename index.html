@@ -21,6 +21,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122866044-3"></script>
 
@@ -39,7 +47,12 @@
             AOS.init();
 
     </script>
-
+ <script>
+  $( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  } );
+  </script>
 </head>
 
 <!---
@@ -237,18 +250,25 @@ Google Calendar
 
 
 <div class="spacer" style="height: 40px;"></div>
-<form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
-  <p>
-    <label>Email: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <div data-netlify-recaptcha="true"></div>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+
+
+
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1" class="borderLeftRight">Featured</a></li>
+    <li><a href="#tabs-2">News</a></li>
+    <li><a href="#tabs-3">Events</a></li>
+  </ul>
+  <div id="tabs-1" >
+Text1
+  </div>
+  <div id="tabs-2">
+   Text2
+  </div>
+  <div id="tabs-3">
+    Text3
+  </div>
+</div>
 
         <div class="navigation-card cd1  help" data-aos="fade-up">
 
@@ -846,7 +866,7 @@ Google Calendar
 
 
         <div class="calendar">
-            <div class="indicator-container nav-element">
+            <div class="indicator-container nav-element" style="top: 0px;margin-top:17px;">
                 <div class="indicator" style="width: 162px;">
                     <div class="line-indicator vivify pullLeft duration-500"></div>
                 </div>
@@ -862,7 +882,7 @@ Google Calendar
 
 
         <div class="site">
-            <div class="indicator-container nav-element">
+            <div class="indicator-container nav-element" style="top: 0px;margin-top:17px;">
                 <div class="indicator" style="width: 0px;">
                     <div class="line-indicator vivify pullLeft duration-500"></div>
                 </div>
