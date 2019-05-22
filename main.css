@@ -1414,11 +1414,13 @@ card-btns > button > a {
     border: none;
 }
 
-#tabs {position:fixed; top: 50px;background-color:white;width: 100%; padding-top: 10px; }
+#tabs {background-color:white;width: 100%; padding-top: 10px; position: relative;top: 0px; height: 100%}
 
 #tabs > ul > li {display:inline-block;margin-left: 20px;}
 
-#tabs > ul {margin: auto; width: 300px; }
+#tabs > ul > li > a {font-size: 14px; }
+
+#tabs > ul {position: fixed;width: 100%; height: 30px;; background-color: white; padding-top: 15px; }
 
 .borderLeftRight {
   display: inline-block;
@@ -1434,7 +1436,7 @@ card-btns > button > a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #5878F3;
+  background-color: #012395;
   transform-origin: bottom right;
   margin-bottom: -10px;
   transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
