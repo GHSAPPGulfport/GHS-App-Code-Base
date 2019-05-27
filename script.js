@@ -119,6 +119,10 @@ function usercheck() {
     console.log(user);
 }
 
+function closeall() {
+    document.getElementsByClassName("univ-menu")[0].style.display = "none", admiralnationsect[0].style.display = "none", mealmenu[0].style.display = "none", kahootsect[0].style.display = "none", homescreen[0].style.display = "block", mediasect[0].style.display = "none", athleticsect[0].style.display = "none", gradessect[0].style.display = "none", hammenu[0].style.display = "none", gradessect[0].style.display = "none", searchsect[0].style.display = "none", document.getElementById("btn-lunch").focus(), document.getElementsByClassName("menu-cover")[0].style.display = "none", close[0].style.display = "none"
+}
+
 function myFunction() {
     var e, s, t;
     for (e = document.getElementById("mySearch").value.toUpperCase(), s = document.getElementById("myMenu").getElementsByTagName("li"), t = 0; t < s.length; t++) - 1 < s[t].getElementsByTagName("a")[0].innerHTML.toUpperCase().indexOf(e) ? s[t].style.display = "" : s[t].style.display = "none"

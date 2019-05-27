@@ -847,6 +847,7 @@ Google Calendar
 
         <div class="live-sect vivify fadeIn">
 
+            <div onclick="closeall()" class="back"><i class="material-icons">arrow_back_ios</i></div>
 
             <div class="card-wrapper" style="border-radius: 15px"><iframe loading="lazy" class="card-img" style="margin-top: 55px" src="https://c.themediacdn.com/embed/media/O7sBCQ/OqvzSehCsA1/mrLrvlwsOOb_5?wmode=opaque" allowfullscreen></iframe></div>
 
@@ -887,9 +888,9 @@ Google Calendar
 
 
 
-    <div class="athletic-sect">
+    <div class="athletic-sect vivify fadeIn">
 
-
+        <div onclick="closeall()" class="back"><i class="material-icons">arrow_back_ios</i></div>
 
         <div class="horizontal-nav nav-element">
             <a href="#">
@@ -968,8 +969,10 @@ Google Calendar
 
 
 
-    <div class="meal-menu">
+    <div class="meal-menu vivify fadeIn">
 
+
+        <div onclick="closeall()" class="back"><i class="material-icons">arrow_back_ios</i></div>
 
 
         <div class="spacer" style="height: 239px"></div>
@@ -1050,8 +1053,8 @@ document.getElementById("datetime2").innerHTML = dt.toLocaleDateString();
 
 
 
-    <div class="kahoot-sect">
-
+    <div class="kahoot-sect vivify fadeIn">
+        <div onclick="closeall()" class="back"><i class="material-icons">arrow_back_ios</i></div>
 
 
         <iframe loading="lazy" style="margin-top: 55px;" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=district.calendar%40gulfportschools.org&amp;color=%2342104A&amp;src=gulfportschools.org_g8kh79cr8sqbipejvm2c9bc0js%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FChicago" style="border-width:0" width="360" frameborder="0" scrolling="no"></iframe>
@@ -1059,7 +1062,9 @@ document.getElementById("datetime2").innerHTML = dt.toLocaleDateString();
 
 
 
-    <div class="search-sect">
+    <div class="search-sect vivify fadeIn">
+
+        <div onclick="closeall()" class="back"><i class="material-icons">arrow_back_ios</i></div>
 
         <div class="close-btn"><button onclick="searchclose()">Cancel</button></div>
         <input class="search-input vivify popIn" style="padding-left:25px; " type="text" id="mySearch" onkeyup="myFunction()" placeholder="&emsp; Find A Teacher..." title="Type in a teacher">

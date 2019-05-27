@@ -540,6 +540,24 @@ summary:focus {
 
 }
 
+.back {
+    position: fixed;
+    top: 9px;
+    z-index: 100;
+
+    width: 66px;
+    height: 40px;
+    border-radius: 33px;
+    left: 1px;
+}
+
+.back > i {
+    margin-left: 23px;
+    margin-top: 6px;
+    color: #012395;
+}
+
+
 .options-sect {
     margin-left: 20px;
     margin-top: 11px;
@@ -1650,8 +1668,8 @@ card-btns > button > a {
 
 .hero-image > img {
     width: 100%;
-    position: relative;
-    top: -209px;
+    position: absolute;
+    top: 26px;
     z-index: 38;
     filter: brightness(0.92);
     height: 222px;
