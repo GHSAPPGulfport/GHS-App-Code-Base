@@ -524,10 +524,7 @@ summary:focus {
 .options {
     margin: auto;
     width: 323px;
-    border: solid;
-    border-width: 1.3px;
-    border-color: lightgray;
-    border-radius: 10px;
+    
 }
 
 .close-menu {
