@@ -18,6 +18,13 @@ a {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
 body {
     font-family: sans-serif;
     margin: 0px;
@@ -442,7 +449,7 @@ summary:focus {
     object-fit: cover;
     width: 125px;
     border: solid;
-    border-width: 1.3px;
+    border-width: 1px;
     border-color: lightgray;
     transition: 0.3s ease;
     background-color: white;
@@ -1171,11 +1178,12 @@ card-btns > button > a {
 
 .card-divider {
     width: 100%;
-border-top:solid 1.3px lightgray;;
-    
+    border-top: solid 1.3px lightgray;
+    ;
+
 
     ;
-   
+
 
     background-color: lightgray;
 }
