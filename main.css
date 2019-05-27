@@ -2231,3 +2231,12 @@ body.darkclass button {
         opacity: 0;
     }
 }
+
+.scroll-elements {
+    position: relative; z-index: 100;scroll-snap-align: start;
+  scroll-snap-align: center;
+}
+
+.homescreen {
+    scroll-snap-type: y mandatory;
+}
