@@ -434,7 +434,8 @@ summary:focus {
     transition: 0.3s ease;
 }
 
-.swipe-menu > button{ margin-left: -6px;
+.swipe-menu > button {
+    margin-left: -6px;
 
     display: inline-block;
     height: 50px;
@@ -443,7 +444,9 @@ summary:focus {
     border: solid;
     border-width: 1.3px;
     border-color: lightgray;
-    transition: 0.3s ease;background-color: white;}
+    transition: 0.3s ease;
+    background-color: white;
+}
 
 
 
@@ -1172,10 +1175,7 @@ card-btns > button > a {
 
     ;
     filter: opacity(0.4);
-    margin-top: 20px;
-    margin-bottom: 15px;
-    padding-top: 20px;
-    padding-bottom: 15px;
+
     background-color: lightgray;
 }
 
