@@ -434,7 +434,16 @@ summary:focus {
     transition: 0.3s ease;
 }
 
+.swipe-menu > button{ margin-left: -6px;
 
+    display: inline-block;
+    height: 50px;
+    object-fit: cover;
+    width: 125px;
+    border: solid;
+    border-width: 1.3px;
+    border-color: lightgray;
+    transition: 0.3s ease;background-color: white;}
 
 
 
@@ -555,6 +564,7 @@ summary:focus {
     margin-left: 23px;
     margin-top: 6px;
     color: #012395;
+
 }
 
 
