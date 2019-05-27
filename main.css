@@ -455,7 +455,19 @@ summary:focus {
     background-color: white;
 }
 
+.swipe-menu > a > button {
+    margin-left: -6px;
 
+    display: inline-block;
+    height: 50px;
+    object-fit: cover;
+    width: 125px;
+    border: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    transition: 0.3s ease;
+    background-color: white;
+}
 
 .swipe-menu > p {
     margin-left: 10px;
@@ -1016,7 +1028,7 @@ card-btns > button > a {
     height: 100%;
     ;
 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
     border-radius: 10px;
 }
 
@@ -1287,7 +1299,7 @@ card-btns > button > a {
 
 .search-link {
     position: fixed;
-    left: 193px;
+    right: -129px;
     width: 296px;
     ;
     top: 4px;

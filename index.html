@@ -230,7 +230,9 @@ Google Calendar
     <div class="header-base">
         <div class="logo-wrapper"><img class="" src="Branding/App%20Logo%20Embed.png"></div>
 
-        <div onclick="closeall()" class="back"><i class="material-icons">arrow_back_ios</i></div>
+        <a href="#">
+            <div onclick="closeall()" class="back"><i class="material-icons">arrow_back_ios</i></div>
+        </a>
 
         <div class="search-link">
             <div class="search-base">
@@ -239,6 +241,7 @@ Google Calendar
                 </button></div>
         </div>
     </div>
+
 
 
     <div class="homescreen vivify fadeIn">
@@ -264,7 +267,7 @@ Google Calendar
                 <h4>GHS App</h4>
                 <p>Gulfport High School</p>
 
-                <div class="swipe-menu" style="margin-top: -13px;margin-bottom: 22px;position: sticky; top: 50px;"><button onclick="leftpress()" style="margin-left: 21px;border-radius: 10px 0px 0px 10px;">Live Games</button> <button>Athletics</button><button>Podcast</button><button style="margin-right: 10px;border-radius: 0px 10px 10px 0px;">Settings</button></div>
+                <div class="swipe-menu" style="margin-top: -13px;margin-bottom: 22px;"><button onclick="leftpress()" style="margin-left: 21px;border-radius: 10px 0px 0px 10px;">Live Games</button> <button onclick="rightpress()">Athletics</button><a href="#podcast"><button>Podcast</button></a><button style="margin-right: 10px;border-radius: 0px 10px 10px 0px;">Settings</button></div>
 
 
 
@@ -311,18 +314,17 @@ Google Calendar
 
 
 
-                <a href="Admiralnation.html">
-                    <div class="options-sect">
-                        <button>
-                            <i class="menu-icon material-icons">
 
-                                shopping_cart</i>
-                            <h3>Shop School Store</h3>
+                <div class="options-sect">
+                    <button onclick="admiral()">
+                        <i class="menu-icon material-icons">
 
-                        </button>
+                            shopping_cart</i>
+                        <h3>Shop School Store</h3>
 
-                    </div>
-                </a>
+                    </button>
+
+                </div>
 
 
 
@@ -426,7 +428,7 @@ Google Calendar
                                 </div>
                             </a>
 
-                            <a href="#"><button class="popup-button">Close</button></a>
+
 
 
                             <div class="spacer" style="height: 60px;"></div>
@@ -482,57 +484,7 @@ Google Calendar
 
 
 
-            <div class="navigation-card cd1  help" data-aos="fade-up">
-
-
-
-                <h3 style="margin-left: 23px;">Try New Dark Mode
-                </h3>
-                <a href="#">
-                    <div>
-                        <h4 style="margin-left: 23px">GHS App | Experimental
-                        </h4>
-                    </div>
-                </a>
-
-                <div class="rounded-btn-wrapper" style="margin-top: 22px;margin-bottom: 77px;">
-                    <div class="rounded-btn"><button onclick="launch_toast()" class="darkmode">Enable</button></div>
-                    <div class="rounded-btn"><button class="normalmode">Disable</button></div>
-
-                </div>
-
-                <div class="rounded-btn-wrapper" style="margin-top: 22px;margin-bottom: 77px;">
-                </div>
-
-                <script>
-                    $(document).ready(function($) {
-                        var mode = localStorage.getItem('mode');
-                        if (mode)
-                            $('body').addClass(mode);
-                        $('accent').addClass(mode);
-                        $(".darkmode").click(function() {
-                            $("body").addClass("darkclass");
-                            $("accent").addClass("darkclass");
-                            localStorage.setItem('mode', 'darkclass');
-                        });
-                        $(".normalmode").click(function() {
-                            $("body").removeClass("darkclass");
-                            $("accent").removeClass("darkclass");
-                            localStorage.setItem('mode', null);
-                        });
-                    });
-
-                </script>
-            </div>
-
-
-
-
-
-
-
-
-            <div id="podcast" class="popup-menu vivify pullUp">
+            <div id="podcast" class="popup-menu vivify pullUp podcast">
                 <div>
                     <div class="content-container">
                         <div class="navigation-card">
@@ -543,7 +495,7 @@ Google Calendar
                                 </div>
                             </a>
 
-                            <a href="#"><button class="popup-button">Close</button></a>
+
 
 
                             <div class="spacer" style="height: 60px;"></div>
@@ -1045,7 +997,7 @@ document.getElementById("datetime2").innerHTML = dt.toLocaleDateString();
 
 
     <div class="admiralnation-sect vivify fadeIn">
-
+        <iframe src="https://admiralnation.github.io/SHOP/"></iframe>
     </div>
 
 
