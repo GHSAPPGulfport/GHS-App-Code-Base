@@ -521,7 +521,14 @@ summary:focus {
     margin-left: 49px;
 }
 
-.options {}
+.options {
+    margin: auto;
+    width: 323px;
+    border: solid;
+    border-width: 1.3px;
+    border-color: lightgray;
+    border-radius: 10px;
+}
 
 .close-menu {
     position: fixed;
@@ -860,6 +867,9 @@ summary > div > p {
     transition: 0.5s ease;
     position: relative;
     z-index: -1;
+    background-color: white;
+    padding-bottom: 5px;
+    padding-top: 1px;
 }
 
 .navigation-card > a > div > h4 {
@@ -1071,6 +1081,8 @@ card-btns > button > a {
     filter: opacity(0.4);
     margin-top: 20px;
     margin-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 15px;
     background-color: lightgray;
 }
 
@@ -1910,6 +1922,7 @@ body.darkclass .header-base {
 
 body.darkclass .navigation-card {
     color: white;
+    background-color: black;
 }
 
 body.darkclass .menu-button > button {
