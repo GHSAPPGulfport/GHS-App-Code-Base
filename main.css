@@ -521,10 +521,7 @@ summary:focus {
     margin-left: 49px;
 }
 
-.options {
- 
-    
-}
+.options {}
 
 .close-menu {
     position: fixed;
@@ -547,6 +544,10 @@ summary:focus {
     margin-left: 20px;
     margin-top: 11px;
 
+}
+
+.options-sect > button > i {
+    color: #012395;
 }
 
 .menu-cover {
@@ -996,6 +997,74 @@ card-btns > button > a {
     top: 18.1px;
     right: 28px;
 }
+
+.arrowBounce {
+    animation: bounce 2s infinite;
+    color: #012395;
+    ;
+    font-size: 27px;
+    position: relative;
+    margin-top: 6px;
+    top: 6px;
+}
+
+.arrowBounce::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    background: url("../assets/images/scroll-arrow.svg") no-repeat;
+    height: 26px;
+    width: 18px;
+}
+
+.scroll-space {
+    border: solid;
+    border-width: 1.3px;
+    border-color: lightgray;
+    border-radius: 10px 10px 0px 0px;
+    margin: auto;
+    width: 336px;
+}
+
+.scroll-space > h3 {
+    margin-left: 84px;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 2px;
+    padding-bottom: -1px;
+}
+
+
+
+.scroll-indicator {
+    position: fixed;
+    width: 100%;
+
+    bottom: 0px;
+    z-index: 10;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
 
 .popup-menu {
     position: fixed;
@@ -2233,8 +2302,10 @@ body.darkclass button {
 }
 
 .scroll-elements {
-    position: relative; z-index: 100;scroll-snap-align: start;
-  scroll-snap-align: center;
+    position: relative;
+    z-index: 15;
+    scroll-snap-align: start;
+    scroll-snap-align: center;
 }
 
 .homescreen {
