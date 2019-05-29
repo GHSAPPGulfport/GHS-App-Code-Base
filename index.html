@@ -85,37 +85,7 @@ Google Calendar
 
 
 
-        <div class="quick-access">
 
-            <a href="#">
-                <div class="quick-link vivify fadeIn">
-                    <button onclick="rightpress()"> <i class="material-icons">fitness_center</i>
-                        <p>Athletics</p>
-                    </button>
-
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="quick-link vivify fadeIn">
-                    <button onclick="leftpress()"><i class="material-icons">live_tv</i>
-                        <p>Live</p>
-                    </button>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="quick-link vivify fadeIn">
-                    <button onclick="homepress()"> <i class="material-icons">home</i>
-                        <p>Home</p>
-                    </button>
-
-                </div>
-            </a>
-
-
-
-        </div>
 
         <button class="close-menu" onclick="collapse()">Close</button>
 
@@ -125,94 +95,6 @@ Google Calendar
 
 
             <div class="menu-cover"></div>
-
-            <div class="options">
-
-
-
-                <h4>GHS App</h4>
-                <p>By Gulfport High School</p>
-
-
-
-
-                <a href="https://261985.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNow%2fMobile%2fGradeBook.List.aspx" target="_self">
-                    <div class="options-sect">
-                        <button>
-                            <i class="material-icons menu-icon">school</i>
-                            <h3>Check My Grades</h3>
-
-                        </button>
-
-                    </div>
-                </a>
-
-
-                <a href="#">
-                    <div class="options-sect">
-                        <button onclick="meal()">
-                            <i class="menu-icon material-icons">
-
-                                restaurant</i>
-                            <h3>Meal Menu</h3>
-
-                        </button>
-
-
-                    </div>
-                </a>
-
-
-
-                <a href="#">
-                    <div class="options-sect" onclick="kahoot()">
-                        <button>
-                            <i class="menu-icon material-icons">
-                                date_range
-                            </i>
-                            <h3> School Calendar</h3>
-
-                        </button>
-
-                    </div>
-                </a>
-
-
-
-                <a href="Admiralnation.html">
-                    <div class="options-sect">
-                        <button>
-                            <i class="menu-icon material-icons">
-
-                                shopping_cart</i>
-                            <h3>Shop School Store</h3>
-
-                        </button>
-
-                    </div>
-                </a>
-
-
-
-
-
-
-
-
-
-
-                <a href="https://payments.efundsforschools.com/v3/districts/56099" target="_self">
-                    <div class="options-sect">
-                        <button>
-                            <i class="material-icons menu-icon">credit_card</i>
-                            <h3>Pay Fees/Lunch</h3>
-
-                        </button>
-
-                    </div>
-                </a>
-
-            </div>
 
 
         </div>
@@ -271,16 +153,16 @@ Google Calendar
 
 
 
-                <a href="https://261985.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNow%2fMobile%2fGradeBook.List.aspx" target="_self">
-                    <div class="options-sect">
-                        <button>
-                            <i class="material-icons menu-icon">school</i>
-                            <h3>Check My Grades</h3>
 
-                        </button>
+                <div class="options-sect">
+                    <button onclick="grades()">
+                        <i class="material-icons menu-icon">school</i>
+                        <h3>Check My Grades</h3>
 
-                    </div>
-                </a>
+                    </button>
+
+                </div>
+
 
 
                 <a href="#">
@@ -388,29 +270,6 @@ Google Calendar
 
 
 
-            <div class="navigation-card cd1  help" data-aos="fade-up">
-
-                <h3 style="margin-left: 23px;">GHS Graduation Ceremony
-                </h3>
-                <a href="#">
-                    <div>
-                        <h4 style="margin-left: 23px">Gulfport High School | May 22nd
-                        </h4>
-                    </div>
-                </a>
-
-                <div class="card-wrapper">
-                    <h3 data-aos="fade-in" data-aos-delay="300">Graduation</h3><img class="card-img" loading="lazy" src="Images/baim-hanif-89800-unsplash.jpg">
-                </div>
-
-                <p>Mandatory Dress Rehearsal for graduation is at 8:30am at the Mississippi Gulf Coast Coliseum. Come fully
-                    dressed in your cap and gown, wear the shoes you will be wearing at graduation to make sure you can walk in
-                    them. Graduation photos will be taken immediately following dress rehearsal in the rear of the Coliseum. Learn more by taping the button below. </p>
-                <div class="rounded-btn-wrapper" style="width: 182px;margin-bottom: 81px;"> <a href="https://www.gulfportschools.org/cms/lib/MS01910520/Centricity/Domain/17/graduation%20reminders%202019%20revised.pdf" class="rounded-btn" target="_blank"><button>Learn More</button></a>
-
-                </div>
-            </div>
-
 
 
 
@@ -470,7 +329,7 @@ Google Calendar
 
                 </div>
 
-                <div class="rounded-btn-wrapper" style="width: 182px;margin-bottom: 81px;"> <a href="https://admiralnation.github.io/SHOP/" class="rounded-btn" target="_blank"><button>Visit Site</button></a>
+                <div class="rounded-btn-wrapper" style="width: 182px;margin-bottom: 81px;"> <a href="#" class="rounded-btn" target="_blank"><button onclick="admiral()">Visit Site</button></a>
 
                 </div>
             </div>
@@ -987,11 +846,11 @@ document.getElementById("datetime2").innerHTML = dt.toLocaleDateString();
 
 
 
-
+    <div class="grades-sect"><iframe loading="lazy" src="https://261985.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNow%2fMobile%2fGradeBook.List.aspx"></iframe></div>
 
 
     <div class="admiralnation-sect vivify fadeIn">
-        <iframe src="https://admiralnation.github.io/SHOP/"></iframe>
+        <iframe loading="lazy" src="https://admiralnation.github.io/SHOP/"></iframe>
     </div>
 
 
