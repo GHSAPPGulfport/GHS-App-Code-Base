@@ -341,6 +341,53 @@ Google Calendar
 
 
 
+            <div class="navigation-card cd1  help" data-aos="fade-up">
+
+
+
+                <h3 style="margin-left: 23px;">Try New Dark Mode
+                </h3>
+                <a href="#">
+                    <div>
+                        <h4 style="margin-left: 23px">GHS App | Experimental
+                        </h4>
+                    </div>
+                </a>
+
+                <div class="rounded-btn-wrapper" style="margin-top: 22px;margin-bottom: 77px;">
+                    <div class="rounded-btn"><button onclick="launch_toast()" class="darkmode">Enable</button></div>
+                    <div class="rounded-btn"><button class="normalmode">Disable</button></div>
+
+                </div>
+
+                <div class="rounded-btn-wrapper" style="margin-top: 22px;margin-bottom: 77px;">
+                </div>
+
+                <script>
+                    $(document).ready(function($) {
+                        var mode = localStorage.getItem('mode');
+                        if (mode)
+                            $('body').addClass(mode);
+                        $('accent').addClass(mode);
+
+                        $(".darkmode").click(function() {
+                            $("body").addClass("darkclass");
+                            $("accent").addClass("darkclass");
+                            localStorage.setItem('mode', 'darkclass');
+                        });
+
+                        $(".normalmode").click(function() {
+                            $("body").removeClass("darkclass");
+                            $("accent").removeClass("darkclass");
+                            localStorage.setItem('mode', null);
+                        });
+                    });
+
+                </script>
+            </div>
+
+
+
 
 
 
