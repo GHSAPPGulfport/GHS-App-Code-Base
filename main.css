@@ -306,7 +306,11 @@ summary:focus {
     white-space: nowrap;
     position: relative;
     z-index: 300;
+    scroll-snap-type: x mandatory;
 
+    scroll-padding {
+        20px;
+    }
 }
 
 .swipe-menu > img {
@@ -453,6 +457,7 @@ summary:focus {
     border-color: lightgray;
     transition: 0.3s ease;
     background-color: white;
+    scroll-snap-align: start;
 }
 
 .swipe-menu > a > button {
@@ -467,6 +472,7 @@ summary:focus {
     border-color: lightgray;
     transition: 0.3s ease;
     background-color: white;
+    scroll-snap-align: start;
 }
 
 .swipe-menu > p {
