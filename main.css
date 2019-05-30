@@ -2415,6 +2415,7 @@ body.darkclass button {
 
 .weather-widget {
     position: absolute;
-    right: -60px;
+    right: 0px;
     top: 0px;
+    width: 150px;
 }
