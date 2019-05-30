@@ -324,6 +324,7 @@ summary:focus {
     border-width: 1.3px;
     border-color: lightgray;
     transition: 0.3s ease;
+    scroll-snap-align: center;
 }
 
 .swipe-menu > a > img {
