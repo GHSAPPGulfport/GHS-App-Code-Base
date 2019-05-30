@@ -1005,6 +1005,7 @@ card-btns > button > a {
     border-radius: 50px;
     height: 40px;
     object-fit: cover;
+    margin-top: 10px;
 
 }
 
@@ -1307,11 +1308,12 @@ card-btns > button > a {
 
 .search-link {
     position: fixed;
-    right: -129px;
+    right: -241px;
     width: 296px;
     ;
     top: 4px;
     z-index: 55;
+
 }
 
 .search-base {
@@ -1784,6 +1786,14 @@ card-btns > button > a {
 
 }
 
+#kahootactive {
+    display: none;
+}
+
+#kahootactive :target {
+    display: block;
+}
+
 .kahoot-sect > iframe {
 
     position: fixed;
@@ -1797,7 +1807,15 @@ card-btns > button > a {
 }
 
 
+.kahoot-frame > iframe {
+    position: fixed;
 
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 15;
+}
 
 
 
@@ -2104,9 +2122,7 @@ body.darkclass .navigation-card > p {
 
 body.darkclass .search-base {
     background-color: black;
-    border: solid;
-    border-color: white;
-    border-width: 1.3px;
+
 }
 
 body.darkclass .search-base > button > p {
@@ -2366,4 +2382,25 @@ body.darkclass button {
 
 .homescreen {
     scroll-snap-type: y mandatory;
+}
+
+#settings {
+    display: none;
+}
+
+#settings:target {
+    display: block;
+}
+
+.settings-sect {
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    height: 100%;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+
+.goog-te-banner {
+    display: none;
 }

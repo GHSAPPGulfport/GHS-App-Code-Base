@@ -79,7 +79,7 @@ Google Calendar
         <div class="search-link">
             <div class="search-base">
                 <button onclick="searchopen()"><i class="material-icons">search</i>
-                    <p>Find A Teacher</p>
+
                 </button></div>
         </div>
 
@@ -119,7 +119,7 @@ Google Calendar
         <div class="search-link">
             <div class="search-base">
                 <button onclick="searchopen()"><i class="material-icons">search</i>
-                    <p>Find A Teacher</p>
+
                 </button></div>
         </div>
     </div>
@@ -149,21 +149,11 @@ Google Calendar
                 <h4>GHS App</h4>
                 <p>Gulfport High School</p>
 
-                <div class="swipe-menu" style="margin-top: -13px;margin-bottom: 22px;"><button onclick="leftpress()" style="margin-left: 21px;border-radius: 10px 0px 0px 10px;">Live Games</button> <button onclick="rightpress()">Athletics</button><a href="#podcast"><button>Podcast</button></a><button style="margin-right: 10px;border-radius: 0px 10px 10px 0px;">Settings</button></div>
+                <div class="swipe-menu" style="margin-top: -13px;margin-bottom: 22px;"><button onclick="leftpress()" style="margin-left: 21px;border-radius: 10px 0px 0px 10px;">Live Games</button> <button onclick="rightpress()">Athletics</button><a href="#podcast"><button>Podcast</button></a><a href="#settings"><button style="margin-right: 10px;border-radius: 0px 10px 10px 0px;">Settings</button></a></div>
 
 
 
-                <a href="https://261985.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNow%2fMobile%2fGradeBook.List.aspx">
-                    <div class="options-sect">
 
-                        <button onclick="grades()">
-                            <i class="material-icons menu-icon">school</i>
-                            <h3>Check My Grades</h3>
-
-                        </button>
-
-                    </div>
-                </a>
 
 
 
@@ -214,7 +204,17 @@ Google Calendar
 
 
 
+                <a href="https://261985.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNow%2fMobile%2fGradeBook.List.aspx">
+                    <div class="options-sect">
 
+                        <button onclick="grades()">
+                            <i class="material-icons menu-icon">school</i>
+                            <h3>Check My Grades</h3>
+
+                        </button>
+
+                    </div>
+                </a>
 
 
 
@@ -341,53 +341,6 @@ Google Calendar
 
 
 
-            <div class="navigation-card cd1  help" data-aos="fade-up">
-
-
-
-                <h3 style="margin-left: 23px;">Try New Dark Mode
-                </h3>
-                <a href="#">
-                    <div>
-                        <h4 style="margin-left: 23px">GHS App | Experimental
-                        </h4>
-                    </div>
-                </a>
-
-                <div class="rounded-btn-wrapper" style="margin-top: 22px;margin-bottom: 77px;">
-                    <div class="rounded-btn"><button onclick="launch_toast()" class="darkmode">Enable</button></div>
-                    <div class="rounded-btn"><button class="normalmode">Disable</button></div>
-
-                </div>
-
-                <div class="rounded-btn-wrapper" style="margin-top: 22px;margin-bottom: 77px;">
-                </div>
-
-                <script>
-                    $(document).ready(function($) {
-                        var mode = localStorage.getItem('mode');
-                        if (mode)
-                            $('body').addClass(mode);
-                        $('accent').addClass(mode);
-
-                        $(".darkmode").click(function() {
-                            $("body").addClass("darkclass");
-                            $("accent").addClass("darkclass");
-                            localStorage.setItem('mode', 'darkclass');
-                        });
-
-                        $(".normalmode").click(function() {
-                            $("body").removeClass("darkclass");
-                            $("accent").removeClass("darkclass");
-                            localStorage.setItem('mode', null);
-                        });
-                    });
-
-                </script>
-            </div>
-
-
-
 
 
 
@@ -477,46 +430,6 @@ Google Calendar
 
 
 
-            <div class="navigation-card cd1  help" data-aos="fade-up">
-
-                <h3 style="margin-left: 23px;">
-                    <marquee style="width: 110px;">Translate Traducir 翻译 Traduire</marquee>
-                </h3>
-                <a href="#">
-                    <div>
-                        <h4 style="margin-left: 23px">GHS App Help
-                        </h4>
-                    </div>
-                </a>
-
-
-
-
-
-
-
-
-
-
-                <div id="google_translate_element" style="position: absolute; top: -3px;margin-left: 190px;z-index: 500"></div>
-
-                <script type="text/javascript">
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({
-                            pageLanguage: 'en'
-                        }, 'google_translate_element');
-                    }
-
-                </script>
-
-                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
-
-
-
-
-            </div>
 
 
 
@@ -746,23 +659,23 @@ Google Calendar
 
         <div class="horizontal-nav nav-element">
             <a href="#">
-                <div class="button-wrapper" style="width: 169px;"><button class="vivify fadeIn" id="btn-schedule" onclick="schedule()">Schedule</button><button class="vivify fadeIn" style="width: 84px;" onclick="site()">Athletic App</button></div>
+                <div class="button-wrapper" style="width: 169px;"><button class="vivify fadeIn" id="btn-schedule" onclick="schedule()">Calendar</button><button class="vivify fadeIn" style="width: 84px;" onclick="site()">Athletic App</button></div>
             </a>
 
         </div>
 
 
-        <div class="hero-image" style="margin-top: 53px;">
+        <div class="hero-image">
             <div class="hero-text">
                 <div>
                     <h2>Athletics</h2>
                 </div>
-            </div><img style="top: 0px;" loading="lazy" src="https://www.sunherald.com/latest-news/t8zgqo/picture219105860/alternates/FREE_1140/0927%20derick%20hall.jpg">
+            </div><img style="top: 26px;" loading="lazy" src="https://www.sunherald.com/latest-news/t8zgqo/picture219105860/alternates/FREE_1140/0927%20derick%20hall.jpg">
         </div>
 
 
         <div class="calendar">
-            <div class="indicator-container nav-element" style="top: 0px;margin-top:17px;">
+            <div class="indicator-container nav-element">
                 <div class="indicator" style="width: 162px;">
                     <div class="line-indicator vivify pullLeft duration-500"></div>
                 </div>
@@ -771,21 +684,16 @@ Google Calendar
             <div class="spacer"></div>
 
 
-
-            <iframe loading="lazy" style="margin-top: -30px;" class=" " src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=gulfportschools.org_g8kh79cr8sqbipejvm2c9bc0js%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FChicago" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+            <iframe style="margin-top: 250px; border: none;width: 100%;height: 675px;" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=Z3VsZnBvcnRzY2hvb2xzLm9yZ19nOGtoNzljcjhzcWJpcGVqdm0yYzliYzBqc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%233F51B5&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;showNav=1&amp;showTitle=0&amp;showDate=0" scrolling="no"></iframe>
         </div>
 
 
 
         <div class="site">
-            <div class="indicator-container nav-element" style="top: 0px;margin-top:17px;">
-                <div class="indicator" style="width: 0px;">
-                    <div class="line-indicator vivify pullLeft duration-500"></div>
-                </div>
-            </div>
-            <div class="navigation-card cd1  " style="margin-top: 161px;margin-bottom: 150px;" data-aos="fade-up">
 
-                <img class="card-icon" loading="lazy" src="Card-Icons/unnamed.webp">
+            <div class="navigation-card cd1" style="margin-bottom: 150px;margin-top: 150px;" data-aos="fade-up">
+
+                <img class="card-icon" loading="lazy" src="Images/246x0w.jpg">
 
                 <h3 style="margin-left: 23px;">Get The Gulfport Admirals Athletics App
                 </h3>
@@ -853,8 +761,9 @@ Google Calendar
 
                         <script>
                             var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
-</script>
+                            document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+
+                        </script>
                     </div>
                 </div><img loading="lazy" src="Images/VegNews.VegSchoolLunch.jpg">
             </div>
@@ -879,8 +788,9 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
 
                         <script>
                             var dt = new Date();
-document.getElementById("datetime2").innerHTML = dt.toLocaleDateString();
-</script>
+                            document.getElementById("datetime2").innerHTML = dt.toLocaleDateString();
+
+                        </script>
                     </div>
                 </div><img loading="lazy" src="Images/VegNews.VegSchoolLunch.jpg">
             </div>
@@ -896,8 +806,101 @@ document.getElementById("datetime2").innerHTML = dt.toLocaleDateString();
 
 
 
+
+
+
+    <div class="settings-sect" id="settings">
+        <div class="navigation-card cd1" style="margin-top: 55px;" data-aos="fade-up">
+
+
+
+            <h3 style="margin-left: 23px;">Settings
+            </h3>
+            <a href="#">
+                <div>
+                    <h4 style="margin-left: 23px">Some Features May Be Experimental
+                    </h4>
+                </div>
+            </a>
+
+            <div class="card-wrapper">
+                <h3>GHS App | Settings</h3><img class="card-img" src="Images/Anouncements.jpg">
+            </div>
+
+
+
+
+        </div>
+        <div class="navigation-card cd1  help" data-aos="fade-up">
+
+
+
+            <h3 style="margin-left: 23px;">Try New Dark Mode
+            </h3>
+            <a href="#">
+                <div>
+                    <h4 style="margin-left: 23px">GHS App | Experimental
+                    </h4>
+                </div>
+            </a>
+
+            <div class="rounded-btn-wrapper" style="margin-top: 22px;margin-bottom: 77px;">
+                <div class="rounded-btn"><button onclick="launch_toast()" class="darkmode">Enable</button></div>
+                <div class="rounded-btn"><button class="normalmode">Disable</button></div>
+
+            </div>
+
+            <div class="rounded-btn-wrapper" style="margin-top: 22px;margin-bottom: 77px;">
+            </div>
+
+            <script>
+                $(document).ready(function($) {
+                    var mode = localStorage.getItem('mode');
+                    if (mode)
+                        $('body').addClass(mode);
+                    $('accent').addClass(mode);
+
+                    $(".darkmode").click(function() {
+                        $("body").addClass("darkclass");
+                        $("accent").addClass("darkclass");
+                        localStorage.setItem('mode', 'darkclass');
+                    });
+
+                    $(".normalmode").click(function() {
+                        $("body").removeClass("darkclass");
+                        $("accent").removeClass("darkclass");
+                        localStorage.setItem('mode', null);
+                    });
+                });
+
+            </script>
+        </div>
+        <div class="card-divider"></div>
+        <div class="navigation-card cd1  help" data-aos="fade-up" style="margin-bottom:100px;">
+
+
+
+
+
+
+
+
+            <div id="ytWidget" style=";height: 500px; margin: auto; width: 170px;margin-top: 15px;"></div>
+            <script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=en&widgetTheme=light&autoMode=false" type="text/javascript"></script>
+
+
+
+
+
+        </div>
+        <div class="card-divider"></div>
+    </div>
+
+
+
+
     <div class="grades-sect">
-        <iframe src="https://261985.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNow%2fMobile%2fGradeBook.List.aspx"></iframe sandbox="allow-same-origin allow-scripts">
+
     </div>
 
 
@@ -921,7 +924,7 @@ document.getElementById("datetime2").innerHTML = dt.toLocaleDateString();
         <div onclick="closeall()" class="back"><i class="material-icons">arrow_back_ios</i></div>
 
         <div class="close-btn"><button onclick="searchclose()">Cancel</button></div>
-        <input class="search-input vivify popIn" style="padding-left:25px; " type="text" id="mySearch" onkeyup="myFunction()" placeholder="&emsp; Find A Teacher..." title="Type in a teacher">
+        <input class="search-input vivify fadeInRight duration-600" style="padding-left:50px; " type="text" id="mySearch" onkeyup="myFunction()" placeholder="&emsp; Find A Teacher..." title="Type in a teacher">
         <ul id="myMenu" class="teacher-list">
             <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="Acey, Randee - Special Education">Acey, Randee - Special Education</a></li>
             <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2050">Anderson, Faith - Math</a></li>
