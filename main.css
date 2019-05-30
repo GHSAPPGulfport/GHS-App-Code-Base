@@ -2044,7 +2044,15 @@ card-btns > button > a {
 /*-----------------------------------Dark Mode------------------------------------*/
 
 
+body.darkclass .swipe-menu > button {
+    background-color: black;
+    color: white;
+}
 
+body.darkclass .swipe-menu > a > button {
+    background-color: black;
+    color: white;
+}
 
 body.darkclass .meal-wrapper {
     margin-top: -465px;
@@ -2403,4 +2411,10 @@ body.darkclass button {
 
 .goog-te-banner {
     display: none;
+}
+
+.weather-widget {
+    position: absolute;
+    right: -60px;
+    top: 0px;
 }
