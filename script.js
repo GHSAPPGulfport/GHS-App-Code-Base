@@ -134,3 +134,46 @@ document.addEventListener("touchend", function (e) {
 }, !1), document.documentElement.addEventListener("touchmove", function (e) {
     e.preventDefault()
 }, !1);
+
+var lastScrollTop = 0,
+    eventList = 'DOMContentLoaded load resize scroll',
+    $window = $(window);
+$window.on(eventList, function (evt) {
+    var scroll = $window.scrollTop();
+
+    if (evt.type == 'DOMContentLoaded') {
+        lastScrollTop = $window.scrollTop();
+        return;
+    } else if (evt.type == 'scroll' && scroll <= lastScrollTop) {
+        return; //exit function if not scrolling down.
+    }
+
+    var images = $("img[data-src]"),
+        imagesLen = images.length;
+    // load images that have entered the viewport
+    $(images).each(function (index) {
+        var isInViewPort = isElementInViewport(this, $window);
+        if (isInViewPort) {
+            with($(this)) {
+                attr("src", attr("data-src"));
+                removeAttr("data-src");
+                parent('div').addClass('active');
+            }
+            imagesLen--;
+        } else {
+            return false;
+        }
+    });
+    // if all the images are loaded, stop calling the handler
+    imagesLen || $window.off(eventList);
+
+    //store the scrollbar's latest position
+    evt.type == 'scroll' && (position = scroll);
+});
+
+function isElementInViewport(el, $window) {
+    var rect = el.getBoundingClientRect(),
+        offset = offset || 0;
+
+    return (rect.top <= $window.height());
+}
