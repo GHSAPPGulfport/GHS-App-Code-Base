@@ -1315,7 +1315,7 @@ card-btns > button > a {
 
 .search-link {
     position: fixed;
-    right: -200px;
+    right: -241px;
     width: 296px;
     ;
     top: 4px;
@@ -2414,7 +2414,6 @@ body.darkclass button {
     height: 100%;
     overflow-y: scroll;
     white-space: nowrap;
-    width: 100%;
 }
 
 .goog-te-banner {
@@ -2428,4 +2427,4 @@ body.darkclass button {
     width: 150px;
 }
 
-.settings-icon {position: fixed;; top: 16px; right:30px;z-index: 100;}
+
