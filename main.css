@@ -261,6 +261,7 @@ summary:focus {
     float: left;
     margin-left: 0px;
     padding: 21px;
+    color: black;
 }
 
 
@@ -274,6 +275,7 @@ summary:focus {
     left: 0px;
     z-index: 40;
     transition: 0.4s ease;
+   
 }
 
 
@@ -299,6 +301,65 @@ summary:focus {
     bottom: 85px;
 }
 
+.lds-ellipsis {
+    display: inline-block;
+    position: fixed;
+    left: 40%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 100;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 27px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #012395;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 6px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 6px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 26px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 45px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(19px, 0);
+    }
+  }
+  
 
 .swipe-menu {
     width: 100%;
@@ -594,7 +655,7 @@ summary:focus {
 .back > i {
     margin-left: 23px;
     margin-top: 6px;
-    color: #012395;
+    color: black;
 
 }
 
@@ -906,8 +967,8 @@ summary > div > p {
 }
 
 .logo-wrapper {
-    margin-left: 53px;
-    margin-top: 56px;
+  margin: auto;
+   width: 66px;
 
 }
 
@@ -916,6 +977,7 @@ summary > div > p {
     width: 66px;
     object-fit: cover;
     height: 42px;
+    margin-top: 55px;
 }
 
 .navigation-card {
@@ -1321,7 +1383,7 @@ card-btns > button > a {
     width: 296px;
     ;
     top: 4px;
-    z-index: 55;
+    z-index: 100;
 
 }
 
@@ -1874,7 +1936,7 @@ card-btns > button > a {
     display: none;
     position: fixed;
     top: 0px;
-    z-index: 55;
+    z-index: 100;
     background-color: rgba(0, 0, 0, 0.6);
     ;
     width: 100%;
@@ -1887,7 +1949,7 @@ card-btns > button > a {
     position: fixed;
     top: 0px;
     background-color: white;
-    z-index: 15;
+    z-index: 100;
     border: none;
 }
 
