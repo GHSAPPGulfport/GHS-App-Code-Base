@@ -10,7 +10,7 @@ a {
     -webkit-overflow-scrolling: touch;
 }
 
-.homescreen-frame {position:fixed; left: 0px;width: 100%;height: 100%;top: 0px;z-index: 100;border: none;;}
+.homescreen-frame {position:fixed; left: 0px;width: 100%;height: 100%;top: 50px;z-index: 100;border: none;;}
 
 input,
 textarea,
@@ -1472,7 +1472,7 @@ card-btns > button > a {
     height: 51px;
     background-color: white;
     position: absolute;
-    top: 245px;
+    top: 225px;
     box-shadow: -1px 9px 5px -5px rgba(0, 0, 0, 0.11);
     z-index: 39;
 }
@@ -1765,7 +1765,7 @@ card-btns > button > a {
 
 .nav-element.sticky {
     position: fixed;
-    top: 40px;
+    top: 0px;
 }
 
 
@@ -1780,16 +1780,18 @@ card-btns > button > a {
 .hero-image > img {
     width: 100%;
     position: absolute;
-    top: 26px;
+    top: 0px;
     z-index: 38;
     filter: brightness(0.92);
     height: 222px;
     object-fit: cover;
 }
 
+
+
 .hero-text {
     position: absolute;
-    top: 95px;
+    top: 65px;
     z-index: 39;
     width: 100%;
 }
@@ -2062,7 +2064,7 @@ card-btns > button > a {
 .indicator-container {
     position: absolute;
     width: 100%;
-    top: 294px;
+    top: 275px;
     z-index: 39;
 }
 
