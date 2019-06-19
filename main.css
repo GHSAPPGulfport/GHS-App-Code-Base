@@ -301,14 +301,42 @@ summary:focus {
     bottom: 85px;
 }
 
-.lds-ellipsis {
-    display: inline-block;
-    position: fixed;
+
+
+.loading-container {position: fixed;
     left: 40%;
     top: 40%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    z-index: 100;
+    z-index: 100; }
+
+    .loading-container > h4 {font-weight: normal;text-align: center; padding:10px;  background-color:white;border-radius: 50px;float: left;color: #012395;padding-left: 45px; margin-left: -30px;border: solid; border-width: 1.3px; border-color: lightgray;}
+
+
+    @keyframes donut-spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    .donutSpinner {
+        display: inline-block;
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        border-left-color: #012395;;
+        border-radius: 50%;
+        width: 33px;
+        height: 33px;
+        animation: donut-spin 1.2s linear infinite;
+        float: left;
+        background-color: white;margin-top: 21px;
+        margin-left: -25px;
+    }
+    
+.lds-ellipsis {
+    display: inline-block;
+    
   }
   .lds-ellipsis div {
     position: absolute;
