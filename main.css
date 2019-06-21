@@ -391,10 +391,12 @@ summary:focus {
 
 .swipe-menu {
     width: 100%;
-    overflow-x: scroll;
+   
     height: 210;
-    overflow-y: none;
     white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
     position: relative;
     z-index: 300;
     scroll-snap-type: x mandatory;

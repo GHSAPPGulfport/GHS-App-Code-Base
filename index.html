@@ -1,108 +1,382 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>HCDC App</title>
+    <meta charset="UTF-8">
+    <title>GHS App</title>
+    <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="css/vivify.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="vivify.min.css" rel="stylesheet" type="text/css" />
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="Branding/Ios%20App%20Icon.png" type="image/x-icon">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    <meta name="apple-mobile-web-app-title" content="HCDC">
-    <link rel="manifest" href="/manifest.json">
-<link rel="shortcut-icon" href="branding/512px logo.png">
-    <link rel="stylesheet" href="vivify.min.css">
-    <link rel="manifest" href="/manifest.json">
-    <script src = "script.js"> </script>
+    <meta name="apple-mobile-web-app-title" content="GHS App">
+    <link rel="apple-touch-icon" href="Branding/apple-touch-icon.png">
+
+  
+    <script>
+        $(function() {
+            $("#tabs").tabs();
+        });
+
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122866044-3"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-122866044-3');
+
+    </script>
+
 </head>
 
-<body class="vivify fadeIn delay-700">
-    
-    <script>setTimeout(function () {
-            document.getElementById('loader').className = 'go';
-        }, 3750);</script>
 
-    
+<body class="vivify fadeIn delay-2000">
 
 
-    <div class="top-navigation">
 
-        <div onclick="home()" class="logo-container">
-            <div class="logo-wrapper"> <img src="Branding/harrison-county-mark-01.svg"></div>
+    <div class="univ-menu">
+
+        <button class="menu-cover " onclick="collapse()">
+
+        </button>
+
+
+        <div class="search-link">
+            <div class="search-base">
+                <button onclick="searchopen()"><i class="material-icons">search</i>
+
+                </button></div>
+        </div>
+
+
+
+
+
+        <button class="close-menu" onclick="collapse()">Close</button>
+
+
+        <div class="hamburger-menu vivify fadeInBottom duration-300 ">
+
+
+
+            <div class="menu-cover"></div>
+
 
         </div>
 
-      
 
     </div>
-    <div class="bottom-navigation">
-        <div class="nav-container">
-        <button onclick="home()" ><img src="Assets/Home.svg"></button autofocus = "autofocus">
-           
-            <button onclick="search()"><img src="Assets/Search.svg"></button>
-           
-            <button onclick="warning()"><img src="Assets/Payment.svg"></button>
 
-            <button onclick="warning()"><img src="Assets/Account.svg"></button>
 
-          
 
+
+
+    <div class="iphone-nav"></div>
+
+
+    <div class="header-base">
+        <div class="logo-wrapper"><img class="" src="Branding/App%20Logo%20Embed.png"></div>
+
+       
+            <div onclick="home()" class="back"><i class="material-icons">arrow_back_ios</i></div>
+        
+
+        <div class="search-link">
+            <div class="search-base">
+                <button onclick="searchopen()"><i class="material-icons">search</i>
+
+                </button></div>
         </div>
 
+       
     </div>
 
-    <div id="snackbar">Account Services Are Currently Unavailable</div>
+
+
+    <div class="homescreen vivify fadeIn">
 
 
 
+<iframe id="IFrameName" class="homescreen-frame" src="homescreen.html"></iframe>
 
-    <div class="frame-container"> <iframe class="main-frame" name="IFrameName">
-        </iframe></div>
-
-
-    <script>
-        document.all.IFrameName.src = 'homescreen.html';
-
-        function home() {
+   <script>
             document.all.IFrameName.src = 'homescreen.html';
 
-        }
+            function home() {
+                document.all.IFrameName.src = 'homescreen.html';
 
-        function news() {
-            document.all.IFrameName.src = 'news.html';
-        }
+            }
 
-        function search() {
-            document.all.IFrameName.src = "search.html"
-        }
+            function news() {
+                document.all.IFrameName.src = 'news.html';
+            }
 
-        function payment(){
-            document.all.IFrameName.src = "payment.html"
-        }
-    </script>
+function search(){
+    document.all.IFrameName.src = "search.html"
+}
+        </script>
+     
 
-    </main>
 
-    <script src="dist/slideout.min.js"></script>
+
+
+  
+
+
+
+    <div class="search-sect vivify fadeIn">
+
+        <div onclick="closeall()" class="back"><i class="material-icons">arrow_back_ios</i></div>
+
+        <div class="close-btn"><button onclick="searchclose()">Cancel</button></div>
+        <input class="search-input vivify fadeInRight duration-600" style="padding-left:50px; " type="text" id="mySearch" onkeyup="myFunction()" placeholder="&emsp; Find A Teacher..." title="Type in a teacher">
+        <ul id="myMenu" class="teacher-list">
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="Acey, Randee - Special Education">Acey, Randee - Special Education</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2050">Anderson, Faith - Math</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2051">Archie, John - Physical Education</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/848">Austin, David - History</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2052">Barry, Mary Kathryn - English</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1184">Batson, Shanna - English HHS</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2053">Bauer, Michele - Special Education</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1719">Bennett, Stephanie - Science</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/849">Bodenhamer, Reynolds - History</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1187">Brawley, Clinton - Engineering/Robotics STEM</a>
+            </li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2054">Brenneis, Angela - Special Education</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1141">Brooks, Tania - Science</a></li>
+            <li><a style="text-decoration: none" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/780">Brown, Chad - Art</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/685">Brown, Jimi - Fine Arts</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/835">Buntyn, Ellen - Science</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/851">Bush, Jeffrey - History CAB</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1781">Callahan, Jennifer - Special Education</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/861">Carraway, Robin - Special Education</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/872">Caylor, Robert - Automotive Service Technology
+                    STEM</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Page/15838">Celentano, Shana - Librarian</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1775">Chambliss, Jacob - History</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1974">Cilliers, Glenda - ELL</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/816">Clark, Crystal - Math</a> </li>
+            <li> <a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2055">Combs, Meaghan - Math</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/837">Cordray, Jack - Science HHS</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1587">Cordray, Sharon - Special Education</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1588">D'Angelo, Micky - Physical Education</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/862">Darden, Angelitta - Special Education</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2056">Dedeaux, Heidi - Special Education</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/786">Dodson, Theary - Business</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1590">Dove, Kelsie - English</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2186">Dukeman, Sarah - Choir</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1632">Dunlap, Jessica - Choir</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1928">Edwards, Daniele - Science</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/753">Elward, Kyle - Digital Media Technology</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/819">Estrada, Angie - Math</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1809">Ferreira, Sasha - Strings</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1179">Flores, Edith - Science</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1111">Gault, Nick - Academic Business</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/820">Gemelli, Mike - Math</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1929">Glass, Brooke - Health</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1783">Haarala, Zachary - Math</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1231">Hardin, Brad - History</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/789">Hart, Larry - Fine Arts</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/854">Hatch, Savannah - History</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1793">Helms, Kevin-Michael - History</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2057">Henshaw, Andrea - History</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1937">Holman, Rachael - Law and Safety</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1784">Hoye, Emily - Science</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/839">Hoyt, Bruce - Science</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/874">Huffman, Dave - Construction Technology STEM</a>
+            </li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1930">Hutchins, Jan - Science</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1976">Irwin, David - Odyssey</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1931">Kelley, Desiree - Math</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2122">Knight, Violet - Special Eduation</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2058">Ladner, Courtney - Special Education</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1932">Lahuta, Jennifer - Math</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1786">Lassabe, Lauren - History</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2059">Latham, Courtnie - Science</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1503">Lawrence, Joseph - Science</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1222">Lee, Amy - Business Marketing CAB</a> </li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/802">Lee, Blanca - Spanish</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1828">Leska, Malgorzata - Strings</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1603">Lewakowski, Melinda - Health Science HHS</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1595">Lewis, Chelsea - History</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/793">Lopez, Jessica - English</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1230">Lopez, John - History</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1173">Lynch, Treasure - Math</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1232">Martinez, Daniel - Fine Arts</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1726">McKenna, Tammy - Science</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/829">McMahon, James - Physical Education</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1620">Middleton, Reginald - History</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1596">Miller, Owen - Physical Education</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/785">Morehead, Westley - Fine Arts</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1229">Myrick, Kelsey - Science</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/813">Neumann, Alan - ROTC</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/814">Owens, John - ROTC</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1180">Payne, Meredith - English</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/782">Pecoul, Laura - Art</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/843">Pfaff, Scott - Science STEM</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/740">Pitts, Dee Dee - Fine Arts</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/783">Polson, Marshall - Art</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/794">Pryor, Christopher - English</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1788">Rodriguez, Danielle - Culinary Arts</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/846">Rogers, Amanda - Science</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/795">Rogers, Beth - English</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/796">Rogers, Wesley - English</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/797">Salminen, Tina - English</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1934">Sheckart, Rachel - Art</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1804">Smith, Courtney - Health and Cheerleading</a>
+            </li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1228">Spann, Lori - English</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/803">Speck, Lisa - Special Education</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1935">Swinney, Cassidy - English</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2061">Swinney, Jacob - Science</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1629">Switzer, Hale - Science CAB</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1059">Tarter, Lorelei - Math CAB</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/804">Taylor, Barrett - French</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/858">Thames, Hardy - History</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/787">Tucker, Charles - Business Marketing CAB</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2063">Turner, Bradford - Special Education</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/824">Ulrich, Courtney - Math</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1789">Vernon, Daniel - Choir</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1227">Vonder Bruegge, Nicole - English</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1178">Wadsworth, Patrick - English STEM</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1936">Wedgeworth, Natalie - Math</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/825">Wedgeworth, Scott - Math STEM</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1791">Wetherington, Alanna - Special Education</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/867">Wetzel, Kristy - Special Eduaction</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/826">White, Glenn - Math</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1605">White, Katheryn - English</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1801">Wilson, Beth - Education and Training HHS</a>
+            </li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1792">Wilson, James - Math</a></li>
+            <li><a style="text-decoration: none;" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1977">Woodberry, Michele - Physical Education</a></li>
+
+        </ul>
+
+    </div>
+
+
     <script>
-        var slideout = new Slideout({
-            'panel': document.getElementById('panel'),
-            'menu': document.getElementById('menu'),
-            'padding': 256,
-            'tolerance': 70
+        $(window).scroll(function() {
+
+
+            var scroll = $(window).scrollTop();
+            if (scroll > 200) {
+                $(".nav-element").addClass("sticky");
+            } else {
+                $(".nav-element").removeClass("sticky");
+            }
+
+            if (scroll > 400) {
+                $(".indicator").addClass("sticky");
+            } else {
+                $(".indicator").removeClass("sticky");
+            }
         });
 
-
-
-        // Toggle button
-        document.querySelector('.toggle-button').addEventListener('click', function () {
-            slideout.toggle();
-        });
     </script>
 
 
 
 
+
+    <script>
+        function launch_toast() {
+            var x = document.getElementById("toast")
+            x.className = "show";
+            setTimeout(function() {
+                x.className = x.className.replace("show", "");
+            }, 5000);
+        }
+
+    </script>
+
+    <script defer src="script.js">
+    </script>
+    <script>
+        var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+        if (iOS = true) {
+            document.getElementsByClassName("logo-wrapper")[0].setAttribute("ios-logo", "iOS-device");
+        }
+
+    </script>
+    <script>
+        AOS.init();
+
+    </script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+    <script src="sw.js"></script>
+    <script src="Service-Worker.js"></script>
+    <script>
+        $("a").click(function(event) {
+            event.preventDefault();
+            window.location = $(this).attr("href");
+        });
+
+    </script>
+    <script>
+        window.addEventListener('load', function() {
+            var allimages = document.getElementsByTagName('img');
+            for (var i = 0; i < allimages.length; i++) {
+                if (allimages[i].getAttribute('data-src')) {
+                    allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+                }
+            }
+        }, false)
+
+    </script>
+
+    <script>
+        $(document).ready(function($) {
+            var mode = localStorage.getItem('mode');
+            if (mode)
+                $('body').addClass(mode);
+
+            $(".darkmode").click(function() {
+                $("body").addClass("darkclass");
+                localStorage.setItem('mode', 'darkclass');
+            });
+
+            $(".normalmode").click(function() {
+                $("body").removeClass("darkclass");
+                localStorage.setItem('mode', null);
+            });
+        });
+
+    </script>
+
+    <script>
+        window.setTimeout(loaded, 1500);
+        var element = document.getElementById('loader');
+
+        function loaded() {
+            element.style.display = 'none';
+        }
+
+    </script>
 </body>
 
-</html>c 
+</html>
