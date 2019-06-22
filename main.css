@@ -388,6 +388,7 @@ summary:focus {
     }
   }
   
+.swipe-container {margin: auto; width: 350px;}
 
 .swipe-menu {
     width: 100%;
