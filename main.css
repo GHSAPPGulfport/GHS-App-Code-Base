@@ -388,22 +388,18 @@ summary:focus {
     }
   }
   
-.swipe-container {margin: auto; width:100%;}
+.swipe-container {margin: auto; width:346.5px; }
 
 .swipe-menu {
     width: 100%;
    
     height: 210;
-    white-space: nowrap;
-	overflow-y: hidden;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling:touch;overflow: scroll; 
+   
+  
     z-index: 300;
     scroll-snap-type: x mandatory;
 
-    scroll-padding {
-        20px;
-    }
+    
 }
 
 .swipe-menu > img {
@@ -540,12 +536,12 @@ summary:focus {
 }
 
 .swipe-menu > button {
-    margin-left: -6px;
+  
 
     display: inline-block;
     height: 50px;
     object-fit: cover;
-    width: 125px;
+    width: 123px;
     border: solid;
     border-width: 1px;
     border-color: lightgray;
@@ -560,7 +556,7 @@ summary:focus {
     display: inline-block;
     height: 50px;
     object-fit: cover;
-    width: 125px;
+    width: 120px;
     border: solid;
     border-width: 1px;
     border-color: lightgray;
