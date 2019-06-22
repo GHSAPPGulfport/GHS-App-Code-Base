@@ -395,9 +395,8 @@ summary:focus {
     height: 210;
     white-space: nowrap;
 	overflow-y: hidden;
-	overflow-x: scroll;
-	-webkit-overflow-scrolling: touch;
-  
+    overflow-x: scroll;
+    -webkit-overflow-scrolling:touch;overflow: scroll; 
     z-index: 300;
     scroll-snap-type: x mandatory;
 
