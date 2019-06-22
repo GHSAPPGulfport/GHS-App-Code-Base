@@ -388,7 +388,7 @@ summary:focus {
     }
   }
   
-.swipe-container {margin: auto; width: 350px;}
+.swipe-container {margin: auto; width:100%;}
 
 .swipe-menu {
     width: 100%;
