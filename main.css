@@ -10,7 +10,7 @@ a {
     -webkit-overflow-scrolling: touch;
 }
 
-.homescreen-frame {width: 100%;height: 100vh;z-index: 100;border: none;margin-top: 40px;;}
+.homescreen-frame {width: 100%;height: 100vh;z-index: 100;border: none;margin-top: 40px;-webkit-overflow-scrolling: touch;;}
 
 input,
 textarea,
@@ -2483,6 +2483,8 @@ body.darkclass button {
     scroll-snap-align: start;
     scroll-snap-align: center;
 }
+
+.home-frame-container {overflow:auto;-webkit-overflow-scrolling:touch}
 
 .homescreen {
     scroll-snap-type: y mandatory;
