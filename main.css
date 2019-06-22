@@ -388,7 +388,7 @@ summary:focus {
     }
   }
   
-.swipe-container {margin: auto; width:346.5px; }
+.swipe-container {margin: auto; width: 92%;}
 
 .swipe-menu {
     width: 100%;
@@ -535,28 +535,15 @@ summary:focus {
     transition: 0.3s ease;
 }
 
-.swipe-menu > button {
-  
 
-    display: inline-block;
-    height: 50px;
-    object-fit: cover;
-    width: 123px;
-    border: solid;
-    border-width: 1px;
-    border-color: lightgray;
-    transition: 0.3s ease;
-    background-color: white;
-    scroll-snap-align: start;
-}
 
 .swipe-menu > a > button {
-    margin-left: -6px;
 
+margin-left: -5px;
     display: inline-block;
     height: 50px;
     object-fit: cover;
-    width: 120px;
+    width: 33%;
     border: solid;
     border-width: 1px;
     border-color: lightgray;
