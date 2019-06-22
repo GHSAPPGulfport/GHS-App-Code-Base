@@ -1859,13 +1859,13 @@ card-btns > button > a {
 .meal-wrapper {
     margin: auto;
     width: 360px;
-
+margin-top: 15px;
 
 }
 
 .meal-wrapper > img {
     width: 360px;
-    margin-top: -4px;
+  
 }
 
 .breakfast-menu {
@@ -1893,7 +1893,7 @@ card-btns > button > a {
 
     position: fixed;
 
-    top: 0px;
+    top: 20px;
     width: 100%;
     height: 95%;
     border: none;
