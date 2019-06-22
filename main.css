@@ -31,7 +31,7 @@ body {
     font-family: sans-serif;
     margin: 0px;
     transition: 0.4s ease;
-
+    -webkit-overflow-scrolling: touch;
 }
 
 .redirect-btn > a > button {
@@ -170,7 +170,8 @@ a {
 }
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 html::-webkit-scrollbar {
