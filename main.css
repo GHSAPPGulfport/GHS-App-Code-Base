@@ -1009,7 +1009,7 @@ summary > div > p {
     font-size: 14px;
     margin-top: 0px;
     color: #737474;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     margin-left: 0px;
 
 }
@@ -1017,7 +1017,7 @@ summary > div > p {
 .navigation-card > h3 {
     font-weight: normal;
     font-size: 14px;
-    margin-bottom: 6px;
+    margin-bottom: -5px;
     width: 336px;
 
 
