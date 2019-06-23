@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="55" viewBox="0 0 65 55">
+  <defs>
+    <clipPath id="clip-Shop">
+      <rect width="65" height="55"/>
+    </clipPath>
+  </defs>
+  <g id="Shop" clip-path="url(#clip-Shop)">
+    <rect width="65" height="55" fill="rgba(255,255,255,0)"/>
+    <g id="Group_425" data-name="Group 425" transform="translate(-151.881 -590)">
+      <text id="Shop-2" data-name="Shop" transform="translate(160 622)" fill="#012395" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="12.766" y="11">Shop</tspan></text>
+    </g>
+    <g id="outline-shopping_cart-24px" transform="translate(22 8)">
+      <path id="Path_11" data-name="Path 11" d="M0,0H24V24H0Z" fill="none"/>
+      <path id="Path_12" data-name="Path 12" d="M15.55,13a1.991,1.991,0,0,0,1.75-1.03l3.58-6.49A1,1,0,0,0,20.01,4H5.21L4.27,2H1V4H3l3.6,7.59L5.25,14.03A2,2,0,0,0,7,17H19V15H7l1.1-2ZM6.16,6H18.31l-2.76,5H8.53ZM7,18a2,2,0,1,0,2,2A2,2,0,0,0,7,18Zm10,0a2,2,0,1,0,2,2A2,2,0,0,0,17,18Z" fill="#012395"/>
+    </g>
+  </g>
+</svg>

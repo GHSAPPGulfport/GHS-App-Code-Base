@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="55" viewBox="0 0 65 55">
+  <defs>
+    <clipPath id="clip-Calendar">
+      <rect width="65" height="55"/>
+    </clipPath>
+  </defs>
+  <g id="Calendar" clip-path="url(#clip-Calendar)">
+    <rect width="65" height="55" fill="rgba(255,255,255,0)"/>
+    <g id="Group_425" data-name="Group 425" transform="translate(-153.881 -590)">
+      <text id="Calendar-2" data-name="Calendar" transform="translate(160 622)" fill="#012395" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="2.626" y="11">Calendar</tspan></text>
+    </g>
+    <g id="baseline-calendar_today-24px" transform="translate(21 8)">
+      <path id="Path_7" data-name="Path 7" d="M20,3H19V1H17V3H7V1H5V3H4A2.006,2.006,0,0,0,2,5V21a2.006,2.006,0,0,0,2,2H20a2.006,2.006,0,0,0,2-2V5A2.006,2.006,0,0,0,20,3Zm0,18H4V8H20Z" fill="#012395"/>
+      <path id="Path_8" data-name="Path 8" d="M0,0H24V24H0Z" fill="none"/>
+    </g>
+    <rect id="Rectangle_252" data-name="Rectangle 252" width="2" height="2" transform="translate(27 18)" fill="#012395"/>
+    <rect id="Rectangle_253" data-name="Rectangle 253" width="2" height="2" transform="translate(32 18)" fill="#012395"/>
+    <rect id="Rectangle_254" data-name="Rectangle 254" width="2" height="2" transform="translate(37 18)" fill="#012395"/>
+  </g>
+</svg>
