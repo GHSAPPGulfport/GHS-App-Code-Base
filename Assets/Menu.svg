@@ -1,32 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 65 55">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="55" viewBox="0 0 65 55">
   <defs>
-    <style>
-      .cls-1 {
-        clip-path: url(#clip-Menu);
-      }
-
-      .cls-2, .cls-3 {
-        fill: #606060;
-      }
-
-      .cls-2 {
-        font-size: 12px;
-        font-family: Roboto-Regular, Roboto;
-      }
-
-      .cls-4 {
-        fill: #fff;
-      }
-    </style>
     <clipPath id="clip-Menu">
       <rect width="65" height="55"/>
     </clipPath>
   </defs>
-  <g id="Menu" class="cls-1">
-    <rect class="cls-4" width="65" height="55"/>
-    <g id="Group_425" data-name="Group 425" transform="translate(-144 -589)">
-      <text id="Menu-2" data-name="Menu" class="cls-2" transform="translate(160 621)"><tspan x="0" y="11">Menu</tspan></text>
-      <path id="ic_menu_24px" class="cls-3" d="M3,18H21V16H3Zm0-5H21V11H3ZM3,6V8H21V6Z" transform="translate(163 600)"/>
+  <g id="Menu" clip-path="url(#clip-Menu)">
+    <rect width="65" height="55" fill="rgba(255,255,255,0)"/>
+    <g id="Group_425" data-name="Group 425" transform="translate(-151.881 -590)">
+      <text id="Menu-2" data-name="Menu" transform="translate(160 622)" fill="#012395" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="11.383" y="11">Menu</tspan></text>
+    </g>
+    <g id="baseline-restaurant-24px" transform="translate(21 8)">
+      <path id="Path_9" data-name="Path 9" d="M11,9H9V2H7V9H5V2H3V9a3.986,3.986,0,0,0,3.75,3.97V22h2.5V12.97A3.986,3.986,0,0,0,13,9V2H11Zm5-3v8h2.5v8H21V2C18.24,2,16,4.24,16,6Z" fill="#012395"/>
+      <path id="Path_10" data-name="Path 10" d="M0,0H24V24H0Z" fill="none"/>
     </g>
   </g>
 </svg>
