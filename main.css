@@ -1349,11 +1349,22 @@ card-btns > button > a {
 
 .bottom-nav-container {margin: auto; width: 350px;}
 
-.bottom-nav-container > button {display: inline-block;margin-left: 5px;width: 65px;filter: grayscale(100);background-color: white;border: none;transition: 0.5s ease; }
+.bottom-nav-container > button {display: inline-block;margin-left: 5px;width: 65px;filter: grayscale(100);;border: none;transition: 0.5s ease;background-color: transparent }
 
-.bottom-nav-container > button:focus {filter: grayscale(0);outline: none;}
+.bottom-nav-container > button:focus {filter: grayscale(0);outline: none;animation: popup 0.7s;}
 
-
+@keyframes popup {
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.2);
+    }
+  
+    100%{
+      transform: scale(1);
+    }
+  }
 
 .menu-button {
 
