@@ -1927,7 +1927,7 @@ margin-top: 15px;
 .admiralnation-sect > iframe {
     height: 100%;
     width: 100%;
-
+top: 1.5px;
 
     position: fixed;
     border: none;
