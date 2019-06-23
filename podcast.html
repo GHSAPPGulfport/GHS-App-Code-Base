@@ -1,24 +1,75 @@
-<div id="podcast" class="popup-menu vivify pullUp podcast">
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>GHS App</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="css/vivify.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="vivify.min.css" rel="stylesheet" type="text/css" />
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="Branding/Ios%20App%20Icon.png" type="image/x-icon">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="GHS App">
+    <link rel="apple-touch-icon" href="Branding/apple-touch-icon.png">
+
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122866044-3"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-122866044-3');
+
+    </script>
+
+</head>
+
+
+<div class="loading-container vivify pulsate infinite" id="loading">
+    <div class="donutSpinner"></div>
+    <h4 class="vivify ">Loading...</h4>
+</div>
+<script>window.onload = function () { document.getElementById("loading").style.display = "none" }</script>
+
+
+<div id="podcast" class="popup-menu vivify fadeInBottom duration-400" style="display: block;margin-top: -50px;">
     <div>
+        <div class="hero-image">
+            <div class="hero-text">
+                <div>
+                    <h2>Behind The Faces</h2>
+                <p>Podcast</p>
+                </div>
+           
+            </div><img loading="lazy" src="Images/behindthefaces.png">
+        </div>
         <div class="content-container">
             <div class="navigation-card">
-                <h3
-                    style=" position: fixed;background-color:white;height: 49.3px;width: 100%;padding-left: 23px;padding-top: 10px;margin-top: 0px;z-index: 100;">
-                    Behind the Faces | Podcast</h3><a href="#">
-                    <div>
-                        <h3 style="margin-left: 23px;position: fixed;margin-top: 31.1px;z-index: 101;">
-                            Student Council
-                        </h3>
-                    </div>
-                </a>
 
 
 
 
-                <div class="spacer" style="height: 60px;"></div>
+                <div class="spacer" style="height: 15px;"></div>
 
-                <div class="card-wrapper" style="width: 100%; "><img style="border-radius: 0px;"
-                        class="card-img" data-src="images/behindthefaces.webp"></div>
+                <div class="card-wrapper" style="width: 100%; "><img style="border-radius: 0px;" class="card-img"
+                        data-src="images/behindthefaces.webp"></div>
             </div>
 
             <div class="navigation-card cd1 vivify fadeInLeft">
@@ -87,3 +138,145 @@
     </div>
 </div>
 
+
+
+
+
+
+
+
+<script>
+    $(document).ready(function ($) {
+        var mode = localStorage.getItem('mode');
+        if (mode)
+            $('body').addClass(mode);
+        $('accent').addClass(mode);
+
+        $(".darkmode").click(function () {
+            $("body").addClass("darkclass");
+            $("accent").addClass("darkclass");
+            localStorage.setItem('mode', 'darkclass');
+        });
+
+        $(".normalmode").click(function () {
+            $("body").removeClass("darkclass");
+            $("accent").removeClass("darkclass");
+            localStorage.setItem('mode', null);
+        });
+    });
+
+</script>
+
+
+<script>
+    $(window).scroll(function () {
+
+
+        var scroll = $(window).scrollTop();
+        if (scroll > 200) {
+            $(".nav-element").addClass("sticky");
+        } else {
+            $(".nav-element").removeClass("sticky");
+        }
+
+        if (scroll > 400) {
+            $(".indicator").addClass("sticky");
+        } else {
+            $(".indicator").removeClass("sticky");
+        }
+    });
+
+</script>
+
+
+
+
+
+<script>
+    function launch_toast() {
+        var x = document.getElementById("toast")
+        x.className = "show";
+        setTimeout(function () {
+            x.className = x.className.replace("show", "");
+        }, 5000);
+    }
+
+</script>
+
+<script defer src="script.js">
+</script>
+<script>
+    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+    if (iOS = true) {
+        document.getElementsByClassName("logo-wrapper")[0].setAttribute("ios-logo", "iOS-device");
+    }
+
+</script>
+<script>
+    AOS.init();
+
+</script>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+</script>
+<script src="sw.js"></script>
+<script src="Service-Worker.js"></script>
+<script>
+    $("a").click(function (event) {
+        event.preventDefault();
+        window.location = $(this).attr("href");
+    });
+
+</script>
+<script>
+    window.addEventListener('load', function () {
+        var allimages = document.getElementsByTagName('img');
+        for (var i = 0; i < allimages.length; i++) {
+            if (allimages[i].getAttribute('data-src')) {
+                allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+            }
+        }
+    }, false)
+
+</script>
+
+<script>
+    $(document).ready(function ($) {
+        var mode = localStorage.getItem('mode');
+        if (mode)
+            $('body').addClass(mode);
+
+        $(".darkmode").click(function () {
+            $("body").addClass("darkclass");
+            localStorage.setItem('mode', 'darkclass');
+        });
+
+        $(".normalmode").click(function () {
+            $("body").removeClass("darkclass");
+            localStorage.setItem('mode', null);
+        });
+    });
+
+</script>
+
+<script>
+    window.setTimeout(loaded, 1500);
+    var element = document.getElementById('loader');
+
+    function loaded() {
+        element.style.display = 'none';
+    }
+
+</script>
+</body>
+
+</html>
