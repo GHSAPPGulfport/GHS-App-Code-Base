@@ -12,6 +12,8 @@ a {
 
 .homescreen-frame {width: 100%;height: 100vh;z-index: 100;border: none;margin-top: 40px;-webkit-overflow-scrolling: touch;;}
 
+.scroll-elements {transform: rotateZ(180deg);}
+
 input,
 textarea,
 button,
@@ -1000,9 +1002,11 @@ summary > div > p {
     position: relative;
     z-index: -1;
     background-color: white;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     padding-top: 1px;
+    transform: rotateZ(180deg);
 }
+
 
 .navigation-card > a > div > h4 {
     font-weight: normal;
@@ -1019,7 +1023,7 @@ summary > div > p {
     font-size: 14px;
     margin-bottom: -5px;
     width: 336px;
-
+  
 
 }
 
@@ -1965,6 +1969,8 @@ top: 1.5px;
     height: 49px;
 }
 
+.timestamp {overflow-x: scroll;width: 125px;display: block;white-space: nowrap;float: right
+    ;margin-right:15px;font-size: 12px;color: #3E3E3E}
 
 .search-sect {
     display: none;
