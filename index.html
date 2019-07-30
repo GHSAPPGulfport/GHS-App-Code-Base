@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="vivify.min.css" rel="stylesheet" type="text/css" />
     <link rel="manifest" href="manifest.json">
-    <meta http-equiv="refresh" content="0;URL=https://gulfporthighschoolapp.netlify.com/index.html#homescreen">
+  
     <link rel="shortcut icon" href="Branding/Ios%20App%20Icon.png" type="image/x-icon">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
@@ -46,7 +46,10 @@
         <h6>{{subTitle}}</h6>
         <img class="card-img" src="{{imageURL1}}">
         <p>{{paragraph}}</p>
-        <a href="#" class="waves-effect">Learn More</a>
+        <div class="button-container">
+             <a href="#" class="waves-effect btn-flat">Learn More</a>
+            </div>
+       
      </div>
      <div class="filterDiv cars">Testing</div>
 
@@ -147,6 +150,7 @@
                     </ul>
                 </div>
             </div>
+            <blockquote style="border-color:#012395;margin-top: 0px;position: fixed; bottom: 38px; left: 0px;z-index: 150" class="blue lighten-5">the GHS App is currently under summer maintenance some features may be unavailable or limited. </blockquote>
             <div class="tab-items filterDiv sports">
                 <div id="inbox" class="col s12">  
 
@@ -296,8 +300,41 @@ function w3RemoveClass(element, name) {
 
 
     <section id="media">
+    
         <div class="spacer"></div>
-        Media
+        <div class="inline-spacer" style="height: 55px;"></div>
+        <h5>Settings</h5>
+        <div class="settings-option">
+        <div class="rounded-btn-wrapper" style="margin-top: 22px;margin-bottom: 77px;">
+                <div><a onclick="launch_toast()" class="darkmode waves-effect btn blue darken-4">Enable</a></div>
+                <div><a class="normalmode waves-effect btn-flat">Disable</a></div>
+
+            </div>
+
+
+
+            <script>
+                $(document).ready(function($) {
+                    var mode = localStorage.getItem('mode');
+                    if (mode)
+                        $('body').addClass(mode);
+                    $('accent').addClass(mode);
+
+                    $(".darkmode").click(function() {
+                        $("body").addClass("darkclass");
+                        $("accent").addClass("darkclass");
+                        localStorage.setItem('mode', 'darkclass');
+                    });
+
+                    $(".normalmode").click(function() {
+                        $("body").removeClass("darkclass");
+                        $("accent").removeClass("darkclass");
+                        localStorage.setItem('mode', null);
+                    });
+                });
+
+            </script>
+        </div>
     </section>
 
 
