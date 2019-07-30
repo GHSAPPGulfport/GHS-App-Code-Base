@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="vivify.min.css" rel="stylesheet" type="text/css" />
     <link rel="manifest" href="manifest.json">
-  
+
     <link rel="shortcut icon" href="Branding/Ios%20App%20Icon.png" type="image/x-icon">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
@@ -19,7 +19,7 @@
     <link rel="apple-touch-icon" href="Branding/apple-touch-icon.png">
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"
         integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
-        <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+    <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
     <script type="text/javascript"
@@ -118,9 +118,9 @@
     </nav>
 
     <section id="homescreen">
-    <div class="inline-spacer"></div>
+        <div class="inline-spacer"></div>
         <div class="spacer"></div>
-        
+
         <style>
             .tabs .indicator {
                 background-color: #012395;
@@ -139,98 +139,102 @@
             <div class="tab-navigation">
                 <div style="position: fixed;width: 100%;top: 55px;left: 0px;;" class="" style="padding: 0px;">
                     <ul class="tabs">
-                        <li class="tab col s3"><a href=""><button
-                                    class="waves-effect tab-button" onclick="filterSelection('all')">HOME</button></a></li>
-                        <li class="tab col s3"><a href=""><button
-                                    class="waves-effect tab-button" onclick="filterSelection('media')">MEDIA</button></a></li>
-                        <li class="tab col s3"><a href=""><button class="waves-effect tab-button" onclick="filterSelection('news')">NEWS</button></a>
+                        <li class="tab col s3"><a href=""><button class="waves-effect tab-button"
+                                    onclick="filterSelection('all')">HOME</button></a></li>
+                        <li class="tab col s3"><a href=""><button class="waves-effect tab-button"
+                                    onclick="filterSelection('media')">MEDIA</button></a></li>
+                        <li class="tab col s3"><a href=""><button class="waves-effect tab-button"
+                                    onclick="filterSelection('news')">NEWS</button></a>
                         </li>
-                        <li class="tab col s3"><a href="#sports"><button
-                                    class="waves-effect tab-button" onclick="filterSelection('sports')">SPORTS</button></a></li>
+                        <li class="tab col s3"><a href="#sports"><button class="waves-effect tab-button"
+                                    onclick="filterSelection('sports')">SPORTS</button></a></li>
                     </ul>
                 </div>
             </div>
-            <blockquote style="border-color:#012395;margin-top: 0px;position: fixed; bottom: 38px; left: 0px;z-index: 150" class="blue lighten-5">the GHS App is currently under summer maintenance some features may be unavailable or limited. </blockquote>
-            <div class="tab-items filterDiv sports">
-                <div id="inbox" class="col s12">  
+            <blockquote
+                style="border-color:#012395;margin-top: 0px;position: fixed; bottom: 38px; left: 0px;z-index: 150"
+                class="blue lighten-5">the GHS App is currently under summer maintenance some features may be
+                unavailable or limited. </blockquote>
+            <div class="tab-items">
+                <div id="inbox" class="col s12">
 
 
-<div id="sports" class="sports-filter filterDiv">
-<button class="waves-effect" onclick="filterSelection('baseball')">Baseball</button>
-<button class="waves-effect" onclick="filterSelection('football')">Football</button>
-<button class="waves-effect" onclick="filterSelection('volleyball')">VolleyBall</button>
+                    <div id="sports" class="sports-filter">
+                        <button class="waves-effect baseball" onclick="filterSelection('baseball')">Baseball</button>
+                        <button class="waves-effect" onclick="filterSelection('football')">Football</button>
+                        <button class="waves-effect" onclick="filterSelection('volleyball')">VolleyBall</button>
 
-<button class="waves-effect" onclick="filterSelection('gbasketball')">Girls Basketball</button>
-<button class="waves-effect" onclick="filterSelection('bowling')">Bowling</button>
-<button class="waves-effect" onclick="filterSelection('swimming')">Swimming</button>
-<button class="waves-effect" onclick="filterSelection('crosscountry')">Cross Country</button>
+                        <button class="waves-effect" onclick="filterSelection('gbasketball')">Girls Basketball</button>
+                        <button class="waves-effect" onclick="filterSelection('bowling')">Bowling</button>
+                        <button class="waves-effect" onclick="filterSelection('swimming')">Swimming</button>
+                        <button class="waves-effect" onclick="filterSelection('crosscountry')">Cross Country</button>
 
-<br>
-<button class="waves-effect" onclick="filterSelection('bbasketball')">Boys Basketball</button>
-<button class="waves-effect" onclick="filterSelection('cheerleading')">Cheerleading</button>
-<button class="waves-effect" onclick="filterSelection('golf')">Golf</button>
-<button class="waves-effect" onclick="filterSelection('bsoccer')">Boys Soccer</button>
-<button class="waves-effect" onclick="filterSelection('gsoccer')">Girls Soccer</button>
-<button class="waves-effect" onclick="filterSelection('softball')">Softball</button>
+                        <br>
+                        <button class="waves-effect" onclick="filterSelection('bbasketball')">Boys Basketball</button>
+                        <button class="waves-effect" onclick="filterSelection('cheerleading')">Cheerleading</button>
+                        <button class="waves-effect" onclick="filterSelection('golf')">Golf</button>
+                        <button class="waves-effect" onclick="filterSelection('bsoccer')">Boys Soccer</button>
+                        <button class="waves-effect" onclick="filterSelection('gsoccer')">Girls Soccer</button>
+                        <button class="waves-effect" onclick="filterSelection('softball')">Softball</button>
 
-<button class="waves-effect" onclick="filterSelection('tennis')">Tennis</button>
-<button class="waves-effect" onclick="filterSelection('trackfield')">Track And Field</button>
+                        <button class="waves-effect" onclick="filterSelection('tennis')">Tennis</button>
+                        <button class="waves-effect" onclick="filterSelection('trackfield')">Track And Field</button>
 
-</div>
-<div class="card-divider"></div>
+                    </div>
+                    <div class="card-divider"></div>
 
-<div class="navigation-card-container">
-<div id="items"></div>
-</div>
+                    <div class="navigation-card-container">
+                        <div id="items"></div>
+                    </div>
                 </div>
-               
-
-               
 
 
 
-<script>
+
+
+
+                <script>
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
+            w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
 function w3AddClass(element, name) {
   var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i]; }
+      }
+    }
+    
 function w3RemoveClass(element, name) {
   var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            arr1.splice(arr1.indexOf(arr2[i]), 1);     
     }
-  }
-  element.className = arr1.join(" ");
-}
-
-
-</script>
-                </div>
-              
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    
+                    </script>
             </div>
+
+        </div>
 
 
         </div>
-        Homescreen
+
 
     </section>
 
@@ -257,7 +261,8 @@ function w3RemoveClass(element, name) {
                 </div>
             </div>
             <div class="tab-items">
-                <div id="lunch" class="col s12"><embed class="pdf-embed" src="Menu/Menu Plan Calendar.pdf" type="application/pdf"></embed></div>
+                <div id="lunch" class="col s12"><embed class="pdf-embed" src="Menu/Menu Plan Calendar.pdf"
+                        type="application/pdf"></embed></div>
                 <div id="breakfast" class="col s12">Breakfast</div>
 
             </div>
@@ -289,7 +294,10 @@ function w3RemoveClass(element, name) {
 
     <section id="calendar">
         <div class="spacer"></div>
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=ZGlzdHJpY3QuY2FsZW5kYXJAZ3VsZnBvcnRzY2hvb2xzLm9yZw&amp;src=Z3VsZnBvcnRzY2hvb2xzLm9yZ19nOGtoNzljcjhzcWJpcGVqdm0yYzliYzBqc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%238E24AA&amp;color=%233F51B5&amp;color=%230B8043&amp;showTitle=0&amp;showNav=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0" style="border-width:0;position: fixed; top: 0px;width:100%; height:100%"  frameborder="0" scrolling="no"></iframe>
+        <iframe
+            src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=ZGlzdHJpY3QuY2FsZW5kYXJAZ3VsZnBvcnRzY2hvb2xzLm9yZw&amp;src=Z3VsZnBvcnRzY2hvb2xzLm9yZ19nOGtoNzljcjhzcWJpcGVqdm0yYzliYzBqc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%238E24AA&amp;color=%233F51B5&amp;color=%230B8043&amp;showTitle=0&amp;showNav=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0"
+            style="border-width:0;position: fixed; top: 0px;width:100%; height:100%" frameborder="0"
+            scrolling="no"></iframe>
     </section>
 
 
@@ -301,38 +309,38 @@ function w3RemoveClass(element, name) {
 
 
     <section id="media">
-    
+
         <div class="spacer"></div>
         <div class="inline-spacer" style="height: 55px;"></div>
         <h5>Settings</h5>
         <div class="settings-option">
 
-                <div><a onclick="launch_toast()" class="darkmode waves-effect btn blue darken-4">Enable</a></div>
-                <div><a class="normalmode waves-effect btn-flat">Disable</a></div>
+            <div><a onclick="launch_toast()" class="darkmode waves-effect btn blue darken-4">Enable</a></div>
+            <div><a class="normalmode waves-effect btn-flat">Disable</a></div>
 
-        
+
 
 
 
             <script>
                 $(document).ready(function($) {
                     var mode = localStorage.getItem('mode');
-                    if (mode)
-                        $('body').addClass(mode);
-                    $('accent').addClass(mode);
+        if (mode)
+            $('body').addClass(mode);
+        $('accent').addClass(mode);
 
                     $(".darkmode").click(function() {
-                        $("body").addClass("darkclass");
-                        $("accent").addClass("darkclass");
-                        localStorage.setItem('mode', 'darkclass');
-                    });
+            $("body").addClass("darkclass");
+        $("accent").addClass("darkclass");
+        localStorage.setItem('mode', 'darkclass');
+    });
 
                     $(".normalmode").click(function() {
-                        $("body").removeClass("darkclass");
+            $("body").removeClass("darkclass");
                         $("accent").removeClass("darkclass");
-                        localStorage.setItem('mode', null);
-                    });
-                });
+        localStorage.setItem('mode', null);
+    });
+});
 
             </script>
         </div>
@@ -380,17 +388,17 @@ function w3RemoveClass(element, name) {
 
     <div class="bottom-navigation">
         <div class="nav-container">
-            <a href="#homescreen"><button onclick="filterSelection('all')" class="nav-button waves-effect" autofocus><img
-                        src="Assets/Home.svg"></button></a>
+            <a href="#homescreen"><button onclick="filterSelection('all')" class="nav-button waves-effect"
+                    autofocus><img src="Assets/Home.svg"></button></a>
             <a href="#meal-menu"><button class="nav-button waves-effect"><img src="Assets/Menu.svg"></button></a>
-           
+
             <a href=""><button class="nav-button waves-effect"><img src="Assets/Grades.svg"></button></a>
             <a href="#calendar"><button class="nav-button waves-effect"><img src="Assets/Calendar.svg"></button></a>
             <a href="#media"><button class="nav-button waves-effect"><img src="Assets/Settings.svg"></button></a>
         </div>
     </div>
-<script>window.onload = function() {
-        filterSelection('all');
+    <script>window.onload = function() {
+            filterSelection('all');
 };</script>
 </body>
 
