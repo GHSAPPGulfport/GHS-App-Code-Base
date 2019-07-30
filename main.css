@@ -70,11 +70,13 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
 
 /*---------------------------------------------Navigation Card-------------------------------------------*/
 
-.navigation-card {margin: auto; width: 100%;}
+.navigation-card {margin: auto; width: 100%;transform: rotateZ(180deg);}
 
 .navigation-card > h5 {font-size: 15px;}
 
 .navigation-card > h6 {font-size: 14px;margin-top: 0px;font-size: 13px;}
+
+.navigation-card-container {transform: rotateZ(180deg);}
 
 .button-container {margin: auto; width: 150px;}
 
@@ -107,26 +109,10 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
     overflow: hidden;
   }
   
-  /* Style the buttons */
-  .btn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: #ddd;
-  }
-  
-  .btn.active {
-    background-color: #666;
-    color: white;
-  }
+
 
 /*----------------------------------------------Dark Mode-------------------------------------------------------*/
-.settings-option {margin-top: 150px;}
+.settings-option {;}
 
 body.darkclass {
   background-color: black;
