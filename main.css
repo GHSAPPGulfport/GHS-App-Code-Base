@@ -108,6 +108,9 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
 
 .filter {overflow-x: scroll; white-space: nowrap;height: 80px;border-bottom:solid; border-bottom-color:lightgray;border-bottom-width: 1px; }
 
+.filter::-webkit-scrollbar {
+  width: 0px;}
+
 .filterDiv {
    
     display: none;
