@@ -141,7 +141,7 @@
                     <ul class="tabs">
                         <li class="tab col s3"><a href=""><button class="waves-effect tab-button"
                                     onclick="filterSelection('all')">HOME</button></a></li>
-                        <li class="tab col s3"><a href=""><button class="waves-effect tab-button"
+                        <li class="tab col s3"><a href="#media"><button class="waves-effect tab-button"
                                     onclick="filterSelection('media')">MEDIA</button></a></li>
                         <li class="tab col s3"><a href=""><button class="waves-effect tab-button"
                                     onclick="filterSelection('news')">NEWS</button></a>
@@ -156,7 +156,7 @@
                 <div id="inbox" class="col s12">
 
 
-                    <div id="sports" class="sports-filter">
+                    <div id="sports" class="filter">
                         <button class="waves-effect baseball" onclick="filterSelection('baseball')">Baseball</button>
                         <button class="waves-effect" onclick="filterSelection('football')">Football</button>
                         <button class="waves-effect" onclick="filterSelection('volleyball')">VolleyBall</button>
@@ -177,6 +177,25 @@
                         <button class="waves-effect" onclick="filterSelection('tennis')">Tennis</button>
                         <button class="waves-effect" onclick="filterSelection('trackfield')">Track And Field</button>
 
+                    </div>
+
+                    <div id="news" class="filter filterDiv news" style="height: 50px;">
+                        <button class="waves-effect baseball" onclick="filterSelection('grade9')">9th (Freshman)</button>
+                        <button class="waves-effect" onclick="filterSelection('grade10')">10th (Sophmore)</button>
+                        <button class="waves-effect" onclick="filterSelection('grade11')">11th (Junior)</button>
+
+                        <button class="waves-effect" onclick="filterSelection('grade12')">12th (Senior)</button>
+                    
+                    </div>
+
+                    <div id="media" class="filter filterDiv media" style="height: 50px;">
+                            <button class="waves-effect baseball" onclick="filterSelection('grade9')">Live Games</button>
+                        <button class="waves-effect baseball" onclick="filterSelection('grade9')">GHS Art</button>
+                        <button class="waves-effect" onclick="filterSelection('grade10')">Podcast</button>
+                        <button class="waves-effect" onclick="filterSelection('grade11')">Videos</button>
+
+                     
+                    
                     </div>
                     <div class="card-divider"></div>
 

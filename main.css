@@ -101,12 +101,12 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
 
 .iframe-popup {height: 540px;width: 100%;border-radius: 15px;background-color: white;}
 
-/*---------------------------------------------------Sports Filter----------------------------------------------*/
-.sports-filter > button {border: solid; border-width: 1px; border-color: lightgray; background-color: white; border-radius: 5px;margin-top: 10px;margin-left: 10px;}
+/*---------------------------------------------------Filter----------------------------------------------*/
+.filter > button {border: solid; border-width: 1px; border-color: lightgray; background-color: white; border-radius: 5px;margin-top: 10px;margin-left: 10px;}
 
-.sports-filter > button:focus {background-color: #012395;; color: white;border: none;}
+.filter > button:focus {background-color: #012395;; color: white;border: none;}
 
-.sports-filter {overflow-x: scroll; white-space: nowrap;height: 80px;border-bottom:solid; border-bottom-color:lightgray;border-bottom-width: 1px; padding-bottom: 50px;}
+.filter {overflow-x: scroll; white-space: nowrap;height: 80px;border-bottom:solid; border-bottom-color:lightgray;border-bottom-width: 1px; }
 
 .filterDiv {
    
