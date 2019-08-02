@@ -42,7 +42,8 @@
     <div class="navigation-card filterDiv {{section}} {{athleticSection}} show">
         <h5>{{title}}</h5>
         <h6>{{subTitle}}</h6>
-        <img class="card-img" src="{{imageURL1}}">
+        <div id={{postID}}></div>
+            <button onclick="document.getElementById('{{postID}}').innerHTML = '{{imageURL1}}'">Load Image</button>
         <p>{{paragraph}}</p>
         <div class="button-container">
              <a href="#" class="waves-effect btn-flat">Learn More</a>
