@@ -72,11 +72,13 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
 
 /*---------------------------------------------Navigation Card-------------------------------------------*/
 
-.navigation-card {margin: auto; width: 100%;transform: rotateZ(180deg);}
+.navigation-card {margin: auto; width: 100%;transform: rotateZ(180deg);border-bottom:solid;border-bottom-width: 1px; border-bottom-color: lightgray;padding-bottom: 10px;}
 
 .navigation-card > h5 {font-size: 15px;}
 
 .navigation-card > h6 {font-size: 14px;margin-top: 0px;font-size: 13px;}
+
+.navigation-card > p {margin-top: 10px;}
 
 .navigation-card-container {transform: rotateZ(180deg);}
 
@@ -85,7 +87,7 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
   text-decoration: none;
   color: black;}
 
-  .navigation-image > a > img {width: 100%;height: 200px; object-fit: cover;margin-top: -200px;border-radius: 10px;}
+  .navigation-image > a > img {width: 100%;height: 200px; object-fit: cover;margin-top: -200px;border-radius: 10px;position: relative; z-index: 50;}
 
 .load-button{width: 100%; height: 200px;border-radius: 10px;border: none;background-image: url(images/Placeholderimage.png);float: left;margin-top: 10px;font-size: 15px;border: solid;border-width: 1px;border-color: lightgray; }
 
