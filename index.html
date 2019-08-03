@@ -42,7 +42,7 @@
     <div class="navigation-card filterDiv {{section}} {{athleticSection}} show">
         <h5>{{title}}</h5>
         <h6>{{subTitle}}</h6>
-        <button class="load-button waves-effect btn-flat" style="height: 200px;" onclick="document.getElementById('{{postID}}').innerHTML = '{{imageURL1}}'">Load Image</button>
+        <button class="load-button waves-effect btn-flat" style="height: 200px;" onclick="document.getElementById('{{postID}}').innerHTML = '{{imageURL1}}'">Tap to Load Image</button>
         <div class="navigation-image" id={{postID}}></div>
            
         <p>{{paragraph}}</p>
@@ -62,7 +62,7 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
-            $.getJSON('https://api.sheety.co/522f264c-517f-4cf0-9351-bc5c57644244', function (data) {
+            $.getJSON('https://api.sheety.co/a8c773a1-a82e-4937-b4e9-1bb04115f46d', function (data) {
                 var template = Handlebars.compile($('#item-template2').html())
                 $('#items2').html(template(data))
             })
@@ -72,24 +72,19 @@
 
 {{#each this}}
 
-<div class="card-divider"></div>
+<div class="navigation-card filterDiv {{section}} {{athleticSection}} show">
+    <h5>{{title}}</h5>
+    <h6>{{subTitle}}</h6>
+    <button class="load-button waves-effect btn-flat" style="height: 200px;" onclick="document.getElementById('{{postID}}').innerHTML = '{{imageURL1}}'">Tap to Load Media</button>
+    <div class="navigation-image" id={{postID}}></div>
+    <iframe src="https://www.youtube.com/embed/kMGrNyAS-70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-
-      <div class="card" style="width: 100%;position: relative;">
-        <div class="card-image">
-          <img src="Images/AIG.jpg">
-          <span class="card-title">Card Title</span>
+    <p>{{paragraph}}</p>
+    <div class="button-container">
+         <a href="#" class="waves-effect btn-flat">Learn More</a>
         </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    
+   
+ </div>
 
     
 {{/each}}
@@ -117,7 +112,7 @@
         <a href="#search" class="search-btn"><i class="material-icons">search</i></a>
     </nav>
 
-    <section id="homescreen">
+    <section id="homescreen" >
         <div class="inline-spacer"></div>
         <div class="spacer"></div>
 
@@ -201,6 +196,7 @@
 
                     <div class="navigation-card-container">
                         <div id="items"></div>
+                        <div id="items2"></div>
                     </div>
                 </div>
 
@@ -277,8 +273,7 @@ function w3RemoveClass(element, name) {
                 </div>
             </div>
             <div class="tab-items">
-                <div id="lunch" class="col s12"><embed class="pdf-embed" src="Menu/Menu Plan Calendar.pdf"
-                        type="application/pdf"></embed></div>
+                <div id="lunch" class="col s12"><div class="menu-overflow"><img src="Menu/Menu Plan Calendar-1.png"></div></div>
                 <div id="breakfast" class="col s12">Breakfast</div>
 
             </div>
