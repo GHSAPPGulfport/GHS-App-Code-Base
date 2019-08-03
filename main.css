@@ -11,7 +11,7 @@ body {
  
 }
 
-.ios-container {background-color: green;overflow-y: scroll;}
+.ios-container {background-color: green;overflow-x: scroll;}
 
 a {text-decoration: none;}
 
