@@ -2,12 +2,13 @@ body {margin: 0px; padding: 0px;font-family: roboto,sans-serif;transition: 0.3s 
 
 body {
   -webkit-overflow-scrolling: touch;
-  overflow: scroll;
+  overflow-y: scroll;
 
 }
 
 * {
   -webkit-overflow-scrolling: touch;
+ 
 }
 
 a {text-decoration: none;}
