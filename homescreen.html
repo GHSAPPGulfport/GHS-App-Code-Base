@@ -40,7 +40,7 @@
 
     {{#each this}}
 
-    <div class="navigation-card filterDiv {{section}} {{athleticSection}} show">
+    <div class="navigation-card filterDiv {{section}} {{athleticSection}} show vivify fadeIn delay-300">
         <h5>{{title}}</h5>
         <h6>{{subTitle}}</h6>
         <button class="load-button waves-effect btn-flat" style="height: 200px;" onclick="document.getElementById('{{postID}}').innerHTML = '{{imageURL1}}'">Tap to Load Image</button>
@@ -156,21 +156,21 @@
 
 
                     <div id="sports" class="filter">
-                        <button class="waves-effect baseball" onclick="filterSelection('baseball')">Baseball</button>
-                        <button class="waves-effect" onclick="filterSelection('football')">Football</button>
-                        <button class="waves-effect" onclick="filterSelection('volleyball')">VolleyBall</button>
+                        <button class="waves-effect baseball vivify fadeIn" onclick="filterSelection('baseball')">Baseball</button>
+                        <button class="waves-effect vivify fadeIn delay-200" onclick="filterSelection('football')">Football</button>
+                        <button class="waves-effect vivify fadeIn delay-400" onclick="filterSelection('volleyball')">VolleyBall</button>
 
-                        <button class="waves-effect" onclick="filterSelection('gbasketball')">Girls Basketball</button>
-                        <button class="waves-effect" onclick="filterSelection('bowling')">Bowling</button>
-                        <button class="waves-effect" onclick="filterSelection('swimming')">Swimming</button>
+                        <button class="waves-effect vivify fadeIn delay-600" onclick="filterSelection('gbasketball')">Girls Basketball</button>
+                        <button class="waves-effect vivify fadeIn delay-800" onclick="filterSelection('bowling')">Bowling</button>
+                        <button class="waves-effect vivify fadeIn delay-1000" onclick="filterSelection('swimming')">Swimming</button>
                         <button class="waves-effect" onclick="filterSelection('crosscountry')">Cross Country</button>
 
                         <br>
-                        <button class="waves-effect" onclick="filterSelection('bbasketball')">Boys Basketball</button>
-                        <button class="waves-effect" onclick="filterSelection('cheerleading')">Cheerleading</button>
-                        <button class="waves-effect" onclick="filterSelection('golf')">Golf</button>
-                        <button class="waves-effect" onclick="filterSelection('bsoccer')">Boys Soccer</button>
-                        <button class="waves-effect" onclick="filterSelection('gsoccer')">Girls Soccer</button>
+                        <button class="waves-effect vivify fadeIn delay-100" onclick="filterSelection('bbasketball')">Boys Basketball</button>
+                        <button class="waves-effect vivify fadeIn delay-300" onclick="filterSelection('cheerleading')">Cheerleading</button>
+                        <button class="waves-effect vivify fadeIn delay-500" onclick="filterSelection('golf')">Golf</button>
+                        <button class="waves-effect vivify fadeIn delay-700" onclick="filterSelection('bsoccer')">Boys Soccer</button>
+                        <button class="waves-effect vivify fadeIn delay-900" onclick="filterSelection('gsoccer')">Girls Soccer</button>
                         <button class="waves-effect" onclick="filterSelection('softball')">Softball</button>
 
                         <button class="waves-effect" onclick="filterSelection('tennis')">Tennis</button>
@@ -179,20 +179,20 @@
                     </div>
 
                     <div id="news" class="filter filterDiv news" style="height: 50px;">
-                        <button class="waves-effect" onclick="filterSelection('freshman')">9th (Freshman)</button>
-                        <button class="waves-effect" onclick="filterSelection('sophmore')">10th (Sophmore)</button>
-                        <button class="waves-effect" onclick="filterSelection('junior')">11th (Junior)</button>
+                        <button class="waves-effect vivify fadeIn" onclick="filterSelection('freshman')">9th (Freshman)</button>
+                        <button class="waves-effect vivify fadeIn delay-100" onclick="filterSelection('sophmore')">10th (Sophmore)</button>
+                        <button class="waves-effect vivify fadeIn delay-200" onclick="filterSelection('junior')">11th (Junior)</button>
 
-                        <button class="waves-effect" onclick="filterSelection('senior')">12th (Senior)</button>
+                        <button class="waves-effect vivify fadeIn delay-300" onclick="filterSelection('senior')">12th (Senior)</button>
                     
                     </div>
 
                     <div id="media" class="filterDiv media" >
                     <div class="filter"style="height: 50px;">
-                            <button class="waves-effect" onclick="filterSelection('live')">Live Games</button>
-                        <button class="waves-effect" onclick="filterSelection('art')">GHS Art</button>
-                        <button class="waves-effect" onclick="filterSelection('podcast')">Podcast</button>
-                        <button class="waves-effect" onclick="filterSelection('videos')">Videos</button>
+                            <button class="waves-effect vivify fadeIn delay-100" onclick="filterSelection('live')">Live Games</button>
+                        <button class="waves-effect vivify fadeIn delay-200" onclick="filterSelection('art')">GHS Art</button>
+                        <button class="waves-effect vivify fadeIn delay-300" onclick="filterSelection('podcast')">Podcast</button>
+                        <button class="waves-effect vivify fadeIn delay-400" onclick="filterSelection('videos')">Videos</button>
                     </div>
                     <div class="live-stream">
                         <iframe loading="lazy" class="live-frame"
