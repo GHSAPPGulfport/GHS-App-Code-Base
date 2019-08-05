@@ -68,6 +68,9 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
 #podcast {display: none}
 #podcast:target {display: block;}
 
+#settings {display: none;}
+#settings:target{display: block}
+
 .pdf-embed {position: fixed;left: 0px;top: 100px; width: 100%; height: 100vh;border: none;}
 
 /*------------------------------------------------Tab Navigation-----------------------------------------*/
@@ -153,4 +156,25 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
 body.darkclass {
   background-color: black;
   
+}
+body.darkclass .bottom-navigation {
+  background-color: black;
+}
+
+body.darkclass .nav-button {filter: invert(100);}
+
+body.darkclass .nav-button > img {filter: saturate(0)}
+
+body.darkclass .tab-navigation {background-color: black;}
+
+body.darkclass .spacer {background-color: black;}
+
+body.darkclass .tabs .tab a.active {background-color: black;color: white}
+
+body.darkclass .tabs{background-color: black;color: lightgray}
+
+body.darkclass .tab-button {color: lightgray;}
+
+.bottom-navigation.darkclass {
+  background-color: black;
 }
