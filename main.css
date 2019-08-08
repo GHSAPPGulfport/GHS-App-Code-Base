@@ -151,11 +151,15 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
   
 /*-----------------------------------------------------Search---------------------------------------------------*/
 
-.search-input {;position: fixed; top: 12px; background-color: white; left: 0px; z-index: 170;;}
+.search-input {;position: fixed; top: 60px; background-color:white; left: 0px; z-index: 170;;}
 
 .search-container {background-color: white;}
 
+.search-results {margin-top: -10px;}
 
+.search-results > div > li {padding: 15px;border-bottom:solid; border-bottom-width: 1px; border-bottom-color: lightgray;width: 100%;}
+
+.search-results > div > li > a {color:black}
 
   /*----------------------------------------------------Media---------------------------------------------------*/
 
