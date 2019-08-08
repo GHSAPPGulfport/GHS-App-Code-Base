@@ -57,7 +57,7 @@
              <button onclick="document.getElementById('{{subPostID}}').innerHTML = '<iframe src='{{buttonUrl}}' ></iframe>'"  class="waves-effect btn-flat">Learn More</button>
             </div>
 
-            <div class="load-container" id="{{subPostID}}">
+            <div class="load-container" id="{{subpostID}}">
 
             </div>
        
@@ -104,7 +104,7 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        $.getJSON('https://api.sheety.co/a8c773a1-a82e-4937-b4e9-1bb04115f46d', function (data) {
+        $.getJSON('https://api.sheety.co/86891052-3092-4d3e-b9fb-8fcdb9859876', function (data) {
             var template = Handlebars.compile($('#item-template3').html())
             $('#items3').html(template(data))
         })
@@ -138,7 +138,7 @@
 <body>
 <style>nav {background-color:white;}</style>
     <nav>
-    <a href="homescreen.html#homescreen" class="refresh waves-effect" style="position: fixed;"><i onclick="M.toast({html: 'I am a toast'});" class="material-icons">refresh</i></a>
+    <a href="index.html" class="refresh waves-effect" style="position: fixed;"><i onclick="M.toast({html: 'I am a toast'});" class="material-icons">refresh</i></a>
         <div class="logo-container"><img src="Branding/App Logo Embed.png">
         </div>
         <a href="#search" class="search-btn waves-effect" style="position: fixed;"><i class="material-icons">search</i></a>
