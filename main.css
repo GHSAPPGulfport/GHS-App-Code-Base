@@ -218,3 +218,11 @@ body.darkclass .navigation-card > p {color: white; }
 body.darkclass .menu-overflow > img {filter: invert(100)}
 
 body.darkclass #calendar > iframe {filter: invert(100)}
+
+body.darkclass .search-results > div > li > a {color:white;}
+
+body.darkclass .search-input {color: white;}
+
+body.darkclass .normalmode {color: white;}
+
+body.darkclass .settings-option > p {color: white;}
