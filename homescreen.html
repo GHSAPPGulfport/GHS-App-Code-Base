@@ -58,19 +58,15 @@
         <div class="navigation-image" id={{postID}}></div>
            
         <p>{{paragraph}}</p>
-        <div class="button-container">
-             <button onclick="document.getElementById('{{subPostID}}').innerHTML = '<iframe src='www.fusion364.com/'></iframe>'"  class="waves-effect btn-flat white" >Learn More</button>
+        <div class="button-container" onclick="document.getElementById('popup').style.display = 'block'">
+             <button onclick="document.all.IFrameName.src = '{{buttonUrl}}'"  class="waves-effect btn-flat white" >Learn More</button>
             </div>
 
-            <div class="popup-container">
-                <div class="popup-wrapper" id="{{subPostID}}">
-                   
-                </div>
-            </div>
+           
     </div>
 
     {{/each}}
-
+    
 </script>
 
 
@@ -134,6 +130,23 @@
     </nav>
 
     <section id="homescreen">
+            <div class="popup-container vivify fadeIn" id="popup" >
+                    <div class="popup-wrapper  vivify fadeInBottom" >
+                        <div class="close-btn">
+                            <button onclick="document.getElementById('popup').style.display = 'none'"><i class="material-icons waves-effect">close</i>"</button>
+                        </div>
+                     <iframe name="IFrameName" class="iframe-popup" src=""></iframe>
+                    </div>
+                </div>
+                <script> "pop" = 
+                        function popup(){
+                            
+                        }
+                       
+                        function remove(){
+                            pop.style.display = "none"
+                        }
+                       </script>
         <div class="inline-spacer"></div>
         <div class="spacer"></div>
 
@@ -226,7 +239,9 @@
 
 
                 <div class="navigation-card-container">
+                        <div class="inline-spacer"></div>
                     <div id="items"></div>
+                   
                     <script>
                             $(function() {
                             $(".DateDiv").each(function(index) {
@@ -484,6 +499,7 @@ function w3RemoveClass(element, name) {
     }
 
 </script>
+
 </body>
 
 </body>

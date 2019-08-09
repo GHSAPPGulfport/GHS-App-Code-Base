@@ -125,11 +125,22 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
 
 .card-img {width: 100%;margin-top: 10px;border-radius: 5px;height: 200px; object-fit: cover}
 
-.popup-container {position: fixed; top: 350px;left: 0px; width: 100%; z-index: 170;height: 100%;;}
+#popup {display: none;}
 
-.popup-wrapper {margin: auto; width: 100%;margin-top: 10vh}
+#popup:target {display: block; }
 
-.iframe-popup {height: 540px;width: 100%;border-radius: 15px;background-color: white;}
+.popup-container {position: fixed; top: 0px;left: 0px; width: 100%; z-index: 170;height: 100%;background-color: rgba(0, 0, 0, 0.76);;}
+
+.popup-wrapper {margin: auto; width: 340px;margin-top: 10vh}
+
+.iframe-popup {height: 570px;width: 100%;border-radius: 10px;background-color: white;border: none;}
+
+.close-btn {float: right;margin-bottom: 15px;background-color: white;border-radius: 5px;}
+
+.close-btn > button{border: none; border: none;border-radius: 70px;background-color: white;border-radius: 5px;}
+
+
+
 
 /*---------------------------------------------------Filter----------------------------------------------*/
 .filter > button {border: solid; border-width: 1px; border-color: lightgray; background-color: white; border-radius: 5px;margin-top: 10px;margin-left: 10px;}
