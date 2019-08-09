@@ -145,6 +145,16 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
 
 
 /*---------------------------------------------------Filter----------------------------------------------*/
+.zoom-buttons > button > i {padding: 8px; border-radius: 150px;}
+
+.zoom-buttons > button {background-color: white;border: solid; border-width: 1px; border-color: lightgray; border-radius: 5px; margin-left: 5px;}
+
+.zoom-buttons {position: fixed;bottom: 65px; right: 10px; background-color:white; z-index: 190;border-radius: 15px;}
+
+.menu-overflow > img {width: 100%;}
+
+.menu-overflow {width: 100%;margin-top: 90px;;}
+
 .filter > button {border: solid; border-width: 1px; border-color: lightgray; background-color: white; border-radius: 5px;margin-top: 10px;margin-left: 10px;}
 
 .filter > button:focus {background-color: #012395;; color: white;border: none;}

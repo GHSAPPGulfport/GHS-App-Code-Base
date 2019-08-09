@@ -51,15 +51,15 @@
         {{#each this}}
 
  
-    <div class="navigation-card filterDiv {{section}} {{athleticSection}} show vivify fadeIn"  >
+    <div class="navigation-card filterDiv {{section}} {{athleticSection}} show vivify fadeIn delay-100"  >
         <h5>{{title}}</h5>
         <h6>{{subTitle}}</h6>
-        <button class="load-button waves-effect btn-flat" style="height: 200px;" onclick="document.getElementById('{{postID}}').innerHTML = '{{imageURL1}}'">Tap to Load Image</button>
+        <button class="load-button waves-effect btn-flat vivify " style="height: 200px;" onclick="document.getElementById('{{postID}}').innerHTML = '{{imageURL1}}'">Tap to Load Image</button>
         <div class="navigation-image" id={{postID}}></div>
            
         <p>{{paragraph}}</p>
         <div class="button-container" onclick="document.getElementById('popup').style.display = 'block'">
-             <button onclick="document.all.IFrameName.src = '{{buttonUrl}}'"  class="waves-effect btn-flat white" >Learn More</button>
+             <button onclick="document.all.IFrameName.src = '{{buttonUrl}}'"  class="waves-effect btn-flat white pulse" >Learn More</button>
             </div>
 
            
@@ -329,16 +329,36 @@ function w3RemoveClass(element, name) {
                 </div>
             </div>
             <div class="tab-items">
-                <div id="lunch" class="col s12">
-                    <div class="menu-overflow"><img class="vivify fadeIn delay-300" src="Menu/Menu Plan Calendar-1.png"></div>
+                <div class="zoom-buttons"><button class="waves-effect" onclick="zoomin()"><i class="material-icons">add</i></button>
+                    <button onclick="zoomout()" class="waves-effect"><i class="material-icons">remove</i></button></div>
+                <div id="lunch">
+                    <div class="menu-overflow"><img id="lunch" class="vivify fadeIn delay-300" src="Menu/Menu Plan Calendar-1.png"></div>
                 </div>
                 <div id="breakfast" class="col s12">Breakfast</div>
 
             </div>
 
+<script>
+function zoomin() {
+  var myImg = document.getElementById("lunch");
+  var currWidth = myImg.clientWidth;
+  if (currWidth == 2500) return false;
+  else {
+    myImg.style.width = (currWidth + 100) + "px";
+  }
+}
 
+function zoomout() {
+  var myImg = document.getElementById("lunch");
+  var currWidth = myImg.clientWidth;
+  if (currWidth == 100) return false;
+  else {
+    myImg.style.width = (currWidth - 100) + "px";
+  }
+}
+</script>
         </div>
-        Mealmenu
+        
     </section>
 
 
@@ -477,9 +497,7 @@ function w3RemoveClass(element, name) {
             <a href="#settings"><button class="nav-button waves-effect"><img src="Assets/Settings.svg"></button></a>
         </div>
     </div>
-    <div class="info-container vivify fadeInBottom delay-500">
-        <p>GHS App Currently Under Maintenance Until Monday.</p>
-    </div>
+    
     <script>
         window.onload = function() {
             filterSelection('all');
