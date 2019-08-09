@@ -51,7 +51,7 @@
         {{#each this}}
 
  
-    <div class="navigation-card filterDiv {{section}} {{athleticSection}} show"  >
+    <div class="navigation-card filterDiv {{section}} {{athleticSection}} show vivify fadeIn"  >
         <h5>{{title}}</h5>
         <h6>{{subTitle}}</h6>
         <button class="load-button waves-effect btn-flat" style="height: 200px;" onclick="document.getElementById('{{postID}}').innerHTML = '{{imageURL1}}'">Tap to Load Image</button>
@@ -168,11 +168,11 @@
         <div class="tab-navigation">
             <div style="position: fixed;width: 100%;top: 55px;left: 0px;;" class="" style="padding: 0px;">
                 <ul class="tabs">
-                    <li class="tab col s3"><a href="#home"><button id="clickButton" class="waves-effect tab-button" onclick="filterSelection('all')">HOME</button></a></li>
-                    <li class="tab col s3"><a href="#news"><button class="waves-effect tab-button" onclick="filterSelection('news')">NEWS</button></a>
+                    <li class="tab col s3"><a href="#home"><button id="clickButton" class="waves-effect tab-button vivify fadeIn" onclick="filterSelection('all')">HOME</button></a></li>
+                    <li class="tab col s3"><a href="#news"><button class="waves-effect tab-button vivify fadeIn delay-100" onclick="filterSelection('news')">NEWS</button></a>
                     </li>
-                    <li class="tab col s3"><a href="#sports"><button class="waves-effect tab-button" onclick="filterSelection('sports')">SPORTS</button></a></li>
-                    <li class="tab col s3"><a href="#media"><button class="waves-effect tab-button" onclick="filterSelection('media')">MEDIA</button></a></li>
+                    <li class="tab col s3"><a href="#sports"><button class="waves-effect tab-button vivify fadeIn delay-200" onclick="filterSelection('sports')">SPORTS</button></a></li>
+                    <li class="tab col s3"><a href="#media"><button class="waves-effect tab-button vivify fadeIn delay-300" onclick="filterSelection('media')">MEDIA</button></a></li>
 
 
                 </ul>
@@ -322,15 +322,15 @@ function w3RemoveClass(element, name) {
             <div class="tab-navigation">
                 <div style="position: fixed;width: 100%;top: 55px;left: 0px;;" class="" style="padding: 0px;">
                     <ul class="tabs">
-                        <li class="tab col s3"><a href="#lunch"><button class="waves-effect tab-button XL">LUNCH</button></a></li>
-                        <li class="tab col s3"><a href="#breakfast"><button class="waves-effect tab-button XL">BREAKFAST</button></a></li>
+                        <li class="tab col s3"><a href="#lunch"><button class="waves-effect tab-button XL vivify fadeIn">LUNCH</button></a></li>
+                        <li class="tab col s3"><a href="#breakfast"><button class="waves-effect tab-button XL vivify fadeIn delay-200">BREAKFAST</button></a></li>
 
                     </ul>
                 </div>
             </div>
             <div class="tab-items">
                 <div id="lunch" class="col s12">
-                    <div class="menu-overflow"><img src="Menu/Menu Plan Calendar-1.png"></div>
+                    <div class="menu-overflow"><img class="vivify fadeIn delay-300" src="Menu/Menu Plan Calendar-1.png"></div>
                 </div>
                 <div id="breakfast" class="col s12">Breakfast</div>
 
@@ -363,7 +363,7 @@ function w3RemoveClass(element, name) {
 
     <section id="calendar">
 
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=ZGlzdHJpY3QuY2FsZW5kYXJAZ3VsZnBvcnRzY2hvb2xzLm9yZw&amp;src=Z3VsZnBvcnRzY2hvb2xzLm9yZ19nOGtoNzljcjhzcWJpcGVqdm0yYzliYzBqc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%238E24AA&amp;color=%233F51B5&amp;color=%230B8043&amp;showTitle=0&amp;showNav=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0" style="border-width:0;position: fixed; top: 38.5px;width:100%; height:92%" frameborder="0" scrolling="no"></iframe>
+        <iframe class="vivify fadeIn" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=ZGlzdHJpY3QuY2FsZW5kYXJAZ3VsZnBvcnRzY2hvb2xzLm9yZw&amp;src=Z3VsZnBvcnRzY2hvb2xzLm9yZ19nOGtoNzljcjhzcWJpcGVqdm0yYzliYzBqc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%238E24AA&amp;color=%233F51B5&amp;color=%230B8043&amp;showTitle=0&amp;showNav=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0" style="border-width:0;position: fixed; top: 38.5px;width:100%; height:92%" frameborder="0" scrolling="no"></iframe>
     </section>
 
 
