@@ -35,7 +35,7 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
 
 /*------------------------------------------------Bottom-Navigation--------------------------------------------*/
 
-.bottom-navigation {position: fixed; bottom: 0px; left: 0px;background-color: white;width: 100%; height: 56px;box-shadow: 0px -5px 5px -1px rgba(0,0,0,0.07);;z-index: 150;}
+.bottom-navigation {position: fixed; bottom: 0px; left: 0px;background-color: white;width: 100%; height: 56px;;z-index: 150;border-top: solid; border-width: 1px; border-color: lightgray; }
 
 .nav-button {background-color: white;border: none;margin-left: 0px;padding: 0px;filter: saturate(0)}
 
@@ -44,6 +44,10 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
 .nav-button:focus {outline: none;}
 
 .nav-container {margin: auto; width: 345px;}
+
+.info-container {position: fixed; left: 0px; width: 100%; background-color:white ; height: 50px;bottom: 55px;z-index:119;border-bottom: solid; border-bottom-width: 1px; border-top: solid; border-top-width: 1px; border-color: lightgray; }
+
+.info-container > p {width: 100%; text-align: center;}
 
 /*-------------------------------------------------Sections---------------------------------------------*/
 
@@ -91,6 +95,8 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
 .hide-tab-scrollbar {border-bottom:solid; border-bottom-color: lightgray; border-bottom-width: 1px;}
 
 /*---------------------------------------------Navigation Card-------------------------------------------*/
+
+.date-container {display: block}
 
 .navigation-card {margin: auto; width: 100%;transform: rotateZ(180deg);border-bottom:solid;border-bottom-width: 1px; border-bottom-color: lightgray;padding-bottom: 10px;}
 
@@ -226,3 +232,8 @@ body.darkclass .search-input {color: white;}
 body.darkclass .normalmode {color: white;}
 
 body.darkclass .settings-option > p {color: white;}
+
+body.darkclass .info-container {background-color:black; color: white;}
+
+
+

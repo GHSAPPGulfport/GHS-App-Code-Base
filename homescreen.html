@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>GHS App</title>
+    <link rel="stylesheet" href="styles.css">
+
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
     <link rel="manifest" href="/manifest.json">
@@ -13,56 +15,54 @@
     <link rel="shortcut icon" href="Branding/Ios%20App%20Icon.png" type="image/x-icon">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+
     <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-title" content="GHS App">
     <link rel="apple-touch-icon" href="Branding/apple-touch-icon.png">
-    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+
     <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
     <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script
+    src="http://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
     </script>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-5381330417949875",
-          enable_page_level_ads: true
-        });
-      </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/easytimer.js"></script>
+    <link rel="stylesheet" media="all" href="css/styles.css" />
+
     <script type="text/javascript">
-        $(document).ready(function () {
-            $.getJSON('https://api.sheety.co/86891052-3092-4d3e-b9fb-8fcdb9859876', function (data) {
+        $(document).ready(function() {
+            $.getJSON('https://api.sheety.co/86891052-3092-4d3e-b9fb-8fcdb9859876', function(data) {
                 var template = Handlebars.compile($('#item-template').html())
                 $('#items').html(template(data))
             })
         })
+
     </script>
-     
+
     <script id="item-template" type="text/x-handlebars-template">
 
-    {{#each this}}
+        {{#each this}}
 
-    <div class="navigation-card filterDiv {{section}} {{athleticSection}} show vivify fadeIn delay-300">
+ 
+    <div class="navigation-card filterDiv {{section}} {{athleticSection}} show"  >
         <h5>{{title}}</h5>
         <h6>{{subTitle}}</h6>
-        <button class="load-button waves-effect btn-flat" style="height: 200px;" onclick="document.getElementById('{{postID}}').innerHTML = '{{imageURL1}}';">Tap to Load Image</button>
+        <button class="load-button waves-effect btn-flat" style="height: 200px;" onclick="document.getElementById('{{postID}}').innerHTML = '{{imageURL1}}'">Tap to Load Image</button>
         <div class="navigation-image" id={{postID}}></div>
            
         <p>{{paragraph}}</p>
         <div class="button-container">
-             <button onclick="document.getElementById('{{subPostID}}').innerHTML = '<iframe src='{{buttonUrl}}' ></iframe>'"  class="waves-effect btn-flat">Learn More</button>
+             <a href="#" class="waves-effect btn-flat">Learn More</a>
             </div>
 
-            <div class="load-container" id="{{subpostID}}">
-
-            </div>
-       
-     </div>
-    
+    </div>
 
     {{/each}}
 
@@ -72,47 +72,35 @@
 
 
     <script type="text/javascript">
-        $(document).ready(function () {
-            $.getJSON('https://api.sheety.co/a8c773a1-a82e-4937-b4e9-1bb04115f46d', function (data) {
+        $(document).ready(function() {
+            $.getJSON('https://api.sheety.co/a8c773a1-a82e-4937-b4e9-1bb04115f46d', function(data) {
                 var template = Handlebars.compile($('#item-template2').html())
                 $('#items2').html(template(data))
             })
         })
+
     </script>
     <script id="item-template2" type="text/x-handlebars-template">
 
-{{#each this}}
-
-<div class="navigation-card filterDiv {{section}} {{athleticSection}} show">
-    <h5>{{title}}</h5>
-    <h6>{{subTitle}}</h6>
-    <button class="load-button waves-effect btn-flat" style="height: 200px;" onclick="document.getElementById('{{postID}}').innerHTML = '<iframe src='https://www.youtube.com/embed/kMGrNyAS-70' allowfullscreen></iframe>'>Tap to Load Media</button>
-    <div class="navigation-image"></div>
-    
-
-    <p>{{paragraph}}</p>
-    <div class="button-container">
-         <a href="#" class="waves-effect btn-flat">Learn More</a>
-        </div>
-   
- </div>
+        {{#each this}}
 
     
 {{/each}}
 
 </script>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        $.getJSON('https://api.sheety.co/86891052-3092-4d3e-b9fb-8fcdb9859876', function (data) {
-            var template = Handlebars.compile($('#item-template3').html())
-            $('#items3').html(template(data))
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $.getJSON('https://api.sheety.co/86891052-3092-4d3e-b9fb-8fcdb9859876', function(data) {
+                var template = Handlebars.compile($('#item-template3').html())
+                $('#items3').html(template(data))
+            })
         })
-    })
-</script>
-<script id="item-template3" type="text/x-handlebars-template">
 
-{{#each this}}
+    </script>
+    <script id="item-template3" type="text/x-handlebars-template">
+
+        {{#each this}}
 
 
 <li style="transform: translate(90deg)" class="waves-effect"><a  style="transform: translate(180deg);text-decoration: none;" target="_blank" class="vivify fadeIn " href="Acey, Randee - Special Education">{{title}}<br>{{subTitle}}</a></li>
@@ -120,31 +108,27 @@
 {{/each}}
 
 </script>
-    <script>
 
 
-            <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" >
-< !--Global site tag(gtag.js) - Google Analytics-- >
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122866044-3"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
+    < !--Global site tag(gtag.js) - Google Analytics-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122866044-3"></script>
 
 
-    <script>
-    < script >
-        AOS.init();
-    </script>
 
 </head>
 
-<body>
-<style>nav {background-color:white;}</style>
+<body onload="date()">
+    <style>nav {background-color:white;}</style>
     <nav>
-    <a href="index.html" class="refresh waves-effect" style="position: fixed;"><i onclick="M.toast({html: 'I am a toast'});" class="material-icons">refresh</i></a>
+        <a href="index.html" class="refresh waves-effect" style="position: fixed;"><i onclick="M.toast({html: 'I am a toast'});" class="material-icons">refresh</i></a>
         <div class="logo-container"><img src="Branding/App Logo Embed.png">
         </div>
         <a href="#search" class="search-btn waves-effect" style="position: fixed;"><i class="material-icons">search</i></a>
     </nav>
 
-    <section id="homescreen" >
+    <section id="homescreen">
         <div class="inline-spacer"></div>
         <div class="spacer"></div>
 
@@ -162,99 +146,105 @@
                 color: #000;
             }
         </style>
-     
-            <div class="tab-navigation">
-                <div style="position: fixed;width: 100%;top: 55px;left: 0px;;" class="" style="padding: 0px;">
-                    <ul class="tabs"  >
-                        <li class="tab col s3"><a href="#home"><button id="clickButton" class="waves-effect tab-button"
-                                    onclick="filterSelection('all')">HOME</button></a></li>
-                                    <li class="tab col s3"><a href="#news"><button class="waves-effect tab-button"
-                                    onclick="filterSelection('news')">NEWS</button></a>
-                        </li>
-                        <li class="tab col s3"><a href="#sports"><button class="waves-effect tab-button"
-                                    onclick="filterSelection('sports')">SPORTS</button></a></li>
-                        <li class="tab col s3"><a href="#media"><button class="waves-effect tab-button"
-                                    onclick="filterSelection('media')">MEDIA</button></a></li>
-                      
-                       
-                    </ul>
-                </div>
+
+        <div class="tab-navigation">
+            <div style="position: fixed;width: 100%;top: 55px;left: 0px;;" class="" style="padding: 0px;">
+                <ul class="tabs">
+                    <li class="tab col s3"><a href="#home"><button id="clickButton" class="waves-effect tab-button" onclick="filterSelection('all')">HOME</button></a></li>
+                    <li class="tab col s3"><a href="#news"><button class="waves-effect tab-button" onclick="filterSelection('news')">NEWS</button></a>
+                    </li>
+                    <li class="tab col s3"><a href="#sports"><button class="waves-effect tab-button" onclick="filterSelection('sports')">SPORTS</button></a></li>
+                    <li class="tab col s3"><a href="#media"><button class="waves-effect tab-button" onclick="filterSelection('media')">MEDIA</button></a></li>
+
+
+                </ul>
             </div>
-           
-            <div class="tab-items">
-                <div id="inbox" class="col s12">
+        </div>
+
+        <div class="tab-items">
+            <div id="inbox" class="col s12">
 
 
-                    <div id="sports" class="filter">
-                        <button class="waves-effect baseball vivify fadeIn" onclick="filterSelection('baseball')">Baseball</button>
-                        <button class="waves-effect vivify fadeIn delay-100" onclick="filterSelection('football')">Football</button>
-                        <button class="waves-effect vivify fadeIn delay-200" onclick="filterSelection('volleyball')">VolleyBall</button>
+                <div id="sports" class="filter">
+                    <button class="waves-effect baseball vivify fadeIn" onclick="filterSelection('baseball')">Baseball</button>
+                    <button class="waves-effect vivify fadeIn delay-100" onclick="filterSelection('football')">Football</button>
+                    <button class="waves-effect vivify fadeIn delay-200" onclick="filterSelection('volleyball')">VolleyBall</button>
 
-                        <button class="waves-effect vivify fadeIn delay-300" onclick="filterSelection('gbasketball')">Girls Basketball</button>
-                        <button class="waves-effect vivify fadeIn delay-400" onclick="filterSelection('bowling')">Bowling</button>
-                        <button class="waves-effect vivify fadeIn delay-500" onclick="filterSelection('swimming')">Swimming</button>
-                        <button class="waves-effect vivify fadeIn delay-600" onclick="filterSelection('crosscountry')">Cross Country</button>
+                    <button class="waves-effect vivify fadeIn delay-300" onclick="filterSelection('gbasketball')">Girls Basketball</button>
+                    <button class="waves-effect vivify fadeIn delay-400" onclick="filterSelection('bowling')">Bowling</button>
+                    <button class="waves-effect vivify fadeIn delay-500" onclick="filterSelection('swimming')">Swimming</button>
+                    <button class="waves-effect vivify fadeIn delay-600" onclick="filterSelection('crosscountry')">Cross Country</button>
 
-                        <br>
-                        <button class="waves-effect vivify fadeIn" onclick="filterSelection('bbasketball')">Boys Basketball</button>
-                        <button class="waves-effect vivify fadeIn delay-100" onclick="filterSelection('cheerleading')">Cheerleading</button>
-                        <button class="waves-effect vivify fadeIn delay-200" onclick="filterSelection('golf')">Golf</button>
-                        <button class="waves-effect vivify fadeIn delay-300" onclick="filterSelection('bsoccer')">Boys Soccer</button>
-                        <button class="waves-effect vivify fadeIn delay-400" onclick="filterSelection('gsoccer')">Girls Soccer</button>
-                        <button class="waves-effect vivify fadeIn delay-500" onclick="filterSelection('softball')">Softball</button>
+                    <br>
+                    <button class="waves-effect vivify fadeIn" onclick="filterSelection('bbasketball')">Boys Basketball</button>
+                    <button class="waves-effect vivify fadeIn delay-100" onclick="filterSelection('cheerleading')">Cheerleading</button>
+                    <button class="waves-effect vivify fadeIn delay-200" onclick="filterSelection('golf')">Golf</button>
+                    <button class="waves-effect vivify fadeIn delay-300" onclick="filterSelection('bsoccer')">Boys Soccer</button>
+                    <button class="waves-effect vivify fadeIn delay-400" onclick="filterSelection('gsoccer')">Girls Soccer</button>
+                    <button class="waves-effect vivify fadeIn delay-500" onclick="filterSelection('softball')">Softball</button>
 
-                        <button class="waves-effect vivify fadeIn delay-600" onclick="filterSelection('tennis')">Tennis</button>
-                        <button class="waves-effect vivify fadeIn delay-700" onclick="filterSelection('trackfield')">Track And Field</button>
+                    <button class="waves-effect vivify fadeIn delay-600" onclick="filterSelection('tennis')">Tennis</button>
+                    <button class="waves-effect vivify fadeIn delay-700" onclick="filterSelection('trackfield')">Track And Field</button>
 
-                    </div>
+                </div>
 
-                    <div id="news" class="filter filterDiv news" style="height: 50px;">
-                        <button class="waves-effect vivify fadeIn" onclick="filterSelection('freshman')">9th (Freshman)</button>
-                        <button class="waves-effect vivify fadeIn delay-100" onclick="filterSelection('sophmore')">10th (Sophmore)</button>
-                        <button class="waves-effect vivify fadeIn delay-200" onclick="filterSelection('junior')">11th (Junior)</button>
+                <div id="news" class="filter filterDiv news" style="height: 50px;">
+                    <button class="waves-effect vivify fadeIn" onclick="filterSelection('freshman')">9th (Freshman)</button>
+                    <button class="waves-effect vivify fadeIn delay-100" onclick="filterSelection('sophmore')">10th (Sophmore)</button>
+                    <button class="waves-effect vivify fadeIn delay-200" onclick="filterSelection('junior')">11th (Junior)</button>
 
-                        <button class="waves-effect vivify fadeIn delay-300" onclick="filterSelection('senior')">12th (Senior)</button>
-                    
-                    </div>
+                    <button class="waves-effect vivify fadeIn delay-300" onclick="filterSelection('senior')">12th (Senior)</button>
 
-                    <div id="media" class="filterDiv media" >
-                    <div class="filter"style="height: 50px;">
-                            <button class="waves-effect vivify fadeIn delay-100" onclick="filterSelection('live')">Live Games</button>
+                </div>
+
+                <div id="media" class="filterDiv media">
+                    <div class="filter" style="height: 50px;">
+                        <button class="waves-effect vivify fadeIn delay-100" onclick="filterSelection('live')">Live Games</button>
                         <button class="waves-effect vivify fadeIn delay-200" onclick="filterSelection('art')">GHS Art</button>
                         <button class="waves-effect vivify fadeIn delay-300" onclick="filterSelection('podcast')">Podcast</button>
                         <button class="waves-effect vivify fadeIn delay-400" onclick="filterSelection('videos')">Videos</button>
                     </div>
                     <div class="live-stream">
-                        <iframe loading="lazy" class="live-frame"
-                
-                src="https://c.themediacdn.com/embed/media/O7sBCQ/OqvzSehCsA1/mrLrvlwsOOb_5?wmode=opaque"
-                allowfullscreen></iframe>
+                        <iframe loading="lazy" class="live-frame" src="https://c.themediacdn.com/embed/media/O7sBCQ/OqvzSehCsA1/mrLrvlwsOOb_5?wmode=opaque" allowfullscreen></iframe>
 
-                <div class="navigation-card" style="transform: rotateZ(360deg);" style="margin-right: 50px;">
-        <h5>GHS Live Games</h5>
-        <h6>Presented By WGTV & Admiralnation</h6>
-     </div>
-              
-            </div>
-                   
+                        <div class="navigation-card" style="transform: rotateZ(360deg);" style="margin-right: 50px;">
+                            <h5>GHS Live Games</h5>
+                            <h6>Presented By WGTV & Admiralnation</h6>
+                        </div>
+
                     </div>
-                    
-                  
 
-                    
+                </div>
 
-                    <div class="navigation-card-container">
-                        <div id="items"></div>
-                        
-                 </div>
-             
+
+
+
+
+                <div class="navigation-card-container">
+                    <div id="items"></div>
+                    <script>
+                            $(function() {
+                            $(".DateDiv").each(function(index) {
+                                var sRange = $(this).find(".DateRange").html();
+                                var arrTemp = sRange.split(" to ");
+                                var dtFrom = new Date(arrTemp[0]);
+                                var dtTo = new Date(arrTemp[1]);
+                                var dtNow = new Date();
+                                if (dtNow >= dtFrom && dtNow <= dtTo)
+                                    $(this).hide();
+                            });
+                        });
+                            </script>
+
+                </div>
+
 
 
 
 
 
                 <script>
-filterSelection("all")
+                    filterSelection("all")
 function filterSelection(c) {
   var x, i;
         x = document.getElementsByClassName("filterDiv");
@@ -290,7 +280,7 @@ function w3RemoveClass(element, name) {
                     </script>
             </div>
 
-   
+
 
 
         </div>
@@ -312,16 +302,16 @@ function w3RemoveClass(element, name) {
             <div class="tab-navigation">
                 <div style="position: fixed;width: 100%;top: 55px;left: 0px;;" class="" style="padding: 0px;">
                     <ul class="tabs">
-                        <li class="tab col s3"><a href="#lunch"><button
-                                    class="waves-effect tab-button XL">LUNCH</button></a></li>
-                        <li class="tab col s3"><a href="#breakfast"><button
-                                    class="waves-effect tab-button XL">BREAKFAST</button></a></li>
+                        <li class="tab col s3"><a href="#lunch"><button class="waves-effect tab-button XL">LUNCH</button></a></li>
+                        <li class="tab col s3"><a href="#breakfast"><button class="waves-effect tab-button XL">BREAKFAST</button></a></li>
 
                     </ul>
                 </div>
             </div>
             <div class="tab-items">
-                <div id="lunch" class="col s12"><div class="menu-overflow"><img src="Menu/Menu Plan Calendar-1.png"></div></div>
+                <div id="lunch" class="col s12">
+                    <div class="menu-overflow"><img src="Menu/Menu Plan Calendar-1.png"></div>
+                </div>
                 <div id="breakfast" class="col s12">Breakfast</div>
 
             </div>
@@ -352,11 +342,8 @@ function w3RemoveClass(element, name) {
 
 
     <section id="calendar">
-     
-        <iframe
-            src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=ZGlzdHJpY3QuY2FsZW5kYXJAZ3VsZnBvcnRzY2hvb2xzLm9yZw&amp;src=Z3VsZnBvcnRzY2hvb2xzLm9yZ19nOGtoNzljcjhzcWJpcGVqdm0yYzliYzBqc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%238E24AA&amp;color=%233F51B5&amp;color=%230B8043&amp;showTitle=0&amp;showNav=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0"
-            style="border-width:0;position: fixed; top: 38.5px;width:100%; height:92%" frameborder="0"
-            scrolling="no"></iframe>
+
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=ZGlzdHJpY3QuY2FsZW5kYXJAZ3VsZnBvcnRzY2hvb2xzLm9yZw&amp;src=Z3VsZnBvcnRzY2hvb2xzLm9yZ19nOGtoNzljcjhzcWJpcGVqdm0yYzliYzBqc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%238E24AA&amp;color=%233F51B5&amp;color=%230B8043&amp;showTitle=0&amp;showNav=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0" style="border-width:0;position: fixed; top: 38.5px;width:100%; height:92%" frameborder="0" scrolling="no"></iframe>
     </section>
 
 
@@ -371,10 +358,10 @@ function w3RemoveClass(element, name) {
 
         <div class="spacer"></div>
         <div class="inline-spacer" style="height: 55px;"></div>
-  
+
         <div class="card-divider" style="display: block"></div>
         <div class="settings-option">
-<p style="margin-left: 10px;">Dark Mode</p>
+            <p style="margin-left: 10px;">Dark Mode</p>
             <div><a onclick="launch_toast()" class="darkmode waves-effect btn blue darken-4">Enable</a></div>
             <div><a class="normalmode waves-effect btn-flat">Disable</a></div>
 
@@ -443,24 +430,26 @@ function w3RemoveClass(element, name) {
 
     <section id="search">
         <div class="inline-spacer"></div>
-     <div class="search-container">
+        <div class="search-container">
             <input class="search-input vivify fadeIn" type="text" style="padding-left: 25px;" id="mySearch" onkeyup="myFunction()" placeholder="&emsp; GHS App Search..." title="Type in a teacher" autofocus>
         </div>
-        
+
         <ul id="myMenu" class="search-results">
-        <div id="items3"></div>
-           
+            <div id="items3"></div>
+
 
         </ul>
     </section>
-    <script>function myFunction() {
-                var e, s, t;
-                for (e = document.getElementById("mySearch").value.toUpperCase(), s = document.getElementById("myMenu").getElementsByTagName("li"), t = 0; t < s.length; t++) - 1 < s[t].getElementsByTagName("a")[0].innerHTML.toUpperCase().indexOf(e) ? s[t].style.display = "block" : s[t].style.display = "none"
-            }</script>
+    <script>
+        function myFunction() {
+            var e, s, t;
+            for (e = document.getElementById("mySearch").value.toUpperCase(), s = document.getElementById("myMenu").getElementsByTagName("li"), t = 0; t < s.length; t++) - 1 < s[t].getElementsByTagName("a")[0].innerHTML.toUpperCase().indexOf(e) ? s[t].style.display = "block" : s[t].style.display = "none"
+        }
+
+    </script>
     <div class="bottom-navigation">
         <div class="nav-container">
-            <a href="#homescreen"><button onclick="filterSelection('all')" class="nav-button waves-effect"
-                    autofocus><img src="Assets/Home.svg"></button></a>
+            <a href="#homescreen"><button onclick="filterSelection('all')" class="nav-button waves-effect" autofocus><img src="Assets/Home.svg"></button></a>
             <a href="#meal-menu"><button class="nav-button waves-effect"><img src="Assets/Menu.svg"></button></a>
 
             <a href="https://261985.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNow%2fMobile%2fGradeBook.List.aspx"><button class="nav-button waves-effect"><img src="Assets/Grades.svg"></button></a>
@@ -468,15 +457,29 @@ function w3RemoveClass(element, name) {
             <a href="#settings"><button class="nav-button waves-effect"><img src="Assets/Settings.svg"></button></a>
         </div>
     </div>
-    <script>window.onload = function() {
+    <div class="info-container vivify fadeInBottom delay-500">
+        <p>GHS App Currently Under Maintenance Until Monday.</p>
+    </div>
+    <script>
+        window.onload = function() {
             filterSelection('all');
-};</script>
+        };
+
+    </script>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('clickButton').click();
+        }
+
+    </script>
 <script>
-    window.onload = function(){
-  document.getElementById('clickButton').click();
-}
+    function date(){
+        $(document).timeMachine();
+    }
 
 </script>
+</body>
 
 </body>
 
