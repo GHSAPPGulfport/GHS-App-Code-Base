@@ -149,6 +149,8 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
 
 .zoom-buttons > button {background-color: white;border: solid; border-width: 1px; border-color: lightgray; border-radius: 5px; margin-left: 5px;}
 
+.zoom-buttons > button:focus {background-color: white;}
+
 .zoom-buttons {position: fixed;bottom: 65px; right: 10px; z-index: 190;border-radius: 15px;}
 
 .menu-overflow > img {width: 100%;}
