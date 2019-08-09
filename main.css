@@ -96,6 +96,8 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
 
 /*---------------------------------------------Navigation Card-------------------------------------------*/
 
+
+
 .date-container {display: block}
 
 .navigation-card {margin: auto; width: 100%;transform: rotateZ(180deg);border-bottom:solid;border-bottom-width: 1px; border-bottom-color: lightgray;padding-bottom: 10px;}
@@ -110,7 +112,7 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
 
 .load-container > iframe {position: fixed; width: 100%; top: 0px;height: 100%;z-index: 70; border: none; border: solid; border-width: 1px; border-color: lightgray;border-radius: 10px;}
 
-.navigation-card-container {transform: rotateZ(180deg);margin: auto; width: 92%;}
+.navigation-card-container {transform: rotateZ(180deg);margin: auto; width: 92%;margin-top: 10px;}
 
 .navigation-image > a{ pointer-events: none;
   cursor: default;
