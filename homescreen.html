@@ -54,14 +54,19 @@
     <div class="navigation-card filterDiv {{section}} {{athleticSection}} show"  >
         <h5>{{title}}</h5>
         <h6>{{subTitle}}</h6>
-        <button class="load-button waves-effect btn-flat" style="height: 200px;" onclick="document.getElementById('{{postID}}').innerHTML = '{{imageURL1}}'">Tap to Load Image</button>
+        <button class="load-button waves-effect btn-flat" style="height: 200px;" onclick="document.getElementById('{{postID}}').innerHTML = '<{{imageURL1}}>'">Tap to Load Image</button>
         <div class="navigation-image" id={{postID}}></div>
            
         <p>{{paragraph}}</p>
         <div class="button-container">
-             <a href="#" class="waves-effect btn-flat">Learn More</a>
+             <button onclick="document.getElementById('{{subPostID}}').innerHTML = '<iframe src='www.fusion364.com/'></iframe>'"  class="waves-effect btn-flat white" >Learn More</button>
             </div>
 
+            <div class="popup-container">
+                <div class="popup-wrapper" id="{{subPostID}}">
+                   
+                </div>
+            </div>
     </div>
 
     {{/each}}
@@ -103,7 +108,7 @@
         {{#each this}}
 
 
-<li style="transform: translate(90deg)" class="waves-effect"><a  style="transform: translate(180deg);text-decoration: none;" target="_blank" class="vivify fadeIn " href="Acey, Randee - Special Education">{{title}}<br>{{subTitle}}</a></li>
+<li style="transform: translate(90deg)" class="waves-effect"><a  style="transform: translate(180deg);text-decoration: none;" target="_blank" class="vivify fadeIn " href="Acey, Randee - Special Education">{{title}}<br>{{subTitle}}</button></li>
 
 {{/each}}
 

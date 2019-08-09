@@ -125,9 +125,9 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
 
 .card-img {width: 100%;margin-top: 10px;border-radius: 5px;height: 200px; object-fit: cover}
 
-.popup-container {position: fixed; top: 0px;left: 0px; width: 100%; z-index: 150;height: 100%;;}
+.popup-container {position: fixed; top: 350px;left: 0px; width: 100%; z-index: 170;height: 100%;;}
 
-.popup-wrapper {margin: auto; width: 340px;margin-top: 10vh}
+.popup-wrapper {margin: auto; width: 100%;margin-top: 10vh}
 
 .iframe-popup {height: 540px;width: 100%;border-radius: 15px;background-color: white;}
 
