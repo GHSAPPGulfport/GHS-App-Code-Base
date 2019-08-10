@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="Branding/Ios%20App%20Icon.png" type="image/x-icon">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
-
+<script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=en&widgetTheme=light&autoMode=false" type="text/javascript"></script>
     <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-title" content="GHS App">
     <link rel="apple-touch-icon" href="Branding/apple-touch-icon.png">
@@ -59,7 +59,7 @@
            
         <p>{{paragraph}}</p>
         <div class="button-container" onclick="document.getElementById('popup').style.display = 'block'">
-             <button onclick="document.all.IFrameName.src = '{{buttonUrl}}'"  class="waves-effect btn-flat white pulse" >Learn More</button>
+             <button onclick="document.all.IFrameName.src = '{{buttonUrl}}'"  class="waves-effect btn-flat pulse" >Learn More</button>
             </div>
 
            
@@ -121,6 +121,7 @@
 </head>
 
 <body class="vivify fadeIn delay-300">
+
     <style>nav {background-color:white;}</style>
     <nav>
         <a href="index.html" class="refresh waves-effect" style="position: fixed;"><i onclick="M.toast({html: 'I am a toast'});" class="material-icons">refresh</i></a>
@@ -243,7 +244,7 @@
                 <div class="navigation-card-container">
                         <div class="inline-spacer"></div>
                     <div id="items"></div>
-                   
+            
                     <script>
                             $(function() {
                             $(".DateDiv").each(function(index) {
@@ -403,13 +404,12 @@ function zoomout() {
 
         <div class="card-divider" style="display: block"></div>
         <div class="settings-option">
+                <div id="ytWidget"></div>
             <p style="margin-left: 10px;">Dark Mode</p>
             <div><a onclick="launch_toast()" class="darkmode waves-effect btn blue darken-4">Enable</a></div>
             <div><a class="normalmode waves-effect btn-flat">Disable</a></div>
 
-
-
-
+           
 
             <script>
                 $(document).ready(function($) {
@@ -432,6 +432,8 @@ function zoomout() {
 });
 
             </script>
+
+            
         </div>
     </section>
 
@@ -491,10 +493,11 @@ function zoomout() {
     </script>
     <div class="bottom-navigation">
         <div class="nav-container">
-            <a href="#homescreen"><button onclick="filterSelection('all')" class="nav-button waves-effect" autofocus><img src="Assets/Home.svg"></button></a>
+           
             <a href="#meal-menu"><button class="nav-button waves-effect"><img src="Assets/Menu.svg"></button></a>
 
             <a href="https://261985.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNow%2fMobile%2fGradeBook.List.aspx"><button class="nav-button waves-effect"><img src="Assets/Grades.svg"></button></a>
+             <a href="#homescreen"><button onclick="filterSelection('all')" class="nav-button waves-effect" autofocus><img src="Assets/Home.svg"></button></a>
             <a href="#calendar"><button class="nav-button waves-effect"><img src="Assets/Calendar.svg"></button></a>
             <a href="#settings"><button class="nav-button waves-effect"><img src="Assets/Settings.svg"></button></a>
         </div>
