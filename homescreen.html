@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="Branding/Ios%20App%20Icon.png" type="image/x-icon">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
-<script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=en&widgetTheme=light&autoMode=false" type="text/javascript"></script>
+
     <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-title" content="GHS App">
     <link rel="apple-touch-icon" href="Branding/apple-touch-icon.png">
@@ -262,9 +262,23 @@
                 </div>
 
 
+<div class="back-top vivify fadeInRight" id="up">
+    <a href="/homescreen.html#homescreen" class="back-top-button"><button class="waves-effect white"><i class="material-icons">
+            keyboard_arrow_up</i><p>Back To Top</p></button></a>
+    
+</div>
 
+<script>
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 300) {
+            $("#up").addClass("scrolled");
+        } else {
+            $("#up").removeClass("scrolled");
+        }
+    });
 
-
+</script>
 
                 <script>
                     filterSelection("all")

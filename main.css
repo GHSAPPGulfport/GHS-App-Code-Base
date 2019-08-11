@@ -111,7 +111,19 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
 
 /*---------------------------------------------Navigation Card-------------------------------------------*/
 
+.back-top {position: fixed; bottom: 65px;width: 150px;right: -10px;  z-index: ;}
 
+.back-top-button {}
+
+.back-top-button > button {background-color: white; border: solid; border-width: 1px; border-color: lightgray; border-radius: 10px; padding: 7px;color: black;padding-right: 15px;padding-top: 0px;padding-bottom: 0px;}
+
+#up {display: none}
+
+#up.scrolled {display: block}
+
+.back-top-button > button > i {float: left;margin-top: 10px;}
+
+.back-top-button > button > p {float: left;}
 
 .date-container {display: block}
 
@@ -279,7 +291,6 @@ body.darkclass .zoom-buttons > button { background-color: black ;border-color: w
 
 body.darkclass .load-button {border-radius: 10px;color: white;background-color: rgb(17, 17, 17);background-image: none;}
 
-body.darkclass .navigation-image > a > img {filter: brightness(0.65)}
 
 body.darkclass .iframe-popup {background-color: rgb(22, 22, 22)}
 
