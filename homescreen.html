@@ -136,7 +136,7 @@
                         <div class="close-btn">
                             <button onclick="document.getElementById('popup').style.display = 'none'"><i class="material-icons waves-effect">close</i></button>
                         </div>
-                     <iframe is="x-frame-bypass" name="IFrameName" target="_self" class="iframe-popup vivify fadeInBottom duration-500 delay-200" src=""></iframe>
+                     <iframe name="IFrameName" target="_self" class="iframe-popup vivify fadeInBottom duration-500 delay-200" src=""></iframe>
                     </div>
                 </div>
                 <script> "pop" = 
@@ -346,12 +346,18 @@ function w3RemoveClass(element, name) {
                 </div>
             </div>
             <div class="tab-items">
-                <div class="zoom-buttons"><button class="waves-effect" onclick="zoomin()"><i class="material-icons">add</i></button>
-                    <button onclick="zoomout()" class="waves-effect"><i class="material-icons">remove</i></button></div>
+                
                 <div id="lunch">
-                    <div class="menu-overflow"><img style="transition: 0.2s ease;" id="lunch" class="vivify fadeIn delay-300" src="Menu/Menu Plan Calendar-1.png"></div>
+                        <div class="zoom-buttons"><button class="waves-effect" onclick="zoomin()"><i class="material-icons">add</i></button>
+                            <button onclick="zoomout()" class="waves-effect"><i class="material-icons">remove</i></button></div>
+
+                    <div class="menu-overflow"><img style="transition: 0.2s ease;" id="lunch" class="vivify fadeIn delay-300" src="Menu/Menu Plan Calendar-1.png">  </div>
                 </div>
-                <div id="breakfast" class="col s12">Breakfast</div>
+                <div id="breakfast" class="col s12">
+                        <div class="zoom-buttons"><button class="waves-effect" onclick="zoomin2()"><i class="material-icons">add</i></button>
+                            <button onclick="zoomout2()" class="waves-effect"><i class="material-icons">remove</i></button></div> 
+                    
+                    <div class="menu-overflow"><img style="transition: 0.2s ease;" id="breakfast" class="vivify fadeIn delay-300" src="Menu/menubreakfast.png"></div></div>
 
             </div>
 
@@ -374,6 +380,26 @@ function zoomout() {
   }
 }
 </script>
+
+<script>
+        function zoomin2() {
+          var myImg = document.getElementById("breakfast");
+          var currWidth = myImg.clientWidth;
+          if (currWidth == 2500) return false;
+          else {
+            myImg.style.width = (currWidth + 350) + "px";
+          }
+        }
+        
+        function zoomout2() {
+          var myImg = document.getElementById("breakfast");
+          var currWidth = myImg.clientWidth;
+          if (currWidth == 100) return false;
+          else {
+            myImg.style.width = (currWidth - 350) + "px";
+          }
+        }
+        </script>
         </div>
         
     </section>
