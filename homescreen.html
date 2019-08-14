@@ -24,7 +24,7 @@
     <link rel="shortcut icon" href="Branding/Ios%20App%20Icon.png" type="image/x-icon">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
-
+    <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
     <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-title" content="GHS App">
     <link rel="apple-touch-icon" href="Branding/apple-touch-icon.png">
@@ -140,12 +140,25 @@
     </nav>
 
     <section id="homescreen">
+            
+                <div class="special-content" class="vivify fadeIn">
+                        <a class="waves-effect" href="https://www.google.com/url?q=https://docs.google.com/forms/d/e/1FAIpQLScARPCwbHlvjTdy2BfbRH6lfWpfSQmYBIDFq9_emO8e9l1-dw/viewform?vc%3D0%26c%3D0%26w%3D1%26usp%3Dmail_form_link&source=gmail&ust=1565876637838000&usg=AFQjCNGKltaT_-koauWS7a5otoVRrRG3rg">
+                    <h3>Vote For Homecoming Theme</h3>
+                    <p>Brought to you by The Student Council</p>
+                </a>
+                    <i class="material-icons waves-effect">close</i>
+                </div>
+
+                <script>
+                
+                </script>
+            
             <div class="popup-container vivify fadeIn" id="popup" >
                     <div class="popup-wrapper ;" >
                         <div class="close-btn">
                             <button onclick="document.getElementById('popup').style.display = 'none'"><i class="material-icons waves-effect">close</i></button>
                         </div>
-                     <iframe name="IFrameName" target="_self" class="iframe-popup vivify fadeInBottom duration-500 delay-200" src=""></iframe>
+                     <iframe is="x-frame-bypass" name="IFrameName" target="_self" class="iframe-popup vivify fadeInBottom duration-500 delay-200" src=""></iframe>
                     </div>
                 </div>
                 <script> "pop" = 
@@ -253,7 +266,7 @@
                 <div class="navigation-card-container">
                         <div class="inline-spacer" style=""></div>
                     <div id="items"></div>
-            
+     
                     <script>
                             $(function() {
                             $(".DateDiv").each(function(index) {
