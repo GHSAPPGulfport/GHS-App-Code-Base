@@ -1,5 +1,56 @@
 
-    <div class="inline-spacer"></div>
+  
+ <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>GHS App | Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145321577-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-145321577-1');
+    </script>
+
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="css/vivify.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="vivify.min.css" rel="stylesheet" type="text/css" />
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="Branding/Ios%20App%20Icon.png" type="image/x-icon">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+    <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="GHS App">
+    <link rel="apple-touch-icon" href="Branding/apple-touch-icon.png">
+
+    <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+
+    <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/easytimer.js"></script>
+    <link rel="stylesheet" media="all" href="css/styles.css" />
+  </head>
+  
+  
+  <div class="inline-spacer"></div>
     <div class="search-container">
         <input style="background-color: white; " class="search-input vivify fadeIn" type="text" style="padding-left: 25px;" id="mySearch"
             onkeyup="myFunction()" placeholder="&emsp; GHS App Search..." title="Type in a teacher" autofocus>
@@ -7,7 +58,7 @@
 <style>
 #mymenu > li > a{color: black;padding: 20px;border-bottom:solid;border-bottom-width: 1px; border-bottom-color: lightgray;width: 100%;  }
 </style>
-    <ul id="myMenu" class="search-results">
+    <ul style="margin-top: 15px; " id="myMenu" class="search-results">
         <li><a class="waves-effect" href="https://www.gulfportschools.org/Domain/1174" class=”vivify fadeIn”>Acey, Randee | Special Education</a></li>
 
         <li><a class="waves-effect" href="https://www.gulfportschools.org/Domain/2050" class=”vivify fadeIn”>Anderson, Faith | Math</a></li>
@@ -101,3 +152,4 @@
             .toUpperCase().indexOf(e) ? s[t].style.display = "block" : s[t].style.display = "none"
     }
 </script>
+</html> 
