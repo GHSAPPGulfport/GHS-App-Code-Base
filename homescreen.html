@@ -16,7 +16,8 @@
 
         gtag('config', 'UA-145321577-1');
     </script>
-
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
     <link rel="manifest" href="/manifest.json">
@@ -39,7 +40,8 @@
     </script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
-    <script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -47,13 +49,12 @@
     <link rel="stylesheet" media="all" href="css/styles.css" />
 
     <script type="text/javascript">
-        $(document).ready(function() {
-            $.getJSON('https://api.sheety.co/86891052-3092-4d3e-b9fb-8fcdb9859876', function(data) {
+        $(document).ready(function () {
+            $.getJSON('https://api.sheety.co/86891052-3092-4d3e-b9fb-8fcdb9859876', function (data) {
                 var template = Handlebars.compile($('#item-template').html())
                 $('#items').html(template(data))
             })
         })
-
     </script>
 
     <script id="item-template" type="text/x-handlebars-template">
@@ -83,13 +84,12 @@
 
 
     <script type="text/javascript">
-        $(document).ready(function() {
-            $.getJSON('https://api.sheety.co/a8c773a1-a82e-4937-b4e9-1bb04115f46d', function(data) {
+        $(document).ready(function () {
+            $.getJSON('https://api.sheety.co/a8c773a1-a82e-4937-b4e9-1bb04115f46d', function (data) {
                 var template = Handlebars.compile($('#item-template2').html())
                 $('#items2').html(template(data))
             })
         })
-
     </script>
     <script id="item-template2" type="text/x-handlebars-template">
 
@@ -101,13 +101,12 @@
 </script>
 
     <script type="text/javascript">
-        $(document).ready(function() {
-            $.getJSON('https://api.sheety.co/86891052-3092-4d3e-b9fb-8fcdb9859876', function(data) {
+        $(document).ready(function () {
+            $.getJSON('https://api.sheety.co/86891052-3092-4d3e-b9fb-8fcdb9859876', function (data) {
                 var template = Handlebars.compile($('#item-template3').html())
                 $('#items3').html(template(data))
             })
         })
-
     </script>
     <script id="item-template3" type="text/x-handlebars-template">
 
@@ -122,7 +121,8 @@
 
 
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
     < !--Global site tag(gtag.js) - Google Analytics-->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122866044-3"></script>
 
@@ -132,24 +132,55 @@
 
 <body class="vivify fadeIn delay-300">
 
+
+
     <style>
         nav {
             background-color: white;
             box-shadow: none;
         }
-
     </style>
     <nav>
-        <a href="index.html" class="refresh waves-effect" style="position: fixed;"><i onclick="M.toast({html: 'I am a toast'});" class="material-icons">refresh</i></a>
+        <a href="index.html" class="refresh waves-effect" style="position: fixed;"><i
+                onclick="M.toast({html: 'I am a toast'});" class="material-icons">refresh</i></a>
         <div class="logo-container"><img src="Branding/App Logo Embed.png">
         </div>
-        <a href="#search" class="search-btn waves-effect" style="position: fixed;"><i class="material-icons">search</i></a>
+        <a href="#search" class="search-btn waves-effect" style="position: fixed;"><i
+                class="material-icons">search</i></a>
     </nav>
+
+    <div class="welcome" style="display: none;">
+        <div class="w-logo">
+            <div class="wlogo-container"> <img src="Welcome Slides/Welcome logo.jpg"></div>
+
+        </div>
+        <div class="main-carousel" data-flickity='{ "draggable": true,"pageDots": false }'>
+            <div class="carousel-cell"><img src="Welcome Slides/Home.jpg"> </div>
+            <div class="carousel-cell"><img src="Welcome Slides/Welcome Page.jpg"></div>
+            <div class="carousel-cell"><img src="Welcome Slides/Grades Page.jpg"> </div>
+            <div class="carousel-cell"><img src="Welcome Slides/mealmenu.jpg"> </div>
+            <div class="carousel-cell"><img src="Welcome Slides/Calendar.jpg"> </div>
+            <div class="carousel-cell"><img src="Welcome Slides/Theme.jpg">
+                <div style="margin-top: -50px;"><a onclick="launch_toast()"
+                        class="darkmode waves-effect btn blue darken-4">Enable</a></div>
+                <div><a class="normalmode waves-effect btn-flat">Disable</a></div>
+            </div>
+        </div>
+
+        <script>
+            $('.main-carousel').flickity({
+                // options
+                cellAlign: 'left',
+                contain: true
+            });
+        </script>
+    </div>
 
     <section id="homescreen">
 
         <div class="special-content" class="vivify fadeIn" style="display: none;">
-            <a class="waves-effect" href="https://www.google.com/url?q=https://docs.google.com/forms/d/e/1FAIpQLScARPCwbHlvjTdy2BfbRH6lfWpfSQmYBIDFq9_emO8e9l1-dw/viewform?vc%3D0%26c%3D0%26w%3D1%26usp%3Dmail_form_link&source=gmail&ust=1565876637838000&usg=AFQjCNGKltaT_-koauWS7a5otoVRrRG3rg">
+            <a class="waves-effect"
+                href="https://www.google.com/url?q=https://docs.google.com/forms/d/e/1FAIpQLScARPCwbHlvjTdy2BfbRH6lfWpfSQmYBIDFq9_emO8e9l1-dw/viewform?vc%3D0%26c%3D0%26w%3D1%26usp%3Dmail_form_link&source=gmail&ust=1565876637838000&usg=AFQjCNGKltaT_-koauWS7a5otoVRrRG3rg">
                 <h3>Vote For Homecoming Theme</h3>
                 <p>Brought to you by The Student Council</p>
             </a>
@@ -163,9 +194,11 @@
         <div class="popup-container vivify fadeIn" id="popup">
             <div class="popup-wrapper ;">
                 <div class="close-btn">
-                    <button onclick="document.getElementById('popup').style.display = 'none'"><i class="material-icons waves-effect">close</i></button>
+                    <button onclick="document.getElementById('popup').style.display = 'none'"><i
+                            class="material-icons waves-effect">close</i></button   >
                 </div>
-                <iframe name="IFrameName" target="_self" class="iframe-popup vivify fadeInBottom duration-500 delay-200" src=""></iframe>
+                <iframe name="IFrameName" target="_self" class="iframe-popup vivify fadeInBottom duration-500 delay-200"
+                    src=""></iframe>
             </div>
         </div>
         <script>
@@ -177,7 +210,6 @@
             function remove() {
                 pop.style.display = "none"
             }
-
         </script>
         <div class="inline-spacer"></div>
         <div class="spacer"></div>
@@ -199,18 +231,26 @@
             body.darkclass .tabs .indicator {
                 background-color: white;
             }
-
         </style>
-        <div style="position: fixed; width: 6px; height:6px; top: 60px; right: 10px; background-color: red;z-index: 150;border-radius: 5px;display: none" class="live-dot vivify fadeIn infinite"></div>
+        <div style="position: fixed; width: 6px; height:6px; top: 60px; right: 10px; background-color: red;z-index: 150;border-radius: 5px;display: none"
+            class="live-dot vivify fadeIn infinite"></div>
         <div class="tab-navigation">
             <div style="position: fixed;width: 100%;top: 55px;left: 0px;;" class="" style="padding: 0px;">
                 <ul class="tabs">
-                    <li class="tab col s3"><a href="#home"><button id="clickButton" class="waves-effect tab-button vivify fadeIn" onclick="filterSelection('all')">HOME</button></a></li>
-                    <li class="tab col s3"><a href="#news"><button class="waves-effect tab-button vivify fadeIn delay-100" onclick="filterSelection('news')">NEWS</button></a>
+                    <li class="tab col s3"><a href="#home"><button id="clickButton"
+                                class="waves-effect tab-button vivify fadeIn"
+                                onclick="filterSelection('all')">HOME</button></a></li>
+                    <li class="tab col s3"><a href="#news"><button
+                                class="waves-effect tab-button vivify fadeIn delay-100"
+                                onclick="filterSelection('news')">NEWS</button></a>
                     </li>
-                    <li class="tab col s3"><a href="#sports"><button class="waves-effect tab-button vivify fadeIn delay-200" onclick="filterSelection('sports')">SPORTS</button></a></li>
+                    <li class="tab col s3"><a href="#sports"><button
+                                class="waves-effect tab-button vivify fadeIn delay-200"
+                                onclick="filterSelection('sports')">SPORTS</button></a></li>
 
-                    <li class="tab col s3"><a href="#media"><button class="waves-effect tab-button vivify fadeIn delay-300" onclick="filterSelection('media')">MEDIA</button></a></li>
+                    <li class="tab col s3"><a href="#media"><button
+                                class="waves-effect tab-button vivify fadeIn delay-300"
+                                onclick="filterSelection('media')">MEDIA</button></a></li>
 
 
                 </ul>
@@ -222,31 +262,38 @@
 
 
                 <div id="sports" class="filter">
-                    <button class="waves-effect baseball vivify fadeIn" onclick="filterSelection('baseball')">Baseball</button>
-                    <button class="waves-effect vivify fadeIn delay-100" onclick="filterSelection('football')">Football</button>
-                    <button class="waves-effect vivify fadeIn delay-200" onclick="filterSelection('volleyball')">VolleyBall</button>
+                    <button class="waves-effect baseball vivify fadeIn"
+                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/baseball/boys'">Baseball</button>
+                    <button class="waves-effect vivify fadeIn delay-100"
+                    onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/football/boys'">Football</button>
+                    <button class="waves-effect vivify fadeIn delay-200"
+                    onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/volleyball/girls'">VolleyBall</button>
 
-                    <button class="waves-effect vivify fadeIn delay-300" onclick="filterSelection('gbasketball')">Girls
+                    <button class="waves-effect vivify fadeIn delay-300" onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/basketball/girls'">Girls
                         Basketball</button>
-                    <button class="waves-effect vivify fadeIn delay-400" onclick="filterSelection('bowling')">Bowling</button>
-                    <button class="waves-effect vivify fadeIn delay-500" onclick="filterSelection('swimming')">Swimming</button>
-                    <button class="waves-effect vivify fadeIn delay-600" onclick="filterSelection('crosscountry')">Cross
-                        Country</button>
-
-                    <br>
-                    <button class="waves-effect vivify fadeIn" onclick="filterSelection('bbasketball')">Boys
-                        Basketball</button>
-                    <button class="waves-effect vivify fadeIn delay-100" onclick="filterSelection('cheerleading')">Cheerleading</button>
-                    <button class="waves-effect vivify fadeIn delay-200" onclick="filterSelection('golf')">Golf</button>
-                    <button class="waves-effect vivify fadeIn delay-300" onclick="filterSelection('bsoccer')">Boys
-                        Soccer</button>
-                    <button class="waves-effect vivify fadeIn delay-400" onclick="filterSelection('gsoccer')">Girls
-                        Soccer</button>
-                    <button class="waves-effect vivify fadeIn delay-500" onclick="filterSelection('softball')">Softball</button>
-
-                    <button class="waves-effect vivify fadeIn delay-600" onclick="filterSelection('tennis')">Tennis</button>
-                    <button class="waves-effect vivify fadeIn delay-700" onclick="filterSelection('trackfield')">Track
+                    <button class="waves-effect vivify fadeIn delay-400"
+                    onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/bowling/coed'">Bowling</button>
+                    <button class="waves-effect vivify fadeIn delay-500"
+                    onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/swimming/coed'">Swimming</button>
+                    <button class="waves-effect vivify fadeIn delay-200" onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/golf/girls'">Girls Golf</button>
+                    <button class="waves-effect vivify fadeIn delay-700" onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/track%20and%20field/coed'">Track
                         And Field</button>
+                    <br>
+                    <button class="waves-effect vivify fadeIn" onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/basketball/boys'">Boys
+                        Basketball</button>
+                    <button class="waves-effect vivify fadeIn delay-100"
+                    onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/cheerleading/coed'">Cheerleading</button>
+                    <button class="waves-effect vivify fadeIn delay-200" onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/golf/boys'">Boys Golf</button>
+                    <button class="waves-effect vivify fadeIn delay-300" onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/soccer/boys'">Boys
+                        Soccer</button>
+                    <button class="waves-effect vivify fadeIn delay-400" onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/soccer/girls'">Girls
+                        Soccer</button>
+                    <button class="waves-effect vivify fadeIn delay-500"
+                    onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/softball/girls'">Softball</button>
+
+                    <button class="waves-effect vivify fadeIn delay-600"
+                    onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/tennis/coed'">Tennis</button>
+                 
 
                 </div>
 
@@ -269,11 +316,15 @@
                             Games</button>
                         <button class="waves-effect vivify fadeIn delay-200" onclick="filterSelection('art')">GHS
                             Art</button>
-                        <button class="waves-effect vivify fadeIn delay-300" onclick="filterSelection('podcast')">Podcast</button>
-                        <button class="waves-effect vivify fadeIn delay-400" onclick="filterSelection('videos')">Videos</button>
+                        <button class="waves-effect vivify fadeIn delay-300"
+                            onclick="filterSelection('podcast')">Podcast</button>
+                        <button class="waves-effect vivify fadeIn delay-400"
+                            onclick="filterSelection('videos')">Videos</button>
                     </div>
                     <div class="live-stream">
-                        <iframe loading="lazy" class="live-frame" src="https://c.themediacdn.com/embed/media/O7sBCQ/OqvzSehCsA1/mrLrvlwsOOb_5?wmode=opaque" allowfullscreen></iframe>
+                        <iframe loading="lazy" class="live-frame"
+                            src="https://c.themediacdn.com/embed/media/O7sBCQ/OqvzSehCsA1/mrLrvlwsOOb_5?wmode=opaque"
+                            allowfullscreen></iframe>
 
                         <div class="navigation-card" style="transform: rotateZ(360deg);" style="margin-right: 50px;">
                             <h5>GHS Live Games</h5>
@@ -290,11 +341,12 @@
 
                 <div class="navigation-card-container">
                     <div class="inline-spacer" style=""></div>
+                    
                     <div id="items" class="vivify fadeInTop duration-500"></div>
 
                     <script>
-                        $(function() {
-                            $(".DateDiv").each(function(index) {
+                        $(function () {
+                            $(".DateDiv").each(function (index) {
                                 var sRange = $(this).find(".DateRange").html();
                                 var arrTemp = sRange.split(" to ");
                                 var dtFrom = new Date(arrTemp[0]);
@@ -304,14 +356,16 @@
                                     $(this).hide();
                             });
                         });
-
                     </script>
 
                 </div>
-
+                <div class="sports filterDiv sports-frame" style="position: fixed; top: 250px; left:0px;z-index: -1;" >
+                    <iframe id="sportsframe" src="" style="border: none; margin-top: -120px;height: 100vh;width: 100%;position: fixed"></iframe>
+                </div>
 
                 <div class="back-top vivify fadeInRight" id="up">
-                    <a href="/homescreen.html#homescreen" class="back-top-button"><button class="waves-effect white"><i class="material-icons">
+                    <a href="/homescreen.html#homescreen" class="back-top-button"><button class="waves-effect white"><i
+                                class="material-icons">
                                 keyboard_arrow_up</i>
                             <p>Back To Top</p>
                         </button></a>
@@ -319,7 +373,7 @@
                 </div>
 
                 <script>
-                    $(window).scroll(function() {
+                    $(window).scroll(function () {
                         var scroll = $(window).scrollTop();
                         if (scroll > 300) {
                             $("#up").addClass("scrolled");
@@ -327,7 +381,6 @@
                             $("#up").removeClass("scrolled");
                         }
                     });
-
                 </script>
 
                 <script>
@@ -365,7 +418,6 @@
                         }
                         element.className = arr1.join(" ");
                     }
-
                 </script>
             </div>
 
@@ -381,7 +433,8 @@
 
 
     <div id="grades">
-        <iframe src="https://261985.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNow%2fMobile%2fGradeBook.List.aspx"></iframe>
+        <iframe
+            src="https://261985.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNow%2fMobile%2fGradeBook.List.aspx"></iframe>
     </div>
 
 
@@ -393,8 +446,10 @@
             <div class="tab-navigation">
                 <div style="position: fixed;width: 100%;top: 55px;left: 0px;;" class="" style="padding: 0px;">
                     <ul class="tabs">
-                        <li class="tab col s3"><a href="#lunch"><button class="waves-effect tab-button XL vivify fadeIn">LUNCH</button></a></li>
-                        <li class="tab col s3"><a href="#breakfast"><button class="waves-effect tab-button XL vivify fadeIn delay-200">BREAKFAST</button></a>
+                        <li class="tab col s3"><a href="#lunch"><button
+                                    class="waves-effect tab-button XL vivify fadeIn">LUNCH</button></a></li>
+                        <li class="tab col s3"><a href="#breakfast"><button
+                                    class="waves-effect tab-button XL vivify fadeIn delay-200">BREAKFAST</button></a>
                         </li>
 
                     </ul>
@@ -403,18 +458,22 @@
             <div class="tab-items">
 
                 <div id="lunch">
-                    <div class="zoom-buttons"><button class="waves-effect" onclick="zoomin()"><i class="material-icons">add</i></button>
+                    <div class="zoom-buttons"><button class="waves-effect" onclick="zoomin()"><i
+                                class="material-icons">add</i></button>
                         <button onclick="zoomout()" class="waves-effect"><i class="material-icons">remove</i></button>
                     </div>
 
-                    <div class="menu-overflow"><img style="transition: 0.2s ease;" id="lunch" class="vivify fadeIn duration-500" src="Menu/Menu Plan Calendar-1.png"> </div>
+                    <div class="menu-overflow"><img style="transition: 0.2s ease;" id="lunch"
+                            class="vivify fadeIn duration-500" src="Menu/Menu Plan Calendar-1.png"> </div>
                 </div>
                 <div id="breakfast" class="col s12">
-                    <div class="zoom-buttons"><button class="waves-effect" onclick="zoomin2()"><i class="material-icons">add</i></button>
+                    <div class="zoom-buttons"><button class="waves-effect" onclick="zoomin2()"><i
+                                class="material-icons">add</i></button>
                         <button onclick="zoomout2()" class="waves-effect"><i class="material-icons">remove</i></button>
                     </div>
 
-                    <div class="menu-overflow"><img style="transition: 0.2s ease;" id="breakfast" class="vivify fadeIn duration-500" src="Menu/menubreakfast.png"></div>
+                    <div class="menu-overflow"><img style="transition: 0.2s ease;" id="breakfast"
+                            class="vivify fadeIn duration-500" src="Menu/menubreakfast.png"></div>
                 </div>
 
             </div>
@@ -437,7 +496,6 @@
                         myImg.style.width = (currWidth - 350) + "px";
                     }
                 }
-
             </script>
 
             <script>
@@ -458,7 +516,6 @@
                         myImg.style.width = (currWidth - 350) + "px";
                     }
                 }
-
             </script>
         </div>
 
@@ -490,9 +547,11 @@
         <div class="tab-navigation">
             <div style="position: fixed;width: 100%;top: 55px;left: 0px;;" class="" style="padding: 0px;">
                 <ul class="tabs">
-                    <li class="tab col s3"><a href="#month"><button class="waves-effect tab-button XL vivify fadeIn delay-200">Month</button></a>
+                    <li class="tab col s3"><a href="#month"><button
+                                class="waves-effect tab-button XL vivify fadeIn delay-200">Month</button></a>
                     </li>
-                    <li class="tab col s3"><a href="#agenda"><button class="waves-effect tab-button XL vivify fadeIn">Agenda</button></a></li>
+                    <li class="tab col s3"><a href="#agenda"><button
+                                class="waves-effect tab-button XL vivify fadeIn">Agenda</button></a></li>
 
 
 
@@ -502,10 +561,16 @@
 
         <div class="tab-items"></div>
         <div class="inline-container"></div>
-        <iframe id="agenda" src="https://calendar.google.com/calendar/b/3/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=Z2hzLmNhbGVuZGFyQGd1bGZwb3J0c2Nob29scy5vcmc&amp;color=%23A79B8E&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;mode=AGENDA&amp;showCalendars=0&amp;showTz=0" frameborder="0" scrolling="no" style="border-width:0;position: fixed; top: 0px;width:100%; height:100vh"></iframe>
+        <iframe id="agenda"
+            src="https://calendar.google.com/calendar/b/3/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=Z2hzLmNhbGVuZGFyQGd1bGZwb3J0c2Nob29scy5vcmc&amp;color=%23A79B8E&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;mode=AGENDA&amp;showCalendars=0&amp;showTz=0"
+            frameborder="0" scrolling="no"
+            style="border-width:0;position: fixed; top: 0px;width:100%; height:100vh"></iframe>
 
 
-        <iframe id="month" src="https://calendar.google.com/calendar/b/3/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=Z2hzLmNhbGVuZGFyQGd1bGZwb3J0c2Nob29scy5vcmc&amp;color=%23A79B8E&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;mode=MONTH&amp;showCalendars=0&amp;showTz=0" style="border-width:0;position: absolute; top: 100px;width:100%; height:92%" frameborder="0" scrolling="no"></iframe>
+        <iframe id="month"
+            src="https://calendar.google.com/calendar/b/3/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=Z2hzLmNhbGVuZGFyQGd1bGZwb3J0c2Nob29scy5vcmc&amp;color=%23A79B8E&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;mode=MONTH&amp;showCalendars=0&amp;showTz=0"
+            style="border-width:0;position: absolute; top: 100px;width:100%; height:92%" frameborder="0"
+            scrolling="no"></iframe>
 
 
     </section>
@@ -532,25 +597,24 @@
 
             <div class="card-divider" style="display: block; margin-top:10px; "></div>
             <script>
-                $(document).ready(function($) {
+                $(document).ready(function ($) {
                     var mode = localStorage.getItem('mode');
                     if (mode)
                         $('body').addClass(mode);
                     $('accent').addClass(mode);
 
-                    $(".darkmode").click(function() {
+                    $(".darkmode").click(function () {
                         $("body").addClass("darkclass");
                         $("accent").addClass("darkclass");
                         localStorage.setItem('mode', 'darkclass');
                     });
 
-                    $(".normalmode").click(function() {
+                    $(".normalmode").click(function () {
                         $("body").removeClass("darkclass");
                         $("accent").removeClass("darkclass");
                         localStorage.setItem('mode', null);
                     });
                 });
-
             </script>
 
 
@@ -592,7 +656,8 @@
 
     <section id="search">
 
-        <iframe is="x-frame-bypass" style="position: fixed; width: 100%; height:100%;" src="https://gulfporthighschoolapp.netlify.com/search.html"></iframe>
+        <iframe is="x-frame-bypass" style="position: fixed; width: 100%; height:100%;"
+            src="https://gulfporthighschoolapp.netlify.com/search.html"></iframe>
     </section>
 
 
@@ -602,30 +667,28 @@
             <a href="#meal-menu"><button class="nav-button waves-effect"><img src="Assets/Menu.svg"></button></a>
 
             <a href="#grades"><button class="nav-button waves-effect"><img src="Assets/Grades.svg"></button></a>
-            <a href="#homescreen"><button onclick="filterSelection('all')" class="nav-button waves-effect" autofocus><img src="Assets/Home.svg"></button></a>
+            <a href="#homescreen"><button onclick="filterSelection('all')" class="nav-button waves-effect"
+                    autofocus><img src="Assets/Home.svg"></button></a>
             <a href="#calendar"><button class="nav-button waves-effect"><img src="Assets/Calendar.svg"></button></a>
             <a href="#settings"><button class="nav-button waves-effect"><img src="Assets/Settings.svg"></button></a>
         </div>
     </div>
 
     <script>
-        window.onload = function() {
+        window.onload = function () {
             filterSelection('all');
         };
-
     </script>
 
     <script>
-        window.onload = function() {
+        window.onload = function () {
             document.getElementById('clickButton').click();
         }
-
     </script>
     <script>
         function date() {
             $(document).timeMachine();
         }
-
     </script>
 
 </body>
