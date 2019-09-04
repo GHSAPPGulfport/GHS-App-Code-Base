@@ -195,7 +195,7 @@
             <div class="popup-wrapper ;">
                 <div class="close-btn">
                     <button onclick="document.getElementById('popup').style.display = 'none'"><i
-                            class="material-icons waves-effect">close</i></button   >
+                            class="material-icons waves-effect">close</i></button>
                 </div>
                 <iframe name="IFrameName" target="_self" class="iframe-popup vivify fadeInBottom duration-500 delay-200"
                     src=""></iframe>
@@ -265,35 +265,44 @@
                     <button class="waves-effect baseball vivify fadeIn"
                         onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/baseball/boys'">Baseball</button>
                     <button class="waves-effect vivify fadeIn delay-100"
-                    onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/football/boys'">Football</button>
+                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/football/boys'">Football</button>
                     <button class="waves-effect vivify fadeIn delay-200"
-                    onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/volleyball/girls'">VolleyBall</button>
+                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/volleyball/girls'">VolleyBall</button>
 
-                    <button class="waves-effect vivify fadeIn delay-300" onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/basketball/girls'">Girls
+                    <button class="waves-effect vivify fadeIn delay-300"
+                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/basketball/girls'">Girls
                         Basketball</button>
                     <button class="waves-effect vivify fadeIn delay-400"
-                    onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/bowling/coed'">Bowling</button>
+                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/bowling/coed'">Bowling</button>
                     <button class="waves-effect vivify fadeIn delay-500"
-                    onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/swimming/coed'">Swimming</button>
-                    <button class="waves-effect vivify fadeIn delay-200" onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/golf/girls'">Girls Golf</button>
-                    <button class="waves-effect vivify fadeIn delay-700" onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/track%20and%20field/coed'">Track
+                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/swimming/coed'">Swimming</button>
+                    <button class="waves-effect vivify fadeIn delay-200"
+                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/golf/girls'">Girls
+                        Golf</button>
+                    <button class="waves-effect vivify fadeIn delay-700"
+                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/track%20and%20field/coed'">Track
                         And Field</button>
                     <br>
-                    <button class="waves-effect vivify fadeIn" onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/basketball/boys'">Boys
+                    <button class="waves-effect vivify fadeIn"
+                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/basketball/boys'">Boys
                         Basketball</button>
                     <button class="waves-effect vivify fadeIn delay-100"
-                    onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/cheerleading/coed'">Cheerleading</button>
-                    <button class="waves-effect vivify fadeIn delay-200" onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/golf/boys'">Boys Golf</button>
-                    <button class="waves-effect vivify fadeIn delay-300" onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/soccer/boys'">Boys
+                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/cheerleading/coed'">Cheerleading</button>
+                    <button class="waves-effect vivify fadeIn delay-200"
+                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/golf/boys'">Boys
+                        Golf</button>
+                    <button class="waves-effect vivify fadeIn delay-300"
+                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/soccer/boys'">Boys
                         Soccer</button>
-                    <button class="waves-effect vivify fadeIn delay-400" onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/soccer/girls'">Girls
+                    <button class="waves-effect vivify fadeIn delay-400"
+                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/soccer/girls'">Girls
                         Soccer</button>
                     <button class="waves-effect vivify fadeIn delay-500"
-                    onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/softball/girls'">Softball</button>
+                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/softball/girls'">Softball</button>
 
                     <button class="waves-effect vivify fadeIn delay-600"
-                    onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/tennis/coed'">Tennis</button>
-                 
+                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/tennis/coed'">Tennis</button>
+
 
                 </div>
 
@@ -341,7 +350,7 @@
 
                 <div class="navigation-card-container">
                     <div class="inline-spacer" style=""></div>
-                    
+
                     <div id="items" class="vivify fadeInTop duration-500"></div>
 
                     <script>
@@ -359,7 +368,10 @@
                     </script>
 
                 </div>
-             
+                <div class="sports filterDiv sports-frame" style="position: fixed; top: 250px; left:0px;z-index: -1;">
+                    <iframe id="sportsframe" src=""
+                        style="border: none; margin-top: -120px;height: 100vh;width: 100%;position: fixed"></iframe>
+                </div>
 
                 <div class="back-top vivify fadeInRight" id="up">
                     <a href="/homescreen.html#homescreen" class="back-top-button"><button class="waves-effect white"><i
