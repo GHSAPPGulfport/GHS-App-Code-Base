@@ -70,6 +70,8 @@ nav {position: fixed; top: 0px; left: 0px; background-color: white; width: 100%;
 
 /*-------------------------------------------------Sections---------------------------------------------*/
 
+#grade-modal {}
+
 .refresh{position: fixed; left: 10px; top: 5px;z-index: 175;;color: black;padding: 10px;border-radius: 50px; }
 
 #homescreen {display: none;}
