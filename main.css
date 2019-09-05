@@ -330,3 +330,9 @@ body.darkclass .close-btn > button {background-color: black}
 body.darkclass .close-btn > button  > i {color: white;}
 
 body.darkclass #grades > iframe {filter: invert(100)}
+
+body.darkclass .filter {background-color: black;}
+
+body.darkclass .search-results > li > a {color: white; }
+
+.search-input {background-color: white;color: black; }
