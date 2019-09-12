@@ -327,9 +327,17 @@ nav {
   display: block;
 }
 
-#agenda {position:fixed; top:0px; margin-top: 15px;}
+#agenda {
+  position: fixed;
+  top: 0px;
+  margin-top: 15px;
+}
 
-#month {position: fixed; top:0px; margin-top: 25px;}
+#month {
+  position: fixed;
+  top: 0px;
+  margin-top: 25px;
+}
 
 #podcast {
   display: none
@@ -898,6 +906,17 @@ body.darkclass .load-button {
   background-image: none;
 }
 
+body.darkclass .sub-modal {
+  background-color: black;
+  border: solid;
+  border-width: 1px;
+  border-color: white;
+  color: white;
+}
+
+body.darkclass .sub-modal>p {
+  color: white;
+}
 
 body.darkclass .iframe-popup {
   background-color: rgb(22, 22, 22)
