@@ -327,6 +327,10 @@ nav {
   display: block;
 }
 
+#agenda {position:fixed; top:0px; margin-top: 15px;}
+
+#month {position: fixed; top:0px; margin-top: 25px;}
+
 #podcast {
   display: none
 }
