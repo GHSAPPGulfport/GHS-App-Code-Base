@@ -899,6 +899,10 @@ body.darkclass .zoom-buttons>button {
   color: white;
 }
 
+body.darkclass .back-top-button>button {
+  background-color: black
+}
+
 body.darkclass .load-button {
   border-radius: 10px;
   color: white;
