@@ -66,9 +66,7 @@
     <div class="navigation-card filterDiv {{section}} {{athleticSection}} show vivify fadeIn delay-100"  >
         <h5>{{title}}</h5>
         <h6>{{subTitle}}</h6>
-        <button class="load-button waves-effect btn-flat vivify " style="height: 200px;" onclick="document.getElementById('{{postID}}').innerHTML = '{{imageURL1}}'">Tap to Load Image</button>
-        <div class="navigation-image" id={{postID}}></div>
-           
+           {{{imageURL1}}}
         <p>{{paragraph}}</p>
         <div class="button-container" onclick="document.getElementById('popup').style.display = 'block'">
              <button onclick="document.all.IFrameName.src = '{{buttonUrl}}'"  class="waves-effect btn-flat pulse white" >Learn More</button>
@@ -585,9 +583,6 @@
                     </li>
                     <li class="tab col s3"><a href="#agenda"><button
                                 class="waves-effect tab-button XL vivify fadeIn">Agenda</button></a></li>
-
-
-
                 </ul>
             </div>
         </div>
@@ -650,7 +645,7 @@
                 });
             </script>
 
-<div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=en&widgetTheme=light&autoMode=false" type="text/javascript"></script>
+           <div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=en&widgetTheme=light&autoMode=false" type="text/javascript"></script>
         </div>
     </section>
 
