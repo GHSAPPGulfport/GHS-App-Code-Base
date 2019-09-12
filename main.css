@@ -525,7 +525,10 @@ nav {
   object-fit: cover;
   border-radius: 7px;
   margin-top: 10px;
+  
 }
+
+.navigation-card > a {pointer-events: none;}
 
 .load-container {
   display: none;
