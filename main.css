@@ -547,6 +547,10 @@ nav {
   border-radius: 10px;
 }
 
+.true {display: block;}
+
+.false {display: none;}
+
 .navigation-card-container {
   transform: rotateZ(180deg);
   margin: auto;

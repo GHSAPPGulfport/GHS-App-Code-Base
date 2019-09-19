@@ -62,14 +62,17 @@
 
         {{#each this}}
 
- 
+ <style>
+ .true {display:block}
+ .false {display:none;}
+ </style>
     <div class="navigation-card filterDiv {{section}} {{athleticSection}} show vivify fadeIn delay-100">
         <h5>{{title}}</h5>
         <h6>{{subTitle}}</h6>
            {{{imageURL1}}}
         <p>{{paragraph}}</p>
         <div class="button-container" onclick="document.getElementById('popup').style.display = 'block'">
-             <button onclick="document.all.IFrameName.src = '{{buttonUrl}}'"  class="waves-effect btn-flat pulse white" >Learn More</button>
+             <button onclick="document.all.IFrameName.src = '{{buttonUrl}}'"  class="waves-effect btn-flat pulse white {{buttonState}}" >Learn More</button>
             </div>
 
            
