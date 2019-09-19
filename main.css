@@ -449,6 +449,23 @@ nav {
 }
 
 /*---------------------------------------------Navigation Card-------------------------------------------*/
+details > summary {
+  list-style: none;
+  text-align: center;
+  color: #012395;
+  font-size: 15px;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.special-content2 {}
+
+summary:focus{outline: none;}
+
+.special-content2:focus {outline: none;}
+
+.special-content2 > summary {height: 50px;list-style-type: none;}
 
 .back-top {
   position: fixed;
