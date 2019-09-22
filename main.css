@@ -606,6 +606,10 @@ summary:focus{outline: none;}
   color: black;
 }
 
+.loader > img {width:100px;}
+
+.loader {margin: auto; width: 100px;margin-top: 20vh;}
+
 .button-container {
   margin: auto;
   width: 150px;
