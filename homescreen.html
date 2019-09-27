@@ -17,22 +17,14 @@
         gtag('config', 'UA-145321577-1');
     </script>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
-    <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="css/vivify.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="vivify.min.css" rel="stylesheet" type="text/css" />
     <link rel="manifest" href="manifest.json">
     <link rel="shortcut icon" href="Branding/Ios%20App%20Icon.png" type="image/x-icon">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
-    <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
     <meta name="theme-color" content="#ffffff">
-    <meta name="apple-mobile-web-app-title" content="GHS App">
-    <link rel="apple-touch-icon" href="Branding/apple-touch-icon.png">
     <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
     <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
@@ -63,6 +55,8 @@
  <style>
  .true {display:block}
  .false {display:none;}
+
+ @media (prefers-color-scheme: dark) {.navigation-card > h5 {color: white;}.navigation-card > h6 {color: white;}.navigation-card > p {color: white;}}
  </style>
     <div class="navigation-card filterDiv {{section}} {{athleticSection}} show vivify fadeIn delay-100">
         <h5>{{title}}</h5>
@@ -139,6 +133,8 @@
             background-color: white;
             box-shadow: none;
         }
+
+        @media (prefers-color-scheme: dark) {nav{background-color: black;} .material-icons {color:white;}}
     </style>
     <nav>
         <a href="index.html" class="refresh waves-effect" style="position: fixed;"><i
@@ -249,8 +245,15 @@
                 }
 
                 body.darkclass .tabs .indicator {
-                    background-color: white;
+                    background-color: black;
                 }
+
+                @media (prefers-color-scheme: dark) {.tabs .indicator{background-color:white}
+                .tabs .tab a.active{background-color: black;color: white;}
+                .tabs {background-color: black;}
+.tabs .tab a {color: white; } .filter > button {background-color: black;border: solid; border-width: 1px; border-color:white;color: white;nav {background-color:black;}}
+            }
+
             </style>
             <div style="position: fixed; width: 6px; height:6px; top: 60px; right: 10px; background-color: red;z-index: 150;border-radius: 5px;display: none;"
                 class="live-dot vivify fadeIn infinite"></div>
@@ -368,7 +371,7 @@
                     </div>
 
 
-                    <details style="border-bottom: solid;border-bottom-width:1px; border-bottom-color:lightgray;" class="special-content2"
+                    <details style="border-bottom: solid;border-bottom-width:1px; border-bottom-color:lightgray;background-image: url(https://media.giphy.com/media/WNJATm9pwnjpjI1i0g/giphy.gif);" class="special-content2"
                         >
                         <summary><a class="waves-effect btn-flat white " style="margin-top: 6px;border: solid; border-width: 1px;border-color: lightgray;">Tap To Learn About Spirit Week</a>
                         </summary>
@@ -377,7 +380,7 @@
                                 Courthouse Road Beach 6:30-8:00PM</li>
                             <li class="collection-item">Tuesday - Dodgeball 6 PM Bert Jenkins Gym - Juniors & Seniors
                                 Only</li>
-                            <li class="collection-item">Wednesday - Capture the Flag 7 PM Bayou View Park by the playground - Juniors &
+                            <li class="collection-item">Wednesday - Capture the Flag 7 PM Location TBA - Juniors &
                                 Seniors Only</li>
                             <li class="collection-item">Thursday - Homecoming Parade - Downtown Gulfport 6:00PM
                                 Homecoming Pep Rally - Market Pavilion, Jones Park after parade (approx
@@ -390,7 +393,7 @@
                     <div class="navigation-card-container">
 
 
-                        <div id="items" style="margin-bottom: 50px;" class="vivify fadeInTop duration-500"><div class="loader"><img src="https://camo.githubusercontent.com/a1a81b0529517027d364ee8432cf9a8bd309542a/687474703a2f2f692e696d6775722e636f6d2f56446449444f522e676966"></div></div>
+                        <div id="items" style="margin-bottom: 50px;" class="vivify fadeInTop duration-500"></div>
 
                         <script>
                             $(function () {
@@ -533,7 +536,7 @@
                                     class="material-icons">remove</i></button>
                         </div>
 
-                        <div class="menu-overflow"><img style="transition: 0.2s ease;" id="lunch"
+                        <div class="menu-overflow" style="margin-top: -150px;"><img style="transition: 0.2s ease;" id="lunch"
                                 class="vivify fadeIn duration-500" src="Menu/september lunch.png"> </div>
                     </div>
                     <div id="breakfast" class="col s12">

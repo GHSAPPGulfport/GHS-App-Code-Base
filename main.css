@@ -235,7 +235,11 @@ nav {
   ;
   color: white;
 }
+/*-------------------------------------------------Popout-------------------------------------------------*/
 
+.popout-navigation {}
+
+.framed-content > iframe {width: 100%; height: 100%; position: fixed;left: 0px; top: 0px; margin-top: 50px;border: none;}
 
 /*-------------------------------------------------Sections---------------------------------------------*/
 
@@ -814,6 +818,153 @@ nav {
   margin-top: -15px;
   ;
 }
+
+@media (prefers-color-scheme: dark) {
+body {background-color: black;}
+
+.bottom-navigation {background-color: black;}
+.nav-button {filter: invert(100);}
+.nav-button>img {
+  filter: saturate(0)
+}
+.tab-navigation {
+  background-color: black;
+}
+.spacer {
+  background-color: black;
+}
+.tabs .tab a.active {
+  background-color: black;
+  color: white
+}
+.tabs {
+  background-color: black;
+  color: lightgray
+}
+body.darkclass .tab-button {
+  color: lightgray;
+}
+
+.bottom-navigation.darkclass {
+  background-color: black;
+}
+
+body.darkclass nav {
+  background-color: black;
+}
+
+body.darkclass .filter>button {
+  background-color: transparent;
+  color: white;
+}
+
+body.darkclass .search-btn {
+  color: white;
+}
+
+body.darkclass .refresh {
+  color: white;
+}
+
+body.darkclass .navigation-card>h5 {
+  color: white;
+}
+
+body.darkclass .navigation-card>h6 {
+  color: white;
+}
+
+body.darkclass h5 {
+  color: white;
+}
+
+body.darkclass .navigation-card>p {
+  color: white;
+}
+
+body.darkclass .menu-overflow>img {
+  filter: invert(100)
+}
+
+body.darkclass #calendar>iframe {
+  filter: invert(100)
+}
+
+body.darkclass .search-results>div>li>a {
+  color: white;
+}
+
+body.darkclass .search-input {
+  color: white;
+}
+
+body.darkclass .normalmode {
+  color: white;
+}
+
+body.darkclass .settings-option>p {
+  color: white;
+}
+
+body.darkclass .info-container {
+  background-color: black;
+  color: white;
+}
+
+body.darkclass .zoom-buttons>button {
+  background-color: black;
+  border-color: white;
+  color: white;
+}
+
+body.darkclass .back-top-button>button {
+  background-color: black
+}
+
+body.darkclass .load-button {
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(17, 17, 17);
+  background-image: none;
+}
+
+body.darkclass .sub-modal {
+  background-color: black;
+  border: solid;
+  border-width: 1px;
+  border-color: white;
+  color: white;
+}
+
+.sub-modal>p {
+  color: white;
+}
+.iframe-popup {
+  background-color: rgb(22, 22, 22)
+}
+
+.close-btn>button {
+  background-color: black
+}
+
+.close-btn>button>i {
+  color: white;
+}
+
+#grades>iframe {
+  filter: invert(100)
+}
+
+.filter {
+  background-color: black;
+}
+
+.search-results>li>a {
+  color: white;
+}
+}
+
+/*---------------------------------Dark mode Button-----------------------------*/
 
 body.darkclass {
   background-color: black;
