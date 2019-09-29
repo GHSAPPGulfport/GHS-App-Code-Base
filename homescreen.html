@@ -117,8 +117,8 @@
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
-   
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122866044-3"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122866044-3"></script>
 
 
 
@@ -134,7 +134,15 @@
             box-shadow: none;
         }
 
-        @media (prefers-color-scheme: dark) {nav{background-color: black;} .material-icons {color:white;}}
+        @media (prefers-color-scheme: dark) {
+            nav {
+                background-color: black;
+            }
+
+            .material-icons {
+                color: white;
+            }
+        }
     </style>
     <nav>
         <a href="index.html" class="refresh waves-effect" style="position: fixed;"><i
@@ -248,12 +256,36 @@
                     background-color: black;
                 }
 
-                @media (prefers-color-scheme: dark) {.tabs .indicator{background-color:white}
-                .tabs .tab a.active{background-color: black;color: white;}
-                .tabs {background-color: black;}
-.tabs .tab a {color: white; } .filter > button {background-color: black;border: solid; border-width: 1px; border-color:white;color: white;nav {background-color:black;}}
-            }
+                @media (prefers-color-scheme: dark) {
+                    .tabs .indicator {
+                        background-color: white
+                    }
 
+                    .tabs .tab a.active {
+                        background-color: black;
+                        color: white;
+                    }
+
+                    .tabs {
+                        background-color: black;
+                    }
+
+                    .tabs .tab a {
+                        color: white;
+                    }
+
+                    .filter>button {
+                        background-color: black;
+                        border: solid;
+                        border-width: 1px;
+                        border-color: white;
+                        color: white;
+
+                        nav {
+                            background-color: black;
+                        }
+                    }
+                }
             </style>
             <div style="position: fixed; width: 6px; height:6px; top: 60px; right: 10px; background-color: red;z-index: 150;border-radius: 5px;display: none;"
                 class="live-dot vivify fadeIn infinite"></div>
@@ -367,7 +399,7 @@
                             </div>
 
                         </div>
-                       
+
                     </div>
 
 
@@ -518,8 +550,8 @@
                                     class="material-icons">remove</i></button>
                         </div>
 
-                        <div class="menu-overflow" style="margin-top: -150px;"><img style="transition: 0.2s ease;" id="lunch"
-                                class="vivify fadeIn duration-500" src="Menu/september lunch.png"> </div>
+                        <div class="menu-overflow" style="margin-top: 105px;"><img style="transition: 0.2s ease;"
+                                id="lunch" class="vivify fadeIn duration-500" src="Menu/october.png"> </div>
                     </div>
                     <div id="breakfast" class="col s12">
                         <div class="zoom-buttons"><button class="waves-effect" onclick="zoomin2()"><i
@@ -529,7 +561,7 @@
                         </div>
 
                         <div class="menu-overflow"><img style="transition: 0.2s ease;" id="breakfast"
-                                class="vivify fadeIn duration-500" src="Menu/september breakfast.png"></div>
+                                class="vivify fadeIn duration-500" src="Menu/october breakfast.png"></div>
                     </div>
 
                 </div>
