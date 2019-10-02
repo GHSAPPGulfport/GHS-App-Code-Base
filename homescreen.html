@@ -6,16 +6,6 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145321577-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-145321577-1');
-    </script>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
@@ -36,7 +26,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/easytimer.js"></script>
     <link rel="stylesheet" media="all" href="css/styles.css" />
 
     <script type="text/javascript">
@@ -169,32 +158,7 @@
           
         </div>
         </div>
-    <div class=" welcome" style="display: none;">
-                    <div class="w-logo">
-                        <div class="wlogo-container"> <img src="Welcome Slides/Welcome logo.jpg"></div>
 
-                    </div>
-                    <div class="main-carousel" data-flickity='{ "draggable": true,"pageDots": false }'>
-                        <div class="carousel-cell"><img src="Welcome Slides/Home.jpg"> </div>
-                        <div class="carousel-cell"><img src="Welcome Slides/Welcome Page.jpg"></div>
-                        <div class="carousel-cell"><img src="Welcome Slides/Grades Page.jpg"> </div>
-                        <div class="carousel-cell"><img src="Welcome Slides/mealmenu.jpg"> </div>
-                        <div class="carousel-cell"><img src="Welcome Slides/Calendar.jpg"> </div>
-                        <div class="carousel-cell"><img src="Welcome Slides/Theme.jpg">
-                            <div style="margin-top: -50px;"><a onclick="launch_toast()"
-                                    class="darkmode waves-effect btn blue darken-4">Enable</a></div>
-                            <div><a class="normalmode waves-effect btn-flat">Disable</a></div>
-                        </div>
-                    </div>
-
-                    <script>
-                        $('.main-carousel').flickity({
-                            // options
-                            cellAlign: 'left',
-                            contain: true
-                        });
-                    </script>
-        </div>
 
 
 
@@ -221,7 +185,7 @@
                         <button onclick="document.getElementById('popup').style.display = 'none'"><i
                                 class="material-icons waves-effect">close</i></button>
                     </div>
-                    <iframe name="IFrameName" target="_self"
+                    <iframe loading="lazy" name="IFrameName" target="_self"
                         class="iframe-popup vivify fadeInBottom duration-500 delay-200" src=""></iframe>
                 </div>
             </div>
@@ -426,7 +390,7 @@
                     </div>
                     <div class="sports filterDiv sports-frame"
                         style="position: fixed; top: 250px; left:0px;z-index: -1;">
-                        <iframe id="sportsframe" src=""
+                        <iframe loading="lazy" id="sportsframe" src=""
                             style="border: none; margin-top: -120px;height: 100vh;width: 100%;position: fixed"></iframe>
                     </div>
                     <style>
@@ -646,13 +610,13 @@
 
             <div class="tab-items"></div>
             <div class="inline-container"></div>
-            <iframe id="agenda"
+            <iframe loading="lazy" id="agenda"
                 src="https://calendar.google.com/calendar/b/3/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=Z2hzLmNhbGVuZGFyQGd1bGZwb3J0c2Nob29scy5vcmc&amp;color=%23A79B8E&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;mode=AGENDA&amp;showCalendars=0&amp;showTz=0"
                 frameborder="0" scrolling="no"
                 style="border-width:0;position: fixed; top: 0px;width:100%; height:100vh"></iframe>
 
 
-            <iframe id="month"
+            <iframe loading="lazy" id="month"
                 src="https://calendar.google.com/calendar/b/3/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=Z2hzLmNhbGVuZGFyQGd1bGZwb3J0c2Nob29scy5vcmc&amp;color=%23A79B8E&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;mode=MONTH&amp;showCalendars=0&amp;showTz=0"
                 style="border-width:0;position: absolute; top: 100px;width:100%; height:92%" frameborder="0"
                 scrolling="no"></iframe>
@@ -744,7 +708,7 @@
 
         <section id="search">
 
-            <iframe id="searchif" class="searchif" is="x-frame-bypass"
+            <iframe id="searchif" loading="lazy" class="searchif" is="x-frame-bypass"
                 style="position: fixed; width: 100%; height:100%;top: -10px;border: none;"
                 src="https://gulfporthighschoolapp.netlify.com/search.html"></iframe>
         </section>
