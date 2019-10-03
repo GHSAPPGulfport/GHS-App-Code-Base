@@ -456,9 +456,9 @@ nav {
 }
 
 /*---------------------------------------------Navigation Card-------------------------------------------*/
-.content-loader {margin: auto; width: 75px;margin-top:30vh;}
+.content-loader {margin: auto; width: 100px;margin-top:30vh;}
 
-.content-loader > img {width: 75px;}
+.content-loader > img {width: 100px;}
 
 details > summary {
   list-style: none;
