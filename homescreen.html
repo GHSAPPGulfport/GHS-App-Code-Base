@@ -53,7 +53,7 @@
            {{{imageURL1}}}
         <p>{{paragraph}}</p>
         <div class="button-container" onclick="document.getElementById('popup').style.display = 'block'">
-             <button onclick="document.all.IFrameName.src = '{{buttonUrl}}'"  class="waves-effect btn-flat pulse white {{buttonState}}" >Learn More</button>
+             <button onclick="document.all.IFrameName.src = '{{buttonUrl}}'"  class="waves-effect btn-flat pulse white {{buttonState}}" >{{buttonText}}</button>
             </div>
 
            
@@ -610,7 +610,7 @@
             </div>
 
             <div class="tab-items"></div>
-            <div class="inline-container"></div>
+            <div class="inline-spacer" style="margin-top: 50px;"></div>
             <iframe loading="lazy" id="agenda"
                 src="https://calendar.google.com/calendar/b/3/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=Z2hzLmNhbGVuZGFyQGd1bGZwb3J0c2Nob29scy5vcmc&amp;color=%23A79B8E&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;mode=AGENDA&amp;showCalendars=0&amp;showTz=0"
                 frameborder="0" scrolling="no"
@@ -643,8 +643,6 @@
                 <p style="margin-left: 10px;">Dark Mode</p>
                 <div><a onclick="launch_toast()" class="darkmode waves-effect btn blue darken-4">Enable</a></div>
                 <div><a class="normalmode waves-effect btn-flat">Disable</a></div>
-
-
                 <div class="card-divider" style="display: block; margin-top:10px; "></div>
                 <script>
                     $(document).ready(function ($) {
