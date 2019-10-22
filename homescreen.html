@@ -549,11 +549,18 @@
             <a href="#homescreen"><button onclick="filterSelection('all')" class="nav-button R" autofocus><img
                         src="Assets/Home.svg"></button></a>
             <a href="#calendar"><button class="nav-button R"><img src="Assets/Calendar.svg"></button></a>
-            <a href="https://ghswkdev.netlify.com/" target="_blank"><button class="nav-button R"><img
+            <a href="https://ghswkdev.netlify.com/" target="_blank" ><button onclick="load()" class="nav-button R"><img
                         src="Assets/Settings.svg"></button></a>
         </div>
     </div>
-
+<div class="workforce-dev-loader work">
+    <div>
+    <img src="Branding/Logo.png">
+    <div class="progress">
+        <div class="indeterminate"></div>
+    </div>
+</div>
+</div>
     <script>
         window.onload = function () {
             filterSelection('all');
@@ -565,7 +572,11 @@
             document.getElementById('clickButton').click();
         }
     </script>
-
+<script>
+function load(){
+document.getElementsByClassName("work").style.display = "block";
+}
+</script>
 
 </body>
 

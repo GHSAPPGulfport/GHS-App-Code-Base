@@ -844,6 +844,32 @@ summary:focus {
   border: none;
 }
 
+.work {display: none;}
+
+.workforce-dev-loader {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  z-index: 500;
+  margin-top: 40vh;
+}
+
+.workforce-dev-loader>div {
+  margin: auto;
+  width: 85%;
+  ;
+  ;
+}
+
+.workforce-dev-loader>div>img {
+  width: 93%;
+  margin-top: vh;
+  ;
+}
+
 .filter {
   overflow-x: scroll;
   white-space: nowrap;
@@ -852,7 +878,7 @@ summary:focus {
   border-bottom-color: lightgray;
   border-bottom-width: 1px;
   background-color: white;
-  transition:0.3s ease; 
+  transition: 0.3s ease;
 }
 
 .filter::-webkit-scrollbar {
