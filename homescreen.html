@@ -100,10 +100,11 @@
     <nav>
         
             <div class="holiday-badge"><div><img class="vivify fadeOut delay-3000" src="branding/RewardingFancyKite-max-1mb.gif"></div></div>
-        <a href="index.html" class="refresh R" style="position: fixed;"><i
+        <a href="index.html" class="refresh R" style="position: fixed;"><i 
                 onclick="M.toast({html: 'I am a toast'});" class="material-icons">refresh</i></a>
         <div class="logo-container"><img class="vivify fadeIn delay-3500" src="Branding/New GSD Logo Micro 512px.png">
         </div>
+        <a class="settings-icon" href="settings-sect"><i class="material-icons">settings</i></a>
       
     </nav>
     <div id="modal1" class="vivify fadeIn">
@@ -116,7 +117,7 @@
                 style="color: black;background-color: #012395;" class="R modal-btn white">Cancel</button>
             <a
                 href="https://261985.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNow%2fMobile%2fGradeBook.List.aspx"><button
-                    class=" R modal-btn mn black" ">Open</button></a>
+                    class=" R modal-btn mn black" >Open</button></a>
                
                 
           
@@ -130,13 +131,13 @@
 
 
 
-            <div class="special-content" class="vivify fadeIn" style="display: none;">
+            <div class="special-content" class="vivify fadeIn" >
                 <a class="R"
                     href="https://www.google.com/url?q=https://docs.google.com/forms/d/e/1FAIpQLScARPCwbHlvjTdy2BfbRH6lfWpfSQmYBIDFq9_emO8e9l1-dw/viewform?vc%3D0%26c%3D0%26w%3D1%26usp%3Dmail_form_link&source=gmail&ust=1565876637838000&usg=AFQjCNGKltaT_-koauWS7a5otoVRrRG3rg">
-                    <h3>Vote For Homecoming Theme</h3>
-                    <p>Brought to you by The Student Council</p>
+                    <h3>GHS App Under Maintenance Until 6:30pm Tonight</h3>
+                    <p>Some Features May Be Restricted Or Disabled</p>
                 </a>
-                <i class="material-icons R">close</i>
+         
             </div>
 
             <script>
@@ -524,8 +525,6 @@
 
 
 
-      
-
 
 
 
@@ -544,86 +543,6 @@
 
 
         </section>
-
-
-
-
-
-
-
-
-
-        <section id="settings">
-
-
-            <div class="inline-spacer" style="height: 55px;"></div>
-
-
-            <div class="settings-option">
-                <p style="margin-left: 10px;">Dark Mode</p>
-                <div><a onclick="launch_toast()" class="darkmode R btn blue darken-4">Enable</a></div>
-                <div><a class="normalmode R btn-flat">Disable</a></div>
-                <div class="card-divider" style="display: block; margin-top:10px; "></div>
-                <script>
-                    $(document).ready(function ($) {
-                        var mode = localStorage.getItem('mode');
-                        if (mode)
-                            $('body').addClass(mode);
-                        $('accent').addClass(mode);
-
-                        $(".darkmode").click(function () {
-                            $("body").addClass("darkclass");
-                            $("accent").addClass("darkclass");
-                            localStorage.setItem('mode', 'darkclass');
-                        });
-
-                        $(".normalmode").click(function () {
-                            $("body").removeClass("darkclass");
-                            $("accent").removeClass("darkclass");
-                            localStorage.setItem('mode', null);
-                        });
-                    });
-                </script>
-
-<style>
-
-
-select {display: block;}
-#google_translate_element {margin-left: 10px;width: 94%;}
-.goog-te-banner-frame {display: none;}
-</style>
- <p style="margin-left: 10px;">Translate | Beta</p>
-<div id="google_translate_element"></div>
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script> 
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'en'
-  }, 'google_translate_element');
-}
-</script>
-  <div class="card-divider" style="display: block; margin-top:10px; "></div>
-  <div class="credit"><p>Developed By Jacoby Broadnax</p></div></div>
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div class="bottom-navigation">
             <div class="nav-container">
 
@@ -634,7 +553,7 @@ function googleTranslateElementInit() {
                 <a href="#homescreen"><button onclick="filterSelection('all')" class="nav-button R"
                         autofocus><img src="Assets/Home.svg"></button></a>
                 <a href="#calendar"><button class="nav-button R"><img src="Assets/Calendar.svg"></button></a>
-                <a href="#settings"><button class="nav-button R"><img src="Assets/Settings.svg"></button></a>
+                <a href="https://ghsworkforcedev.netlify.com/"><button class="nav-button R"><img src="Assets/Settings.svg"></button></a>
             </div>
         </div>
 
