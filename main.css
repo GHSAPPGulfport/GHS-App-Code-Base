@@ -852,6 +852,7 @@ summary:focus {
   border-bottom-color: lightgray;
   border-bottom-width: 1px;
   background-color: white;
+  transition:0.3s ease; 
 }
 
 .filter::-webkit-scrollbar {
