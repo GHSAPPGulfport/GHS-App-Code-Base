@@ -846,6 +846,8 @@ summary:focus {
 
 .work {display: none;}
 
+.grades {display: none;;}
+
 .workforce-dev-loader {
   position: fixed;
   top: 0px;

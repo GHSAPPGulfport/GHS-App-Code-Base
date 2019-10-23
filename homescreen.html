@@ -118,7 +118,7 @@
             <button onclick="document.getElementById('modal1').style.display = 'none'"
                 style="color: black;background-color: #012395;" class="R modal-btn white">Cancel</button>
             <a
-                href="https://261985.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNow%2fMobile%2fGradeBook.List.aspx"><button
+                href="https://261985.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNow%2fMobile%2fGradeBook.List.aspx" target="_blank"><button onclick="load2()"
                     class=" R modal-btn mn black">Open</button></a>
         </div>
     </div>
@@ -558,6 +558,14 @@
             </div>
         </div>
     </div>
+    <div class="workforce-dev-loader grades">
+        <div>
+            <img style="margin-bottom: 10px;;" src="Branding/logo-grades.png" alt="Chalkable Logo">
+            <div class="progress">
+                <div class="indeterminate"></div>
+            </div>
+        </div>
+    </div>
     <script>
         window.onload = function () {
             filterSelection('all');
@@ -574,6 +582,12 @@
             document.getElementsByClassName("work")[0].style.display = "block";
         }
     </script>
+
+<script>
+    function load2() {
+        document.getElementsByClassName("grades")[0].style.display = "block";
+    }
+</script>
 
 </body>
 
