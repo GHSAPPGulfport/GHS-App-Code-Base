@@ -854,13 +854,13 @@ summary:focus {
   width: 100%;
   background-color: white;
   z-index: 500;
-  margin-top: 40vh;
+ 
 }
 
 .workforce-dev-loader>div {
   margin: auto;
   width: 85%;
-  ;
+  margin-top: 40vh;
   ;
 }
 
