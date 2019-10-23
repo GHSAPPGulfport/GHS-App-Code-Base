@@ -528,7 +528,6 @@
 
     <section id="calendar">
         <div class="spacer"></div>
-
         <iframe loading="lazy" id="month"
             src="https://calendar.google.com/calendar/b/3/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=Z2hzLmNhbGVuZGFyQGd1bGZwb3J0c2Nob29scy5vcmc&amp;color=%23A79B8E&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;mode=MONTH&amp;showCalendars=0&amp;showTz=0"
             style="border-width:0;position: absolute; top: 35px;width:100%; height:92%" frameborder="0"
@@ -546,18 +545,18 @@
             <a href="#homescreen"><button onclick="filterSelection('all')" class="nav-button R" autofocus><img
                         src="Assets/Home.svg"></button></a>
             <a href="#calendar"><button class="nav-button R"><img src="Assets/Calendar.svg"></button></a>
-            <a href="https://ghswkdev.netlify.com/" onclick="load()" target="_blank" ><button  class="nav-button R"><img
-                        src="Assets/Settings.svg"></button></a>
+            <a href="http://ghsworkforcedev.netlify.com" target="_blank" onclick="load()"><button class="nav-button R"><img src="Assets/Settings.svg"></button></a>
+
         </div>
     </div>
-<div class="workforce-dev-loader work">
-    <div>
-    <img src="Branding/Logo.png" alt="Work Force Development Logo">
-    <div class="progress">
-        <div class="indeterminate"></div>
+    <div class="workforce-dev-loader work">
+        <div>
+            <img src="Branding/Logo.png" alt="Work Force Development Logo">
+            <div class="progress">
+                <div class="indeterminate"></div>
+            </div>
+        </div>
     </div>
-</div>
-</div>
     <script>
         window.onload = function () {
             filterSelection('all');
@@ -569,11 +568,11 @@
             document.getElementById('clickButton').click();
         }
     </script>
-<script>
-function load(){
-document.getElementsByClassName("work").style.display = "block";
-}
-</script>
+    <script>
+        function load() {
+            document.getElementsByClassName("work")[0].style.display = "block";
+        }
+    </script>
 
 </body>
 
