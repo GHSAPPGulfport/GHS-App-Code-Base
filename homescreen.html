@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145321577-1"></script>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
     <link rel="stylesheet" href="css/vivify.min.css">
@@ -42,15 +42,15 @@
     </script>
 
     <script id="item-template" type="text/x-handlebars-template">
-
+        <style>
+            .true {display:block}
+            .false {display:none;}
+           
+            @media (prefers-color-scheme: dark) {.navigation-card > h5 {color: white;}.navigation-card > h6 {color: white;}.navigation-card > p {color: white;}}
+            </style>
         {{#each this}}
 
- <style>
- .true {display:block}
- .false {display:none;}
 
- @media (prefers-color-scheme: dark) {.navigation-card > h5 {color: white;}.navigation-card > h6 {color: white;}.navigation-card > p {color: white;}}
- </style>
     <div class="navigation-card filterDiv {{section}} {{athleticSection}} show vivify fadeIn delay-100 " id="{{subPostID}}">
         <h5>{{title}}</h5>
         <h6>{{subTitle}}</h6>
