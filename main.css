@@ -859,6 +859,8 @@ summary:focus {
  
 }
 
+.nav-button:focus {background-color: white !important;}
+
 .workforce-dev-loader > p {position: absolute; bottom: 0px; text-align: center;width: 100%;font-size: 18px;;}
 
 .workforce-dev-loader > p > strong {margin-right: 5px;}
