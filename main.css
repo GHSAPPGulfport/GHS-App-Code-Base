@@ -578,8 +578,8 @@ summary:focus {
 
 .settings-icon {
   position: fixed;
-  right: 10px;
-  top: 12px;
+  right: 20px;
+  top: 16px;
   z-index: 175;
 }
 
