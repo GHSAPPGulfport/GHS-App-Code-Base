@@ -27,7 +27,7 @@ body {
 
 nav {
   box-shadow: none;
-  
+
 }
 
 a {
@@ -38,7 +38,7 @@ nav {
   position: fixed;
   top: 0px;
   left: 0px;
-  background-color: white ;
+  background-color: white;
   width: 100%;
   ;
   height: 55px;
@@ -1032,10 +1032,12 @@ nav {
     color: lightgray;
   }
 
-  body.darkclass .settings-icon > img {filter: invert(100), brightness(150);}
-
   .bottom-navigation.darkclass {
     background-color: black;
+  }
+
+  body.darkclass .settings-icon>img {
+    filter: invert(100),saturate(100), brightness(150);
   }
 
   body.darkclass nav {
