@@ -618,8 +618,14 @@ summary:focus {
 
 }
 
+.content-container>a {
+  pointer-events: none;
+  ;
+}
+
 .content-container {
-  border-radius: 10px; ;
+  border-radius: 10px;
+  ;
 }
 
 .holiday-badge {
@@ -848,9 +854,14 @@ summary:focus {
   border: none;
 }
 
-.work {display: none;}
+.work {
+  display: none;
+}
 
-.grades {display: none;;}
+.grades {
+  display: none;
+  ;
+}
 
 .workforce-dev-loader {
   position: fixed;
@@ -860,14 +871,25 @@ summary:focus {
   width: 100%;
   background-color: white;
   z-index: 500;
- 
+
 }
 
-.nav-button:focus {background-color: white !important;}
+.nav-button:focus {
+  background-color: white !important;
+}
 
-.workforce-dev-loader > p {position: absolute; bottom: 0px; text-align: center;width: 100%;font-size: 18px;;}
+.workforce-dev-loader>p {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  ;
+}
 
-.workforce-dev-loader > p > strong {margin-right: 5px;}
+.workforce-dev-loader>p>strong {
+  margin-right: 5px;
+}
 
 .workforce-dev-loader>div {
   margin: auto;
