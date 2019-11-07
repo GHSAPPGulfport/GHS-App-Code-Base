@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admiral Oean</title>
+    <link rel="stylesheet" href="ext.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="vivify.min.css">
+    <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+    <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+</head>
+
+<body class="vivify fadeIn delay-400">
+
+
+    <div class="return" style="margin-top: 10px;">
+        <a href="https://gulfporthighschoolapp.netlify.com/homescreen#homescreen" target="_blank"><button
+                onclick="load()" class="btn-flat"><i class="material-icons left">
+                    arrow_back</i>Return To GHS App</button></a>
+    </div>
+    <div class="workforce-dev-loader work">
+        <div>
+            <img src="Assets/GHS App Loading.svg" alt="WGTV Logo">
+            <div class="progress">
+                <div class="indeterminate"></div>
+            </div>
+            <p style="text-align: center;" class="vivify fadeIn delay-3000">Loading may take longer than expected due to
+                internet connection speed.</p>
+        </div>
+        <p class="branding"><strong>GHS</strong>App</p>
+    </div>
+    <script>
+        function load() {
+            document.getElementsByClassName("work")[0].style.display = "block";
+        }
+    </script>
+    <div class="ext-iframe">
+        <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=UCeFmAX8nx-eVoTx9CPmOoAw" width="480" height="400"></iframe> 
+</div>
+</body>
+
+
+</html>
