@@ -3,7 +3,8 @@ body {
   padding: 0px;
   font-family: roboto, sans-serif;
   transition: 0.3s ease;
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  background-image: url(assets/Christmas\ Stencil.svg);
 }
 
 html {
@@ -43,7 +44,7 @@ nav {
   ;
   height: 55px;
   z-index: 50;
-  ;
+  background-image: url(assets/Christmas\ Stencil.svg);
   ;
 }
 
@@ -149,6 +150,7 @@ nav {
   border-top: solid;
   border-width: 1px;
   border-color: lightgray;
+
 }
 
 .nav-button {
@@ -424,6 +426,8 @@ nav {
 .tabs .tab a {
   color: #000;
 }
+
+.tabs {}
 
 .tab-button {
   border: none;
