@@ -4,7 +4,7 @@ body {
   font-family: roboto, sans-serif;
   transition: 0.3s ease;
   scroll-behavior: smooth;
-  background-image: url(assets/Christmas\ Stencil.svg);
+  background-image: url(assets/christmastencel.svg);
 }
 
 html {
@@ -44,7 +44,7 @@ nav {
   ;
   height: 55px;
   z-index: 50;
-  background-image: url(assets/Christmas\ Stencil.svg);
+  background-image: url(assets/christmastencel.svg);
   ;
 }
 
