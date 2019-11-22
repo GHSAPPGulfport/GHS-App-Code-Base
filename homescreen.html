@@ -38,6 +38,12 @@
                 $('#items').html(template(data))
             })
         })
+        
+        $(".lazy").lazy({
+        effect: "fadeIn",
+        effectTime: 5000,
+        threshold: 0
+    });
     </script>
 
     <script id="item-template" type="text/x-handlebars-template">
@@ -65,13 +71,7 @@
     {{/each}}
     
 </script>
-<script>
-$('.lazy').lazy({
-    effect: "fadeIn",
-    effectTime: 5000,
-    threshold: 0
-});
-</script>
+
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
@@ -201,7 +201,7 @@ $('.lazy').lazy({
             }
 
             .tabs .tab a.active {
-                background-color: white;
+                background-color: transparent;
                 color: #012395;
             }
 
@@ -315,7 +315,9 @@ $('.lazy').lazy({
 
 
             <div id="items" style="margin-bottom: 50px;" class="vivify fadeInTop duration-500">
-                
+                <div class="content-loader"><img
+                        src="https://camo.githubusercontent.com/a1a81b0529517027d364ee8432cf9a8bd309542a/687474703a2f2f692e696d6775722e636f6d2f56446449444f522e676966">
+                </div>
             </div>
 
 
