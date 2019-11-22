@@ -683,6 +683,7 @@ summary:focus {
 
   margin: auto;
   width: 92%;
+  margin-top: 15px;;
 }
 
 .navigation-image>a {
@@ -691,6 +692,10 @@ summary:focus {
   text-decoration: none;
   color: black;
 }
+
+#news {margin-top: 20px;}
+
+#media {margin-top: 20px;}
 
 .navigation-image>a>img {
   width: 100%;

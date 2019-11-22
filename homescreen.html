@@ -231,7 +231,7 @@
                 }
             }
         </style>
-        <div style="position: fixed; width: 6px; height:6px; top: 60px; right: 10px; background-color: red;z-index: 150;border-radius: 5px;display: none;"
+        <div style="position: fixed; width: 6px; height:6px; top: 60px; right: 10px; background-color: red;z-index: 150;border-radius: 5px;display:none;"
             class="live-dot vivify fadeIn infinite"></div>
         <div class="tab-navigation">
             <div style="position: fixed;width: 100%;top: 55px;left: 0px;;" class="" style="padding: 0px;">
@@ -243,9 +243,6 @@
                                 onclick="filterSelection('news')">NEWS</button></a>
                     </li>
 
-                    <li class="tab col s3"><a href="#sports"><button class="R tab-button vivify fadeIn delay-200"
-                                onclick="filterSelection('sports')">SPORTS</button></a></li>
-
                     <li class="tab col s3"><a href="#media"><button class="R tab-button vivify fadeIn delay-300"
                                 onclick="filterSelection('media')">MEDIA</button></a></li>
                 </ul>
@@ -253,180 +250,131 @@
             </div>
         </div>
         <div style="width: 100%; height:85px;"></div>
-        <div class="tab-items">
-            <div id="inbox" class="col s12">
 
 
-                <div id="sports" class="filter">
-                    <button class="R baseball vivify fadeIn"
-                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/baseball/boys'">Baseball</button>
-                    <button class="R vivify fadeIn delay-100"
-                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/football/boys'">Football</button>
-                    <button class="R vivify fadeIn delay-200"
-                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/volleyball/girls'">VolleyBall</button>
+        <div id="news" class="filter filterDiv news" style="height: 50px;padding-bottom: 10px;">
+            <button class="R vivify fadeIn" onclick="filterSelection('freshman')">9th
+                (Freshman)</button>
+            <button class="R vivify fadeIn delay-100" onclick="filterSelection('sophmore')">10th
+                (Sophmore)</button>
+            <button class="R vivify fadeIn delay-200" onclick="filterSelection('junior')">11th
+                (Junior)</button>
 
-                    <button class="R vivify fadeIn delay-300"
-                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/basketball/girls'">Girls
-                        Basketball</button>
-                    <button class="R vivify fadeIn delay-400"
-                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/bowling/coed'">Bowling</button>
-                    <button class="R vivify fadeIn delay-500"
-                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/swimming/coed'">Swimming</button>
-                    <button class="R vivify fadeIn delay-200"
-                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/golf/girls'">Girls
-                        Golf</button>
-                    <button class="R vivify fadeIn delay-700"
-                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/track%20and%20field/coed'">Track
-                        And Field</button>
-                    <br>
-                    <button class="R vivify fadeIn"
-                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/basketball/boys'">Boys
-                        Basketball</button>
-                    <button class="R vivify fadeIn delay-100"
-                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/cheerleading/coed'">Cheerleading</button>
-                    <button class="R vivify fadeIn delay-200"
-                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/golf/boys'">Boys
-                        Golf</button>
-                    <button class="R vivify fadeIn delay-300"
-                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/soccer/boys'">Boys
-                        Soccer</button>
-                    <button class="R vivify fadeIn delay-400"
-                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/soccer/girls'">Girls
-                        Soccer</button>
-                    <button class="R vivify fadeIn delay-500"
-                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/softball/girls'">Softball</button>
+            <button class="R vivify fadeIn delay-300" onclick="filterSelection('senior')">12th
+                (Senior)</button>
 
-                    <button class="R vivify fadeIn delay-600"
-                        onclick="document.all.sportsframe.src = 'http://gulfportadmirals.com/sport/tennis/coed'">Tennis</button>
+        </div>
 
+        <div id="media" class="filterDiv media">
 
-                </div>
-
-
-                <div id="news" class="filter filterDiv news" style="height: 50px;padding-bottom: 10px;">
-                    <button class="R vivify fadeIn" onclick="filterSelection('freshman')">9th
-                        (Freshman)</button>
-                    <button class="R vivify fadeIn delay-100" onclick="filterSelection('sophmore')">10th
-                        (Sophmore)</button>
-                    <button class="R vivify fadeIn delay-200" onclick="filterSelection('junior')">11th
-                        (Junior)</button>
-
-                    <button class="R vivify fadeIn delay-300" onclick="filterSelection('senior')">12th
-                        (Senior)</button>
-
-                </div>
-
-                <div id="media" class="filterDiv media">
-
-                    <div class="filter" style="height: 50px;">
-                        <button class="R vivify fadeIn delay-100" onclick="filterSelection('live')">Live
-                            Games</button>
-                        <button class="R vivify fadeIn delay-200" onclick="filterSelection('art')">GHS
-                            Art</button>
-                        <button class="R vivify fadeIn delay-300" onclick="filterSelection('podcast')">Podcast</button>
-                        <button class="R vivify fadeIn delay-400" onclick="filterSelection('videos')">Videos</button>
-                    </div>
-                    <div class="live-stream">
-                        <iframe loading="lazy" class="live-frame"
-                            src="https://c.themediacdn.com/embed/media/O7sBCQ/OqvzSehCsA1/mrLrvlwsOOb_5?wmode=opaque"
-                            allowfullscreen></iframe>
-
-                        <div class="navigation-card" style="transform: rotateZ(360deg);" style="margin-right: 50px;">
-                            <h5>GHS Live Games</h5>
-                            <h6>Presented By WGTV & Admiralnation</h6>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="navigation-card-container">
-
-
-                    <div id="items" style="margin-bottom: 50px;" class="vivify fadeInTop duration-500">
-                        <div class="content-loader"><img
-                                src="https://camo.githubusercontent.com/a1a81b0529517027d364ee8432cf9a8bd309542a/687474703a2f2f692e696d6775722e636f6d2f56446449444f522e676966">
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="sports filterDiv sports-frame" style="position: fixed; top: 250px; left:0px;z-index: -1;">
-                    <iframe loading="lazy" id="sportsframe" src=""
-                        style="border: none; margin-top: -120px;height: 100vh;width: 100%;position: fixed"></iframe>
-                </div>
-                <style>
-                    body.darkclass .back-top-button {
-                        background-color: black
-                    }
-
-                    body.darkclass .back-top-button>button>i {
-                        color: white;
-                    }
-
-                    body.darkclass .back-top-button>button>p {
-                        color: white;
-                    }
-                </style>
-                <div class="back-top vivify fadeInRight" id="up">
-                    <a href="/homescreen.html#homescreen" class="back-top-button"><button class=""><i
-                                class="material-icons">
-                                keyboard_arrow_up</i>
-                            <p>Back To Top</p>
-                        </button></a>
-
-                </div>
-
-                <script>
-                    $(window).scroll(function () {
-                        var scroll = $(window).scrollTop();
-                        if (scroll > 300) {
-                            $("#up").addClass("scrolled");
-                        } else {
-                            $("#up").removeClass("scrolled");
-                        }
-                    });
-                </script>
-
-                <script>
-                    filterSelection("all")
-
-                    function filterSelection(c) {
-                        var x, i;
-                        x = document.getElementsByClassName("filterDiv");
-                        if (c == "all") c = "";
-                        for (i = 0; i < x.length; i++) {
-                            w3RemoveClass(x[i], "show");
-                            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-                        }
-                    }
-
-                    function w3AddClass(element, name) {
-                        var i, arr1, arr2;
-                        arr1 = element.className.split(" ");
-                        arr2 = name.split(" ");
-                        for (i = 0; i < arr2.length; i++) {
-                            if (arr1.indexOf(arr2[i]) == -1) {
-                                element.className += " " + arr2[i];
-                            }
-                        }
-                    }
-
-                    function w3RemoveClass(element, name) {
-                        var i, arr1, arr2;
-                        arr1 = element.className.split(" ");
-                        arr2 = name.split(" ");
-                        for (i = 0; i < arr2.length; i++) {
-                            while (arr1.indexOf(arr2[i]) > -1) {
-                                arr1.splice(arr1.indexOf(arr2[i]), 1);
-                            }
-                        }
-                        element.className = arr1.join(" ");
-                    }
-                </script>
+            <div class="filter" style="height: 50px;">
+                <button class="R vivify fadeIn delay-100" onclick="filterSelection('live')">Live
+                    Games</button>
+                <button class="R vivify fadeIn delay-200" onclick="filterSelection('art')">GHS
+                    Art</button>
+                <button class="R vivify fadeIn delay-300" onclick="filterSelection('podcast')">Podcast</button>
+                <button class="R vivify fadeIn delay-400" onclick="filterSelection('videos')">Videos</button>
             </div>
+            <div class="live-stream">
+                <iframe loading="lazy" class="live-frame"
+                    src="https://c.themediacdn.com/embed/media/O7sBCQ/OqvzSehCsA1/mrLrvlwsOOb_5?wmode=opaque"
+                    allowfullscreen></iframe>
+
+                <div class="navigation-card" style="transform: rotateZ(360deg);" style="margin-right: 50px;">
+                    <h5>GHS Live Games</h5>
+                    <h6>Presented By WGTV & Admiralnation</h6>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="navigation-card-container">
+
+
+            <div id="items" style="margin-bottom: 50px;" class="vivify fadeInTop duration-500">
+                <div class="content-loader"><img
+                        src="https://camo.githubusercontent.com/a1a81b0529517027d364ee8432cf9a8bd309542a/687474703a2f2f692e696d6775722e636f6d2f56446449444f522e676966">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="sports filterDiv sports-frame" style="position: fixed; top: 250px; left:0px;z-index: -1;">
+            <iframe loading="lazy" id="sportsframe" src=""
+                style="border: none; margin-top: -120px;height: 100vh;width: 100%;position: fixed"></iframe>
+        </div>
+        <style>
+            body.darkclass .back-top-button {
+                background-color: black
+            }
+
+            body.darkclass .back-top-button>button>i {
+                color: white;
+            }
+
+            body.darkclass .back-top-button>button>p {
+                color: white;
+            }
+        </style>
+        <div class="back-top vivify fadeInRight" id="up">
+            <a href="/homescreen.html#homescreen" class="back-top-button"><button class=""><i class="material-icons">
+                        keyboard_arrow_up</i>
+                    <p>Back To Top</p>
+                </button></a>
+
+        </div>
+
+        <script>
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 300) {
+                    $("#up").addClass("scrolled");
+                } else {
+                    $("#up").removeClass("scrolled");
+                }
+            });
+        </script>
+
+        <script>
+            filterSelection("all")
+
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("filterDiv");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                    w3RemoveClass(x[i], "show");
+                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                }
+            }
+
+            function w3AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) {
+                        element.className += " " + arr2[i];
+                    }
+                }
+            }
+
+            function w3RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                        arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    }
+                }
+                element.className = arr1.join(" ");
+            }
+        </script>
+        </div>
 
 
 
