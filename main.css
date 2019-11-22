@@ -428,7 +428,7 @@ nav {
   color: #000;
 }
 
-.tabs {}
+.tabs {border-bottom: solid 1px lightgray;}
 
 .tab-button {
   border: none;
