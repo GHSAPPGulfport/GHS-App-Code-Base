@@ -433,7 +433,7 @@ nav {
 .tab-button {
   border: none;
   background-color: transparent;
-
+width: 100%;
 }
 
 .tab-button:focus {

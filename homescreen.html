@@ -24,14 +24,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
     <script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <link rel="stylesheet" media="all" href="css/styles.css" />
-
+    <script>$('navigation-card').lazyload(options)</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $.getJSON('https://api.sheety.co/86891052-3092-4d3e-b9fb-8fcdb9859876', function (data) {
@@ -57,7 +56,7 @@
           <div class="content-container">{{{imageURL1}}}</div> 
         <p>{{paragraph}}</p>
         <div class="button-container" onclick="document.getElementById('popup').style.display = 'block'">
-             <button onclick="document.all.IFrameName.src = '{{buttonUrl}}'"  class="R btn-flat pulse white {{buttonState}}" >{{buttonText}}</button>
+             <button onclick="document.all.IFrameName.src = '{{buttonUrl}}'"  class="waves-effect btn-flat pulse white {{buttonState}}" >{{buttonText}}</button>
             </div>
 
            
@@ -122,9 +121,9 @@
                 limitations of Chalkable.</p>
 
             <button onclick="document.getElementById('modal1').style.display = 'none'"
-                style="color: black;background-color: #012395;" class="R modal-btn white">Cancel</button>
+                style="color: black;background-color: #012395;" class="waves-effect modal-btn white">Cancel</button>
             <a href="https://261985.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNow%2fMobile%2fGradeBook.List.aspx"
-                target="_blank"><button onclick="load2()" class=" R modal-btn mn black">Open</button></a>
+                target="_blank"><button onclick="load2()" class=" waves-effect modal-btn mn black">Open</button></a>
         </div>
     </div>
 
@@ -132,15 +131,15 @@
     <div class="bottom-navigation">
         <div class="nav-container">
 
-            <a href="#meal-menu"><button class="nav-button R"><img src="Assets/Menu.svg"></button></a>
+            <a href="#meal-menu"><button class="nav-button waves-effect"><img src="Assets/Menu.svg"></button></a>
 
             <a onclick="document.getElementById('modal1').style.display = 'block'"><button
-                    class="nav-button R white"><img src="Assets/Grades.svg"></button></a>
-            <a href="#homescreen"><button onclick="filterSelection('all')" class="nav-button R" autofocus><img
-                        src="Assets/Home.svg"></button></a>
-            <a href="#calendar"><button class="nav-button R"><img src="Assets/Calendar.svg"></button></a>
-            <a href="https://ghswkdev.netlify.com" target="_blank" onclick="load()"><button class="nav-button R"><img
-                        src="Assets/work-dev.svg"></button></a>
+                    class="nav-button waves-effect white"><img src="Assets/Grades.svg"></button></a>
+            <a href="#homescreen"><button onclick="filterSelection('all')" class="nav-button waves-effect"
+                    autofocus><img src="Assets/Home.svg"></button></a>
+            <a href="#calendar"><button class="nav-button waves-effect"><img src="Assets/Calendar.svg"></button></a>
+            <a href="https://ghswkdev.netlify.com" target="_blank" onclick="load()"><button
+                    class="nav-button waves-effect"><img src="Assets/work-dev.svg"></button></a>
 
         </div>
     </div>
@@ -234,16 +233,20 @@
         <div style="position: fixed; width: 6px; height:6px; top: 60px; right: 10px; background-color: red;z-index: 150;border-radius: 5px;display:none;"
             class="live-dot vivify fadeIn infinite"></div>
         <div class="tab-navigation">
-            <div style="position: fixed;width: 100%;top: 55px;left: 0px;solid 1px lightgray;" class="" style="padding: 0px;">
+            <div style="position: fixed;width: 100%;top: 55px;left: 0px;solid 1px lightgray;" class=""
+                style="padding: 0px;">
                 <ul class="tabs">
-                    <li class="tab col s3"><a href="#home"><button id="clickButton" class="R tab-button vivify fadeIn"
+                    <li class="tab col s3 "><a href="#home"><button id="clickButton"
+                                class=" tab-button waves-effect vivify fadeIn"
                                 onclick="filterSelection('all')">HOME</button></a>
                     </li>
-                    <li class="tab col s3"><a href="#news"><button class="R tab-button vivify fadeIn delay-100"
+                    <li class="tab col s3"><a href="#news"><button
+                                class="waves-effect tab-button vivify fadeIn delay-100"
                                 onclick="filterSelection('news')">NEWS</button></a>
                     </li>
 
-                    <li class="tab col s3"><a href="#media"><button class="R tab-button vivify fadeIn delay-300"
+                    <li class="tab col s3 "><a href="#media"><button
+                                class="waves-effect tab-button vivify fadeIn delay-300"
                                 onclick="filterSelection('media')">MEDIA</button></a></li>
                 </ul>
 
@@ -253,14 +256,14 @@
 
 
         <div id="news" class="filter filterDiv news" style="height: 50px;padding-bottom: 10px;">
-            <button class="R vivify fadeIn" onclick="filterSelection('freshman')">9th
+            <button class="waves-effect vivify fadeIn" onclick="filterSelection('freshman')">9th
                 (Freshman)</button>
-            <button class="R vivify fadeIn delay-100" onclick="filterSelection('sophmore')">10th
+            <button class="waves-effect vivify fadeIn delay-100" onclick="filterSelection('sophmore')">10th
                 (Sophmore)</button>
-            <button class="R vivify fadeIn delay-200" onclick="filterSelection('junior')">11th
+            <button class="waves-effect vivify fadeIn delay-200" onclick="filterSelection('junior')">11th
                 (Junior)</button>
 
-            <button class="R vivify fadeIn delay-300" onclick="filterSelection('senior')">12th
+            <button class="waves-effect vivify fadeIn delay-300" onclick="filterSelection('senior')">12th
                 (Senior)</button>
 
         </div>
@@ -268,12 +271,13 @@
         <div id="media" class="filterDiv media">
 
             <div class="filter" style="height: 50px;">
-                <button class="R vivify fadeIn delay-100" onclick="filterSelection('live')">Live
+                <button class="waves-effect vivify fadeIn delay-100" onclick="filterSelection('live')">Live
                     Games</button>
-                <button class="R vivify fadeIn delay-200" onclick="filterSelection('art')">GHS
+                <button class="waves-effect vivify fadeIn delay-200" onclick="filterSelection('art')">GHS
                     Art</button>
-                <button class="R vivify fadeIn delay-300" onclick="filterSelection('podcast')">Podcast</button>
-                <button class="R vivify fadeIn delay-400" onclick="filterSelection('videos')">Videos</button>
+                <button class="waves-effect vivify fadeIn delay-300"
+                    onclick="filterSelection('podcast')">Podcast</button>
+                <button class="waves-effect vivify fadeIn delay-400" onclick="filterSelection('videos')">Videos</button>
             </div>
             <div class="live-stream">
                 <iframe loading="lazy" class="live-frame"
@@ -397,9 +401,9 @@
                 <div style="position: fixed;width: 100%;top: 55px;left: 0px;;" class="" style="padding: 0px;">
                     <ul class="tabs">
                         <li class="tab col s3"><a href="#lunch"><button
-                                    class="R tab-button XL vivify fadeIn">LUNCH</button></a></li>
+                                    class="waves-effect tab-button XL vivify fadeIn">LUNCH</button></a></li>
                         <li class="tab col s3"><a href="#breakfast"><button
-                                    class="R tab-button XL vivify fadeIn delay-200">BREAKFAST</button></a>
+                                    class="waves-effect tab-button XL vivify fadeIn delay-200">BREAKFAST</button></a>
                         </li>
 
                     </ul>
