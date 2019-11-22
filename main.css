@@ -447,7 +447,7 @@ nav {
 .hide-tab-scrollbar {
   border-bottom: solid;
   border-bottom-color: lightgray;
-  border-bottom-width: 1px;
+  border-bottom-width: 1.3px;
 }
 
 .special-content {
