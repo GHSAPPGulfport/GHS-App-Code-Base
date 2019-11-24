@@ -4,19 +4,12 @@
     <meta charset="UTF-8">
     <title>GHS App</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145321577-1"></script>
 
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
     <link rel="stylesheet" href="css/vivify.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="vivify.min.css" rel="stylesheet" type="text/css" />
-    <link rel="manifest" href="manifest.json">
-    <link rel="shortcut icon" href="Branding/Ios%20App%20Icon.png" type="image/x-icon">
-    <meta name="theme-color" content="#ffffff">
-    <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
-    <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
     </script>
 
@@ -38,12 +31,7 @@
                 $('#items').html(template(data))
             })
         })
-        
-        $(".lazy").lazy({
-        effect: "fadeIn",
-        effectTime: 5000,
-        threshold: 0
-    });
+
     </script>
 
     <script id="item-template" type="text/x-handlebars-template">
@@ -76,7 +64,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122866044-3"></script>
+ 
 
 
 
@@ -164,7 +152,7 @@
              });
            </script>
 
-        <div style="display: none;" class="special-content" class="vivify fadeIn">
+        <div style="display: block;" class="special-content" class="vivify fadeIn">
             <a class="R" href="#">
                 <h3>GHS App Under Maintenance Until 10:30pm Tonight</h3>
                 <p>Some Features May Be Restricted Or Disabled</p>
@@ -248,8 +236,8 @@
         </style>
         <div style="position: fixed; width: 6px; height:6px; top: 60px; right: 10px; background-color: red;z-index: 150;border-radius: 5px;display:none;"
             class="live-dot vivify fadeIn infinite"></div>
-        <div class="tab-navigation">
-            <div style="position: fixed;width: 100%;top: 55px;left: 0px;solid 1px lightgray;" class=""
+        <div class="tab-navigation" >
+            <div style="position: fixed;width: 100%;top: 55px;left: 0px;border: transparent;" class=""
                 style="padding: 0px;">
                 <ul class="tabs">
                     <li class="tab col s3 "><a href="#home"><button id="clickButton"
@@ -310,22 +298,7 @@
         </div>
 
 
-
-        <div class="navigation-card-container">
-
-
-            <div id="items" style="margin-bottom: 50px;" class="vivify fadeInTop duration-500">
-                <div class="content-loader"><img
-                        src="https://camo.githubusercontent.com/a1a81b0529517027d364ee8432cf9a8bd309542a/687474703a2f2f692e696d6775722e636f6d2f56446449444f522e676966">
-                </div>
-            </div>
-
-
-        </div>
-        <div class="sports filterDiv sports-frame" style="position: fixed; top: 250px; left:0px;z-index: -1;">
-            <iframe loading="lazy" id="sportsframe" src=""
-                style="border: none; margin-top: -120px;height: 100vh;width: 100%;position: fixed"></iframe>
-        </div>
+       
         <style>
             body.darkclass .back-top-button {
                 background-color: black
@@ -526,75 +499,7 @@
                 });
             </script>
 
-            <style>
-                input:not([type]),
-                input[type=text],
-                input[type=password],
-                input[type=email],
-                input[type=url],
-                input[type=time],
-                input[type=date],
-                input[type=datetime],
-                input[type=datetime-local],
-                input[type=tel],
-                input[type=number],
-                input[type=search],
-                textarea.materialize-textarea {
-                    background-color: transparent;
-                    /border: none;/ /border-bottom: 1px solid #9e9e9e;/ border-bottom: none;
-                    border-radius: 0;
-                    outline: none;
-                    height: 3rem;
-                    width: 100%;
-                    font-size: 1rem;
-                    margin: 0 0 15px 0;
-                    padding: 0;
-                    box-shadow: none;
-                    box-sizing: content-box;
-                    transition: all 0.3s;
-                }
-
-                input:not([type]):focus:not([readonly]),
-                input[type=text]:focus:not([readonly]),
-                input[type=password]:focus:not([readonly]),
-                input[type=email]:focus:not([readonly]),
-                input[type=url]:focus:not([readonly]),
-                input[type=time]:focus:not([readonly]),
-                input[type=date]:focus:not([readonly]),
-                input[type=datetime]:focus:not([readonly]),
-                input[type=datetime-local]:focus:not([readonly]),
-                input[type=tel]:focus:not([readonly]),
-                input[type=number]:focus:not([readonly]),
-                input[type=search]:focus:not([readonly]),
-                textarea.materialize-textarea:focus:not([readonly]) {
-                    /border-bottom: 1px solid #f00;
-                    box-shadow: 0 1px 0 0 #f00;/ border-bottom: none;
-                    box-shadow: none;
-                }
-
-                select {
-                    display: block;
-                }
-
-                #google_translate_element {
-                    margin-left: 10px;
-                    width: 94%;
-                }
-
-                .goog-te-banner-frame {
-                    display: none;
-                }
-            </style>
-            <p style="margin-left: 10px;">Translation | Beta</p>
-            <div id="google_translate_element"></div>
-            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            <script>
-                function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({
-                        pageLanguage: 'en'
-                    }, 'google_translate_element');
-                }
-            </script>
+         
             <div class="card-divider" style="display: block; margin-top:10px; "></div>
             <div class="credit">
                 <p>Developed By Jacoby Broadnax</p>
@@ -662,6 +567,18 @@
         }
     </script>
 
+
+<div class="navigation-card-container">
+
+
+    <div id="items" style="margin-bottom: 50px;" class="vivify fadeInTop duration-500">
+        <div class="content-loader"><img
+                src="https://camo.githubusercontent.com/a1a81b0529517027d364ee8432cf9a8bd309542a/687474703a2f2f692e696d6775722e636f6d2f56446449444f522e676966">
+        </div>
+    </div>
+
+
+</div>
 </body>
 
 </body>

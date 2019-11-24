@@ -357,7 +357,8 @@ nav {
 }
 
 #calendar {
-  display: none
+  display: none;
+
 }
 
 #calendar:target {
@@ -374,6 +375,8 @@ nav {
   position: fixed;
   top: 0px;
   margin-top: 25px;
+  z-index: 50;
+  left: 0px;;
 }
 
 #podcast {
@@ -429,7 +432,7 @@ nav {
   color: #000;
 }
 
-.tabs {border-bottom: solid 1px lightgray;background-color: transparent !important;}
+.tabs {background-color: transparent !important;}
 
 .tab-button {
   border: none;
