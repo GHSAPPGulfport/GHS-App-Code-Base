@@ -1206,6 +1206,8 @@ body.darkclass .spacer {
   background-image: url(/Assets/Christmas\ Stencil\ Dark.svg);
 }
 
+body.darkclass .settings-icon > img {filter: invert(100);}
+
 body.darkclass .tabs .tab a.active {
   background-color: black;
   color: white
