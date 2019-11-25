@@ -326,6 +326,11 @@ nav {
 
 #meal-menu {
   display: none;
+  position: fixed;
+  left: 0px;;
+z-index: 10;
+top: 0px;
+background-color: white;
 }
 
 #meal-menu:target {
@@ -848,7 +853,7 @@ summary:focus {
 
 .menu-overflow {
   width: 100%;
-  margin-top: 90px;
+  
   ;
 }
 
