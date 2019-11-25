@@ -1017,6 +1017,7 @@ nav {
     background-color: black;
   }
 
+
   .bottom-navigation {
     background-color: black;
   }
@@ -1058,6 +1059,8 @@ nav {
   body.darkclass .settings-icon>img {
     filter: invert(100), saturate(100), brightness(150);
   }
+
+ 
 
   body.darkclass nav {
     background-color: black;
@@ -1179,7 +1182,7 @@ nav {
 
 body.darkclass {
   background-color: black;
-
+background-image: url(/Assets/Christmas\ Stencil\ Dark.svg) 
 }
 
 body.darkclass .bottom-navigation {
@@ -1200,6 +1203,7 @@ body.darkclass .tab-navigation {
 
 body.darkclass .spacer {
   background-color: black;
+  background-image: url(/Assets/Christmas\ Stencil\ Dark.svg);
 }
 
 body.darkclass .tabs .tab a.active {
