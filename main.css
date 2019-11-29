@@ -4,7 +4,7 @@ body {
   font-family: roboto, sans-serif;
   transition: 0.3s ease;
   scroll-behavior: smooth;
-  background-image: url(assets/christmastencel.svg);
+background-color: white;;
 }
 
 html {
@@ -589,7 +589,11 @@ summary:focus {
   border-bottom-color: lightgray;
   padding-bottom: 10px;
   padding-top: 5px;
-  color: rgb(0, 0, 0);
+background-image: url(/Assets/card\ stencil.svg);
+border-radius: 10px;
+margin-top: 12px;
+padding-left: 8px;padding-right: 8px;;
+background-size: cover;;
 }
 
 .settings-icon {
