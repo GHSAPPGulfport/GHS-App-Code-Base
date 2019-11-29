@@ -589,6 +589,7 @@ summary:focus {
   border-bottom-color: lightgray;
   padding-bottom: 10px;
   padding-top: 5px;
+  color: white;
 }
 
 .settings-icon {
