@@ -74,8 +74,8 @@ nav {
   top: 0px;
   left: 0px;
   z-index: 10;
-  ;
-  background-image: url(/Assets/christmastencel\ inverted.svg);
+  background-color: white;;
+
 }
 
 .inline-spacer {
@@ -697,7 +697,7 @@ border: solid 1px lightgray;
 .navigation-card-container {
 
   margin: auto;
-  width: 92%;
+  width: 95%;
   margin-top: 35px;;
 }
 
