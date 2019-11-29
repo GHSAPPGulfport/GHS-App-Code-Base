@@ -75,7 +75,7 @@ nav {
   left: 0px;
   z-index: 10;
   ;
-  background-image: url(assets/christmastencel.svg);
+  background-image: url(/Assets/christmastencel\ inverted.svg);
 }
 
 .inline-spacer {
@@ -230,7 +230,7 @@ nav {
   border-radius: 10px;
   padding-bottom: 10px;
   margin-top: 25vh;
-  background-image: url(assets/christmastencel.svg);
+  background-image: url(/Assets/christmastencel\ inverted.svg);
 }
 
 .sub-modal>p {
@@ -891,7 +891,7 @@ summary:focus {
   width: 100%;
   background-color: white;
   z-index: 500;
-  background-image: url(assets/christmastencel.svg);
+  background-image: url(/Assets/christmastencel\ inverted.svg);
 }
 
 .nav-button:focus {
@@ -931,7 +931,7 @@ summary:focus {
   border-bottom: solid;
   border-bottom-color: lightgray;
   border-bottom-width: 1px;
-  background-color: white;
+  background-color: transparent;
   transition: 0.3s ease;
 }
 
