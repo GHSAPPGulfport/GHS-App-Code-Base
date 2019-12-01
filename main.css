@@ -586,7 +586,7 @@ summary:focus {
 
 .navigation-card {
   margin: auto;
-  width: 100%;
+  width: 95%;
 
   border-bottom: solid;
   border-bottom-width: 1px;
@@ -622,12 +622,14 @@ border: solid 1px lightgray;
 
 .navigation-card>h5 {
   font-size: 15px;
+  white-space: pre-wrap;
 }
 
 .navigation-card>h6 {
   font-size: 14px;
   margin-top: 0px;
   font-size: 13px;
+  white-space: pre-wrap;
 }
 
 .navigation-card>p {
@@ -703,7 +705,7 @@ border: solid 1px lightgray;
 
   margin: auto;
   width: 95%;
-  margin-top: 35px;;
+  margin-top: 15px;;
 }
 
 .navigation-image>a {
@@ -944,6 +946,7 @@ border: solid 1px lightgray;
   border-bottom-width: 1px;
   background-color: transparent;
   transition: 0.3s ease;
+  margin-bottom: -10px;
 }
 
 .filter::-webkit-scrollbar {
@@ -1010,7 +1013,8 @@ border: solid 1px lightgray;
 
 .live-stream {
   margin: auto;
-  width: 95%;
+  width: 100%;
+  margin-top: 30px;
 }
 
 nav {
