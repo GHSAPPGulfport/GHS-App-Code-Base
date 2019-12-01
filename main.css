@@ -1001,7 +1001,11 @@ border: solid 1px lightgray;
 
 /*----------------------------------------------------Media---------------------------------------------------*/
 
+.live > span{float: left;margin-left: 6px;color: rgb(255, 0, 0);}
 
+.live-dot {float: left;margin-top: 7px;;}
+
+.live {float: right;margin-top: -38px;background-color: white;padding-left: 7px; padding-right: 7px; padding-top: 2px; padding-bottom: 2px;border: solid lightgray 1px; border-radius: 50px;;}
 
 
 .live-frame {
