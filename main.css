@@ -409,7 +409,9 @@ background-color: white;
   border: none;
 }
 
-#items {overflow: scroll;white-space: nowrap;height: 100vh;width: 100%;margin-top: -15px;margin-bottom: 150px;}
+#items {overflow: scroll;white-space: nowrap;height: 100vh;width: 100%;margin-top: -15px;}
+
+.spec-spacer {width: 100%; height: 200px; background-color: white;display: block;}
 
 /*------------------------------------------------Tab Navigation-----------------------------------------*/
 
