@@ -409,6 +409,8 @@ background-color: white;
   border: none;
 }
 
+#items {overflow-y: scroll;white-space: nowrap;}
+
 /*------------------------------------------------Tab Navigation-----------------------------------------*/
 
 .tab-navigation {
