@@ -26,9 +26,9 @@
    
     <script type="text/javascript">
         $(document).ready(function () {
-            $.getJSON('https://api.sheety.co/86891052-3092-4d3e-b9fb-8fcdb9859876', function (data) {
+            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/ghsApp/formResponses1', function (data) {
                 var template = Handlebars.compile($('#item-template').html())
-                $('#items').html(template(data))
+                $('#items').html(template(data.formResponses1))
             })
         })
 
@@ -47,7 +47,7 @@
     <div class="navigation-card filterDiv {{section}} {{athleticSection}} show vivify fadeIn delay-100 lazy" id="{{subPostID}}">
         <h5>{{title}}</h5>
         <h6>{{subTitle}}</h6>
-          <div class="content-container ">{{{imageURL1}}}</div> 
+          <div class="content-container ">{{{imageUrl1}}}</div> 
         <p>{{paragraph}}</p>
         <div class="button-container" onclick="document.getElementById('popup').style.display = 'block'">
              <button onclick="document.all.IFrameName.src = '{{buttonUrl}}'"  class="waves-effect btn-flat pulse white {{buttonState}}" >{{buttonText}}</button>
@@ -93,13 +93,12 @@
     <nav>
 
         <div class="holiday-badge">
-            <div><img class="vivify fadeOut delay-3000"
-                    src="https://media.giphy.com/media/3o7btLXEiGr1RPUIfu/giphy.gif"></div>
+           
         </div>
         <a href="index.html" class="refresh R" style="position: fixed;"><i onclick="M.toast({html: 'I am a toast'});"
                 class="material-icons">refresh</i></a>
         <a href="admiralocean.html">
-            <div class="logo-container"><img class="vivify fadeIn delay-3500"
+            <div class="logo-container"><img 
                     src="Branding/New GSD Logo Micro 512px.png">
             </div>
 
