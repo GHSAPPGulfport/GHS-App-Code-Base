@@ -409,7 +409,7 @@ background-color: white;
   border: none;
 }
 
-#items {overflow: scroll;white-space: nowrap;height: 100vh;width: 100%;margin-top: -15px;}
+#items {overflow: scroll;white-space: nowrap;height: 100vh;width: 100%;margin-top: -15px;margin-bottom: 150px;}
 
 /*------------------------------------------------Tab Navigation-----------------------------------------*/
 
