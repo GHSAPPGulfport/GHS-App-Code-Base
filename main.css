@@ -880,7 +880,7 @@ border: solid 1px lightgray;
   margin-left: 10px;
 }
 
-.filter>button:focus {
+.filter>button:hover {
   background-color: #012395;
   ;
   color: white;
