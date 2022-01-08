@@ -230,7 +230,7 @@ nav {
   border-radius: 10px;
   padding-bottom: 10px;
   margin-top: 25vh;
-  background-image: url(/Assets/christmastencel\ inverted.svg);
+background-color: white;;
 }
 
 .sub-modal>p {
@@ -593,7 +593,7 @@ summary:focus {
   border-bottom-color: lightgray;
   padding-bottom: 10px;
   padding-top: 5px;
-background-image: url(/Assets/card\ stencil.svg);
+
 border-radius: 10px;
 margin-top: 12px;
 padding-left: 15px;padding-right: 15px;;
